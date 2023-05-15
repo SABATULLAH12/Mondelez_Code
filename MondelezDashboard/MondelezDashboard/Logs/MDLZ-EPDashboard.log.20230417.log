@@ -1,0 +1,731 @@
+2023-04-17 07:53:21,830 [1] DEBUG  Application (null) (null) - Application Started
+2023-04-17 07:53:25,776 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 07:53:25,847 [11] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-04-17 07:53:26,091 [12] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-04-17 07:57:39,748 [11] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-04-17 07:57:43,961 [12] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 07:57:44,075 [12] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 07:58:08,858 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 07:58:09,217 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 07:58:09,607 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '2|4','1','-1001','8|32','1001','','Channel','','','',''
+2023-04-17 07:58:10,346 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 07:58:10,373 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 07:58:10,703 [17] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 07:58:10,720 [17] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '2|4','1','Channel'
+2023-04-17 07:58:16,601 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 07:58:16,613 [11] DEBUG  Application (null) (null) - [USP_mdlz_GetModule_Selections_Multiple] '154','7'
+2023-04-17 07:58:34,513 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 07:58:34,516 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1','Channel'
+2023-04-17 07:58:45,141 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 07:58:45,144 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 07:59:19,113 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 07:59:24,418 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32','1001','','Channel','','','',''
+2023-04-17 08:00:11,811 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:00:13,599 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11','1001','','Channel','','','',''
+2023-04-17 08:01:11,423 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:01:13,936 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 08:06:57,498 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:06:57,509 [12] DEBUG  Application (null) (null) - [USP_mdlz_GetModule_Selections] '154'
+2023-04-17 08:06:58,022 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter] ''
+2023-04-17 08:07:06,608 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:08,054 [20] DEBUG  Application (null) (null) - StoryBoard API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:08,079 [20] DEBUG  Application (null) (null) - [USP_MDLZ_StoryBoard_GetAllStories] '154'
+2023-04-17 08:07:08,561 [3] DEBUG  Application (null) (null) - StoryBoard API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:08,570 [3] DEBUG  Application (null) (null) - [USP_MDLZ_StoryBoard_GetSavedStories] '154'
+2023-04-17 08:07:08,853 [31] DEBUG  Application (null) (null) - StoryBoard API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:08,861 [31] DEBUG  Application (null) (null) - [USP_MDLZ_StoryBoard_GetStorySlides] '53'
+2023-04-17 08:07:15,353 [3] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:15,357 [3] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 08:07:15,684 [3] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 08:07:18,073 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:18,076 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 08:07:29,625 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:29,628 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 08:07:38,446 [12] DEBUG  Application (null) (null) - ReportsHub API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:38,494 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter] '5'
+2023-04-17 08:07:41,852 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 08:07:41,855 [12] DEBUG  Application (null) (null) - [USP_mdlz_GetModule_Selections] '154'
+2023-04-17 08:07:42,340 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter] ''
+2023-04-17 08:07:47,486 [15] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 08:07:47,489 [15] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 09:40:54,200 [42] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 09:40:54,269 [42] DEBUG  Application (null) (null) - [USP_mdlz_StoreModule_Selections] '154','3','[{"Id":0,"Name":"column","Selection":[{"Id":1,"Name":"Markets","DisplayName":"Markets","Selection":null}],"SelectionText":"markets"},{"Id":1,"Name":"row","Selection":[{"Id":101,"Name":"Level 1","DisplayName":"Level 1","Selection":[{"Id":3,"Name":"Category","DisplayName":"Category","Selection":null}]},{"Id":102,"Name":"Level 2","DisplayName":"Level 2","Selection":[{"Id":2,"Name":"Brands","DisplayName":"Brands","Selection":null}]},{"Id":103,"Name":"Level 3","DisplayName":"Level 3","Selection":[{"Id":7,"Name":"KPI","DisplayName":"KPI","Selection":null}]},{"Id":104,"Name":"Level 4","DisplayName":"Level 4","Selection":[{"Id":4,"Name":"Channel/Retailer","DisplayName":"Channel/Retailer","Selection":null}]}],"SelectionText":"Category - Brands - KPI - Channel/Retailer"},{"Id":2,"Name":"markets","Selection":[{"Id":4,"Name":"France","DisplayName":"France","Selection":null},{"Id":6,"Name":"Ireland","DisplayName":"Ireland","Selection":null}],"SelectionText":"Multiple"},{"Id":3,"Name":"category","Selection":[{"Id":1,"Name":"Biscuits","DisplayName":"Biscuits","Selection":null},{"Id":2,"Name":"Chocolate","DisplayName":"Chocolate","Selection":null},{"Id":3,"Name":"Gum & Candy","DisplayName":"Gum & Candy","Selection":null},{"Id":94,"Name":"Total PSA","DisplayName":"Total PSA","Selection":null},{"Id":95,"Name":"Cereal Bars","DisplayName":"Cereal Bars","Selection":null},{"Id":96,"Name":"BreadSubs","DisplayName":"BreadSubs","Selection":null}],"SelectionText":"Multiple"},{"Id":4,"Name":"time period","Selection":[{"Id":1,"Name":"MAT","DisplayName":"MAT","Selection":[{"Id":-1001,"Name":"Latest Time period available","DisplayName":"Latest Timeperiod","Selection":null}]}],"SelectionText":"MAT - Latest Time period available"},{"Id":5,"Name":"Brands","Selection":[{"Id":440761,"Name":"Biscuits and Soft Cakes","DisplayName":"Biscuits and Soft Cakes","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":440761,"BrandName":"biscuits and soft cakes"}],"$$hashKey":"object:3936"},{"Id":445872,"Name":"Total Chocolate Market","DisplayName":"Total Chocolate Market","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":445872,"BrandName":"total chocolate market"},{"CountryId":6,"CategoryId":2,"BrandId":443346,"BrandName":"total chocolate market"}],"$$hashKey":"object:3938"},{"Id":451408,"Name":"Total PSA","DisplayName":"Total PSA","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451408,"BrandName":"total psa"}],"$$hashKey":"object:3940"},{"Id":451408,"Name":"Barres Cerealieres","DisplayName":"Barres Cerealieres","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451408,"BrandName":"barres cerealieres"}],"$$hashKey":"object:3942"},{"Id":436604,"Name":"Gums and Candies","DisplayName":"Gums and Candies","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436604,"BrandName":"gums and candies"}],"$$hashKey":"object:3944"},{"Id":451409,"Name":"Eat Natural Limited","DisplayName":"Eat Natural Limited","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451409,"BrandName":"eat natural limited"}],"$$hashKey":"object:3946"},{"Id":441048,"Name":"Belin Family","DisplayName":"Belin Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441048,"BrandName":"belin family"}],"$$hashKey":"object:3948"},{"Id":445874,"Name":"Milka Family","DisplayName":"Milka Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":445874,"BrandName":"milka family"},{"CountryId":4,"CategoryId":1,"BrandId":440900,"BrandName":"milka family"},{"CountryId":6,"CategoryId":2,"BrandId":443348,"BrandName":"milka family"}],"$$hashKey":"object:3950"},{"Id":451410,"Name":"Eat Natural Limited EatNatural","DisplayName":"Eat Natural Limited EatNatural","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451410,"BrandName":"eat natural limited eatnatural"}],"$$hashKey":"object:3952"},{"Id":436607,"Name":"La Vosgienne","DisplayName":"La Vosgienne","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436607,"BrandName":"la vosgienne"}],"$$hashKey":"object:3954"},{"Id":451411,"Name":"Eat Natural Limited EatNatural Other","DisplayName":"Eat Natural Limited EatNatural Other","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451411,"BrandName":"eat natural limited eatnatural other"}],"$$hashKey":"object:3956"},{"Id":462948,"Name":"Milka Choco and Biscuit","DisplayName":"Milka Choco and Biscuit","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462948,"BrandName":"milka choco and biscuit"}],"$$hashKey":"object:3958"},{"Id":441050,"Name":"Belin Monaco","DisplayName":"Belin Monaco","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441050,"BrandName":"belin monaco"}],"$$hashKey":"object:3960"},{"Id":462949,"Name":"Milka Daim","DisplayName":"Milka Daim","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462949,"BrandName":"milka daim"}],"$$hashKey":"object:3962"},{"Id":451418,"Name":"General Mills","DisplayName":"General Mills","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451418,"BrandName":"general mills"},{"CountryId":4,"CategoryId":94,"BrandId":451559,"BrandName":"general mills"},{"CountryId":6,"CategoryId":1,"BrandId":438484,"BrandName":"general mills"}],"$$hashKey":"object:3964"},{"Id":436608,"Name":"Cachou Lajaunie","DisplayName":"Cachou Lajaunie","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436608,"BrandName":"cachou lajaunie"}],"$$hashKey":"object:3966"},{"Id":451419,"Name":"General Mills Nature Valley","DisplayName":"General Mills Nature Valley","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451419,"BrandName":"general mills nature valley"}],"$$hashKey":"object:3968"},{"Id":451413,"Name":"Snack","DisplayName":"Snack","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451413,"BrandName":"snack"},{"CountryId":6,"CategoryId":1,"BrandId":501462,"BrandName":"snack"}],"$$hashKey":"object:3970"},{"Id":462950,"Name":"Milka Granola","DisplayName":"Milka Granola","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462950,"BrandName":"milka granola"}],"$$hashKey":"object:3972"},{"Id":441052,"Name":"Belin Minizza","DisplayName":"Belin Minizza","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441052,"BrandName":"belin minizza"}],"$$hashKey":"object:3974"},{"Id":462951,"Name":"I Love Milka","DisplayName":"I Love Milka","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462951,"BrandName":"i love milka"}],"$$hashKey":"object:3976"},{"Id":451414,"Name":"Snack Adultes","DisplayName":"Snack Adultes","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451414,"BrandName":"snack adultes"}],"$$hashKey":"object:3978"},{"Id":451420,"Name":"General Mills Nature Valley Other","DisplayName":"General Mills Nature Valley Other","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451420,"BrandName":"general mills nature valley other"}],"$$hashKey":"object:3980"},{"Id":451415,"Name":"Snack Enfants","DisplayName":"Snack Enfants","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451415,"BrandName":"snack enfants"}],"$$hashKey":"object:3982"},{"Id":462952,"Name":"Milka LU","DisplayName":"Milka LU","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462952,"BrandName":"milka lu"}],"$$hashKey":"object:3984"},{"Id":441053,"Name":"Belin Aperitif Monaco","DisplayName":"Belin Aperitif Monaco","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441053,"BrandName":"belin aperitif monaco"}],"$$hashKey":"object:3986"},{"Id":451416,"Name":"Snack PopCorn","DisplayName":"Snack PopCorn","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451416,"BrandName":"snack popcorn"}],"$$hashKey":"object:3988"},{"Id":436618,"Name":"Mars/Wrigley","DisplayName":"Mars/Wrigley","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436618,"BrandName":"mars/wrigley"},{"CountryId":4,"CategoryId":2,"BrandId":445891,"BrandName":"mars/wrigley"},{"CountryId":6,"CategoryId":2,"BrandId":443676,"BrandName":"mars/wrigley"}],"$$hashKey":"object:3990"},{"Id":482079,"Name":"Milka Milkinis","DisplayName":"Milka Milkinis","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":482079,"BrandName":"milka milkinis"}],"$$hashKey":"object:3992"},{"Id":463038,"Name":"Milka Mini","DisplayName":"Milka Mini","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":463038,"BrandName":"milka mini"}],"$$hashKey":"object:3994"},{"Id":436619,"Name":"Airwaves","DisplayName":"Airwaves","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436619,"BrandName":"airwaves"}],"$$hashKey":"object:3996"},{"Id":451417,"Name":"Snack Snacks Asiat","DisplayName":"Snack Snacks Asiat","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451417,"BrandName":"snack snacks asiat"}],"$$hashKey":"object:3998"},{"Id":441055,"Name":"Belin Snacky","DisplayName":"Belin Snacky","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441055,"BrandName":"belin snacky"}],"$$hashKey":"object:4000"},{"Id":450431,"Name":"Belin Triangolini","DisplayName":"Belin Triangolini","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":450431,"BrandName":"belin triangolini"}],"$$hashKey":"object:4002"},{"Id":451418,"Name":"Snack Sucre","DisplayName":"Snack Sucre","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451418,"BrandName":"snack sucre"}],"$$hashKey":"object:4004"}],"SelectionText":"Multiple"},{"Id":6,"Name":"segments","Selection":[],"SelectionText":"None | None"},{"Id":7,"Name":"kpi","Selection":[{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":8,"Name":"Penetration","DisplayName":"Absolute: Penetration","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":32,"Name":"Frequency","DisplayName":"Absolute: Frequency","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":5,"Name":"Buyers (000 HH)","DisplayName":"Absolute: Buyers (000 HH)","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":11,"Name":"Trips (000)","DisplayName":"Absolute: Trips (000)","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":65,"Name":"Volume Per Buyer","DisplayName":"Absolute: Volume Per Buyer (Kg)","Selection":null}]}],"SelectionText":"Multiple"},{"Id":8,"Name":"channel/retailer","Selection":[{"Id":1,"Name":"Total Channels","DisplayName":"Total Channels","Selection":null}],"SelectionText":"total channels"}]'
+2023-04-17 09:40:56,409 [99] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 09:46:21,998 [42] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 09:46:22,010 [42] DEBUG  Application (null) (null) - [USP_mdlz_StoreModule_Selections] '154','3','[{"Id":0,"Name":"column","Selection":[{"Id":1,"Name":"Markets","DisplayName":"Markets","Selection":null}],"SelectionText":"markets"},{"Id":1,"Name":"row","Selection":[{"Id":101,"Name":"Level 1","DisplayName":"Level 1","Selection":[{"Id":3,"Name":"Category","DisplayName":"Category","Selection":null}]},{"Id":102,"Name":"Level 2","DisplayName":"Level 2","Selection":[{"Id":2,"Name":"Brands","DisplayName":"Brands","Selection":null}]},{"Id":103,"Name":"Level 3","DisplayName":"Level 3","Selection":[{"Id":7,"Name":"KPI","DisplayName":"KPI","Selection":null}]},{"Id":104,"Name":"Level 4","DisplayName":"Level 4","Selection":[{"Id":4,"Name":"Channel/Retailer","DisplayName":"Channel/Retailer","Selection":null}]}],"SelectionText":"Category - Brands - KPI - Channel/Retailer"},{"Id":2,"Name":"markets","Selection":[{"Id":4,"Name":"France","DisplayName":"France","Selection":null},{"Id":6,"Name":"Ireland","DisplayName":"Ireland","Selection":null}],"SelectionText":"Multiple"},{"Id":3,"Name":"category","Selection":[{"Id":1,"Name":"Biscuits","DisplayName":"Biscuits","Selection":null},{"Id":2,"Name":"Chocolate","DisplayName":"Chocolate","Selection":null},{"Id":3,"Name":"Gum & Candy","DisplayName":"Gum & Candy","Selection":null},{"Id":94,"Name":"Total PSA","DisplayName":"Total PSA","Selection":null},{"Id":95,"Name":"Cereal Bars","DisplayName":"Cereal Bars","Selection":null},{"Id":96,"Name":"BreadSubs","DisplayName":"BreadSubs","Selection":null}],"SelectionText":"Multiple"},{"Id":4,"Name":"time period","Selection":[{"Id":1,"Name":"MAT","DisplayName":"MAT","Selection":[{"Id":-1001,"Name":"Latest Time period available","DisplayName":"Latest Timeperiod","Selection":null}]}],"SelectionText":"MAT - Latest Time period available"},{"Id":5,"Name":"Brands","Selection":[{"Id":440761,"Name":"Biscuits and Soft Cakes","DisplayName":"Biscuits and Soft Cakes","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":440761,"BrandName":"biscuits and soft cakes"}],"$$hashKey":"object:3936"},{"Id":445872,"Name":"Total Chocolate Market","DisplayName":"Total Chocolate Market","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":445872,"BrandName":"total chocolate market"},{"CountryId":6,"CategoryId":2,"BrandId":443346,"BrandName":"total chocolate market"}],"$$hashKey":"object:3938"},{"Id":451408,"Name":"Total PSA","DisplayName":"Total PSA","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451408,"BrandName":"total psa"}],"$$hashKey":"object:3940"},{"Id":451408,"Name":"Barres Cerealieres","DisplayName":"Barres Cerealieres","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451408,"BrandName":"barres cerealieres"}],"$$hashKey":"object:3942"},{"Id":436604,"Name":"Gums and Candies","DisplayName":"Gums and Candies","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436604,"BrandName":"gums and candies"}],"$$hashKey":"object:3944"},{"Id":451409,"Name":"Eat Natural Limited","DisplayName":"Eat Natural Limited","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451409,"BrandName":"eat natural limited"}],"$$hashKey":"object:3946"},{"Id":441048,"Name":"Belin Family","DisplayName":"Belin Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441048,"BrandName":"belin family"}],"$$hashKey":"object:3948"},{"Id":445874,"Name":"Milka Family","DisplayName":"Milka Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":445874,"BrandName":"milka family"},{"CountryId":4,"CategoryId":1,"BrandId":440900,"BrandName":"milka family"},{"CountryId":6,"CategoryId":2,"BrandId":443348,"BrandName":"milka family"}],"$$hashKey":"object:3950"},{"Id":451410,"Name":"Eat Natural Limited EatNatural","DisplayName":"Eat Natural Limited EatNatural","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451410,"BrandName":"eat natural limited eatnatural"}],"$$hashKey":"object:3952"},{"Id":436607,"Name":"La Vosgienne","DisplayName":"La Vosgienne","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436607,"BrandName":"la vosgienne"}],"$$hashKey":"object:3954"},{"Id":451411,"Name":"Eat Natural Limited EatNatural Other","DisplayName":"Eat Natural Limited EatNatural Other","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451411,"BrandName":"eat natural limited eatnatural other"}],"$$hashKey":"object:3956"},{"Id":462948,"Name":"Milka Choco and Biscuit","DisplayName":"Milka Choco and Biscuit","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462948,"BrandName":"milka choco and biscuit"}],"$$hashKey":"object:3958"},{"Id":441050,"Name":"Belin Monaco","DisplayName":"Belin Monaco","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441050,"BrandName":"belin monaco"}],"$$hashKey":"object:3960"},{"Id":462949,"Name":"Milka Daim","DisplayName":"Milka Daim","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462949,"BrandName":"milka daim"}],"$$hashKey":"object:3962"},{"Id":451418,"Name":"General Mills","DisplayName":"General Mills","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451418,"BrandName":"general mills"},{"CountryId":4,"CategoryId":94,"BrandId":451559,"BrandName":"general mills"},{"CountryId":6,"CategoryId":1,"BrandId":438484,"BrandName":"general mills"}],"$$hashKey":"object:3964"},{"Id":436608,"Name":"Cachou Lajaunie","DisplayName":"Cachou Lajaunie","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436608,"BrandName":"cachou lajaunie"}],"$$hashKey":"object:3966"},{"Id":451419,"Name":"General Mills Nature Valley","DisplayName":"General Mills Nature Valley","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451419,"BrandName":"general mills nature valley"}],"$$hashKey":"object:3968"},{"Id":451413,"Name":"Snack","DisplayName":"Snack","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451413,"BrandName":"snack"},{"CountryId":6,"CategoryId":1,"BrandId":501462,"BrandName":"snack"}],"$$hashKey":"object:3970"},{"Id":462950,"Name":"Milka Granola","DisplayName":"Milka Granola","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462950,"BrandName":"milka granola"}],"$$hashKey":"object:3972"},{"Id":441052,"Name":"Belin Minizza","DisplayName":"Belin Minizza","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441052,"BrandName":"belin minizza"}],"$$hashKey":"object:3974"},{"Id":462951,"Name":"I Love Milka","DisplayName":"I Love Milka","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462951,"BrandName":"i love milka"}],"$$hashKey":"object:3976"},{"Id":451414,"Name":"Snack Adultes","DisplayName":"Snack Adultes","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451414,"BrandName":"snack adultes"}],"$$hashKey":"object:3978"},{"Id":451420,"Name":"General Mills Nature Valley Other","DisplayName":"General Mills Nature Valley Other","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451420,"BrandName":"general mills nature valley other"}],"$$hashKey":"object:3980"},{"Id":451415,"Name":"Snack Enfants","DisplayName":"Snack Enfants","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451415,"BrandName":"snack enfants"}],"$$hashKey":"object:3982"},{"Id":462952,"Name":"Milka LU","DisplayName":"Milka LU","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462952,"BrandName":"milka lu"}],"$$hashKey":"object:3984"},{"Id":441053,"Name":"Belin Aperitif Monaco","DisplayName":"Belin Aperitif Monaco","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441053,"BrandName":"belin aperitif monaco"}],"$$hashKey":"object:3986"},{"Id":451416,"Name":"Snack PopCorn","DisplayName":"Snack PopCorn","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451416,"BrandName":"snack popcorn"}],"$$hashKey":"object:3988"},{"Id":436618,"Name":"Mars/Wrigley","DisplayName":"Mars/Wrigley","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436618,"BrandName":"mars/wrigley"},{"CountryId":4,"CategoryId":2,"BrandId":445891,"BrandName":"mars/wrigley"},{"CountryId":6,"CategoryId":2,"BrandId":443676,"BrandName":"mars/wrigley"}],"$$hashKey":"object:3990"},{"Id":482079,"Name":"Milka Milkinis","DisplayName":"Milka Milkinis","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":482079,"BrandName":"milka milkinis"}],"$$hashKey":"object:3992"},{"Id":463038,"Name":"Milka Mini","DisplayName":"Milka Mini","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":463038,"BrandName":"milka mini"}],"$$hashKey":"object:3994"},{"Id":436619,"Name":"Airwaves","DisplayName":"Airwaves","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436619,"BrandName":"airwaves"}],"$$hashKey":"object:3996"},{"Id":451417,"Name":"Snack Snacks Asiat","DisplayName":"Snack Snacks Asiat","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451417,"BrandName":"snack snacks asiat"}],"$$hashKey":"object:3998"},{"Id":441055,"Name":"Belin Snacky","DisplayName":"Belin Snacky","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441055,"BrandName":"belin snacky"}],"$$hashKey":"object:4000"},{"Id":450431,"Name":"Belin Triangolini","DisplayName":"Belin Triangolini","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":450431,"BrandName":"belin triangolini"}],"$$hashKey":"object:4002"},{"Id":451418,"Name":"Snack Sucre","DisplayName":"Snack Sucre","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451418,"BrandName":"snack sucre"}],"$$hashKey":"object:4004"}],"SelectionText":"Multiple"},{"Id":6,"Name":"segments","Selection":[],"SelectionText":"None | None"},{"Id":7,"Name":"kpi","Selection":[{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":8,"Name":"Penetration","DisplayName":"Absolute: Penetration","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":32,"Name":"Frequency","DisplayName":"Absolute: Frequency","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":5,"Name":"Buyers (000 HH)","DisplayName":"Absolute: Buyers (000 HH)","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":11,"Name":"Trips (000)","DisplayName":"Absolute: Trips (000)","Selection":null}]},{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":65,"Name":"Volume Per Buyer","DisplayName":"Absolute: Volume Per Buyer (Kg)","Selection":null}]}],"SelectionText":"Multiple"},{"Id":8,"Name":"channel/retailer","Selection":[{"Id":1,"Name":"Total Channels","DisplayName":"Total Channels","Selection":null}],"SelectionText":"total channels"}]'
+2023-04-17 09:46:23,554 [42] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 14:17:14,135 [81] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:17:14,155 [81] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-04-17 14:17:14,441 [85] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-04-17 14:17:43,478 [94] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Sabat.Ullah@kantar.com'
+2023-04-17 14:18:24,405 [94] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Cannot open server 'uat-ep-ne-sql01' requested by the login. Client with IP address '117.99.237.32' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at DAL.DALRepository.LoginRepository.CheckUser(LoginRequest request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\LoginRepository.cs:line 75
+   at BAL.BALRepository.Login.CheckUser(LoginRequest request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\Login.cs:line 26
+   at MondelezDashboard.Controllers.API.LoginController.CheckUser(LoginRequest request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\LoginController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ClientConnectionId:e3c02635-10f2-4d63-8eb9-e4d8b891b628
+Error Number:40615,State:1,Class:14
+2023-04-17 14:18:45,316 [46] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:18:45,325 [46] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-04-17 14:18:45,741 [81] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-04-17 14:19:19,307 [81] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Sabat.Ullah@kantar.com'
+2023-04-17 14:19:25,127 [81] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:19:25,157 [81] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:19:36,936 [81] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:19:36,951 [81] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:19:37,504 [81] ERROR  Application (null) (null) - System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at DAL.FilterPanelRepository.GetDataExplorerData(Int32 ModuleId, Int32 userId) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 657
+2023-04-17 14:19:37,736 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:19:37,746 [94] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:20:05,474 [81] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:20:05,500 [81] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5','1|2|3|94|95','Demographics'
+2023-04-17 14:22:37,513 [81] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:22:41,292 [81] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5','1|2|3|94|95','-1001','8|32|5|11|65|77','','1003|1004|1005|1006','Demographics','','','',''
+2023-04-17 14:24:43,572 [83] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:24:43,585 [83] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:24:46,874 [66] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:24:46,884 [66] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:24:47,169 [66] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5','1|2|3|94|95','-1001','8|32|5|11|65|77','','1003|1004|1005|1006','Demographics','','','',''
+2023-04-17 14:24:50,335 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:24:50,342 [94] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:24:56,602 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:24:56,611 [57] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5','1|2|3|94|95','Demographics'
+2023-04-17 14:25:23,768 [83] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:25:23,777 [83] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:25:26,781 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:25:26,791 [44] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:25:27,070 [44] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5','1|2|3|94|95','-1001','8|32|5|11|65|77','','1003|1004|1005|1006','Demographics','','','',''
+2023-04-17 14:25:28,791 [74] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:25:28,801 [74] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:25:33,541 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:25:33,549 [57] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5','1|2|3|94|95','Demographics'
+2023-04-17 14:27:30,959 [44] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:27:30,975 [44] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:27:35,903 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:27:35,920 [94] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:27:36,190 [94] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5','1|2|3|94|95','-1001','8|32|5|11|65|77','','1003|1004|1005|1006','Demographics','','','',''
+2023-04-17 14:27:39,514 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:27:39,522 [94] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:27:45,486 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:27:45,571 [94] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5','1|2|3|94|95','Demographics'
+2023-04-17 14:28:56,327 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:28:56,340 [44] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5','1|2|3|4|94|95','Demographics'
+2023-04-17 14:30:26,728 [94] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:30:26,737 [94] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:30:28,973 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:30:28,982 [94] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:30:29,264 [94] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5','1|2|3|94|95','-1001','8|32|5|11|65|77','','1003|1004|1005|1006','Demographics','','','',''
+2023-04-17 14:30:30,899 [61] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:30:30,906 [61] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:30:33,689 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:30:33,698 [44] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5','1|2|3|94|95','Demographics'
+2023-04-17 14:31:16,323 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:31:16,333 [94] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5|6','1|2|3|94|95|96','Demographics'
+2023-04-17 14:32:58,374 [94] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:33:01,108 [94] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5|6','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 14:44:26,460 [57] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:44:26,480 [57] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:44:33,302 [82] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:44:33,318 [82] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:44:35,346 [82] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5|6','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 14:44:39,065 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:44:39,075 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:44:54,888 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:44:54,905 [57] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5|6','1|2|3|94|95|96','Demographics'
+2023-04-17 14:45:10,814 [57] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:45:10,836 [57] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:45:13,258 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:45:13,267 [57] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:45:13,580 [57] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5|6','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 14:45:17,326 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:45:17,337 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:45:25,287 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:45:25,297 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5|6','1|2|3|94|95|96','Demographics'
+2023-04-17 14:47:17,980 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:47:18,001 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '5|6','1|2','Demographics'
+2023-04-17 14:47:19,320 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:47:21,512 [59] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '5|6','1|2','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 14:49:00,971 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:49:00,982 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5|6','1|2','Demographics'
+2023-04-17 14:49:02,442 [75] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:49:04,532 [75] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5|6','1|2','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 14:55:32,783 [38] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 14:55:32,795 [38] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 14:55:35,841 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:55:35,857 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 14:55:38,257 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5|6','1|2','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 14:55:39,322 [45] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:55:39,330 [45] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 14:55:39,689 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:55:39,701 [32] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5|6','1|2','Demographics'
+2023-04-17 14:57:51,399 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:57:51,419 [38] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 14:58:15,090 [45] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:58:15,098 [45] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5|6','1|2|3|94|95|96','Demographics'
+2023-04-17 14:58:54,770 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 14:58:57,273 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5|6','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:00:11,678 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:00:15,031 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5|6','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:01:03,873 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:01:03,901 [38] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4|5','1|2|3|94|95|96','Demographics'
+2023-04-17 15:01:05,336 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:01:07,307 [51] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4|5','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:01:33,118 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:01:33,131 [38] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '4','1|2|3|94|95|96','Demographics'
+2023-04-17 15:01:34,593 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:01:36,509 [41] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:01:57,133 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:02:00,476 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:02:44,610 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:02:46,820 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:03:14,472 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:03:16,407 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:03:22,628 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:03:24,488 [41] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:19:59,109 [48] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:19:59,158 [48] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96','Demographics'
+2023-04-17 15:20:02,497 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:20:07,013 [55] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:30:20,520 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:30:22,362 [26] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:30:45,280 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:30:45,287 [26] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 15:30:45,548 [26] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:30:46,731 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:30:46,738 [55] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 15:30:47,786 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:30:47,794 [26] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96','Demographics'
+2023-04-17 15:30:51,912 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:30:51,919 [26] DEBUG  Application (null) (null) - [USP_mdlz_GetModule_Selections] '238'
+2023-04-17 15:30:52,225 [26] DEBUG  Application (null) (null) - [USP_mdlz_filter] ''
+2023-04-17 15:35:49,252 [18] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:35:49,266 [18] DEBUG  Application (null) (null) - [USP_mdlz_StoreModule_Selections] '238','3','[{"Id":0,"Name":"column","Selection":[{"Id":1,"Name":"Markets","DisplayName":"Markets","Selection":null}],"SelectionText":"markets"},{"Id":1,"Name":"row","Selection":[{"Id":101,"Name":"Level 1","DisplayName":"Level 1","Selection":[{"Id":3,"Name":"Category","DisplayName":"Category","Selection":null}]},{"Id":102,"Name":"Level 2","DisplayName":"Level 2","Selection":[{"Id":2,"Name":"Brands","DisplayName":"Brands","Selection":null}]},{"Id":103,"Name":"Level 3","DisplayName":"Level 3","Selection":[{"Id":8,"Name":"Segment 1","DisplayName":"Segment 1","Selection":null}]}],"SelectionText":"Category - Brands - Segment 1"},{"Id":2,"Name":"markets","Selection":[{"Id":4,"Name":"France","DisplayName":"France","Selection":null}],"SelectionText":"france"},{"Id":3,"Name":"category","Selection":[{"Id":1,"Name":"Biscuits","DisplayName":"Biscuits","Selection":null},{"Id":2,"Name":"Chocolate","DisplayName":"Chocolate","Selection":null},{"Id":3,"Name":"Gum & Candy","DisplayName":"Gum & Candy","Selection":null},{"Id":94,"Name":"Total PSA","DisplayName":"Total PSA","Selection":null},{"Id":95,"Name":"Cereal Bars","DisplayName":"Cereal Bars","Selection":null},{"Id":96,"Name":"BreadSubs","DisplayName":"BreadSubs","Selection":null}],"SelectionText":"Multiple"},{"Id":4,"Name":"time period","Selection":[{"Id":1,"Name":"MAT","DisplayName":"MAT","Selection":[{"Id":-1001,"Name":"Latest Time period available","DisplayName":"Latest Timeperiod","Selection":null}]}],"SelectionText":"MAT - Latest Time period available"},{"Id":5,"Name":"Brands","Selection":[{"Id":440761,"Name":"Biscuits and Soft Cakes","DisplayName":"Biscuits and Soft Cakes","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":440761,"BrandName":"biscuits and soft cakes"}],"$$hashKey":"object:5536"},{"Id":445872,"Name":"Total Chocolate Market","DisplayName":"Total Chocolate Market","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":445872,"BrandName":"total chocolate market"}],"$$hashKey":"object:5538"},{"Id":451408,"Name":"Total PSA","DisplayName":"Total PSA","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451408,"BrandName":"total psa"}],"$$hashKey":"object:5540"},{"Id":451408,"Name":"Barres Cerealieres","DisplayName":"Barres Cerealieres","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451408,"BrandName":"barres cerealieres"}],"$$hashKey":"object:5542"},{"Id":436604,"Name":"Gums and Candies","DisplayName":"Gums and Candies","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436604,"BrandName":"gums and candies"}],"$$hashKey":"object:5544"},{"Id":451409,"Name":"Eat Natural Limited","DisplayName":"Eat Natural Limited","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451409,"BrandName":"eat natural limited"}],"$$hashKey":"object:5546"},{"Id":441048,"Name":"Belin Family","DisplayName":"Belin Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441048,"BrandName":"belin family"}],"$$hashKey":"object:5548"},{"Id":445874,"Name":"Milka Family","DisplayName":"Milka Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":445874,"BrandName":"milka family"},{"CountryId":4,"CategoryId":1,"BrandId":440900,"BrandName":"milka family"}],"$$hashKey":"object:5550"},{"Id":451410,"Name":"Eat Natural Limited EatNatural","DisplayName":"Eat Natural Limited EatNatural","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451410,"BrandName":"eat natural limited eatnatural"}],"$$hashKey":"object:5552"},{"Id":436607,"Name":"La Vosgienne","DisplayName":"La Vosgienne","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436607,"BrandName":"la vosgienne"}],"$$hashKey":"object:5554"},{"Id":451411,"Name":"Eat Natural Limited EatNatural Other","DisplayName":"Eat Natural Limited EatNatural Other","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451411,"BrandName":"eat natural limited eatnatural other"}],"$$hashKey":"object:5556"},{"Id":462948,"Name":"Milka Choco and Biscuit","DisplayName":"Milka Choco and Biscuit","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462948,"BrandName":"milka choco and biscuit"}],"$$hashKey":"object:5558"},{"Id":441050,"Name":"Belin Monaco","DisplayName":"Belin Monaco","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441050,"BrandName":"belin monaco"}],"$$hashKey":"object:5560"},{"Id":462949,"Name":"Milka Daim","DisplayName":"Milka Daim","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462949,"BrandName":"milka daim"}],"$$hashKey":"object:5562"},{"Id":451418,"Name":"General Mills","DisplayName":"General Mills","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451418,"BrandName":"general mills"},{"CountryId":4,"CategoryId":94,"BrandId":451559,"BrandName":"general mills"}],"$$hashKey":"object:5564"},{"Id":436608,"Name":"Cachou Lajaunie","DisplayName":"Cachou Lajaunie","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436608,"BrandName":"cachou lajaunie"}],"$$hashKey":"object:5566"},{"Id":451419,"Name":"General Mills Nature Valley","DisplayName":"General Mills Nature Valley","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451419,"BrandName":"general mills nature valley"}],"$$hashKey":"object:5568"},{"Id":451413,"Name":"Snack","DisplayName":"Snack","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451413,"BrandName":"snack"}],"$$hashKey":"object:5570"},{"Id":462950,"Name":"Milka Granola","DisplayName":"Milka Granola","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462950,"BrandName":"milka granola"}],"$$hashKey":"object:5572"},{"Id":441052,"Name":"Belin Minizza","DisplayName":"Belin Minizza","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441052,"BrandName":"belin minizza"}],"$$hashKey":"object:5574"},{"Id":462951,"Name":"I Love Milka","DisplayName":"I Love Milka","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462951,"BrandName":"i love milka"}],"$$hashKey":"object:5576"},{"Id":451414,"Name":"Snack Adultes","DisplayName":"Snack Adultes","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451414,"BrandName":"snack adultes"}],"$$hashKey":"object:5578"},{"Id":451420,"Name":"General Mills Nature Valley Other","DisplayName":"General Mills Nature Valley Other","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451420,"BrandName":"general mills nature valley other"}],"$$hashKey":"object:5580"},{"Id":451415,"Name":"Snack Enfants","DisplayName":"Snack Enfants","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451415,"BrandName":"snack enfants"}],"$$hashKey":"object:5582"},{"Id":462952,"Name":"Milka LU","DisplayName":"Milka LU","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462952,"BrandName":"milka lu"}],"$$hashKey":"object:5584"},{"Id":441053,"Name":"Belin Aperitif Monaco","DisplayName":"Belin Aperitif Monaco","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441053,"BrandName":"belin aperitif monaco"}],"$$hashKey":"object:5586"},{"Id":451416,"Name":"Snack PopCorn","DisplayName":"Snack PopCorn","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451416,"BrandName":"snack popcorn"}],"$$hashKey":"object:5588"},{"Id":436618,"Name":"Mars/Wrigley","DisplayName":"Mars/Wrigley","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436618,"BrandName":"mars/wrigley"},{"CountryId":4,"CategoryId":2,"BrandId":445891,"BrandName":"mars/wrigley"}],"$$hashKey":"object:5590"},{"Id":482079,"Name":"Milka Milkinis","DisplayName":"Milka Milkinis","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":482079,"BrandName":"milka milkinis"}],"$$hashKey":"object:5592"},{"Id":463038,"Name":"Milka Mini","DisplayName":"Milka Mini","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":463038,"BrandName":"milka mini"}],"$$hashKey":"object:5596"},{"Id":436619,"Name":"Airwaves","DisplayName":"Airwaves","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436619,"BrandName":"airwaves"}],"$$hashKey":"object:5598"},{"Id":451417,"Name":"Snack Snacks Asiat","DisplayName":"Snack Snacks Asiat","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451417,"BrandName":"snack snacks asiat"}],"$$hashKey":"object:5600"},{"Id":441055,"Name":"Belin Snacky","DisplayName":"Belin Snacky","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441055,"BrandName":"belin snacky"}],"$$hashKey":"object:5602"},{"Id":450431,"Name":"Belin Triangolini","DisplayName":"Belin Triangolini","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":450431,"BrandName":"belin triangolini"}],"$$hashKey":"object:5604"},{"Id":451424,"Name":"Groupe Nestle Chocapic","DisplayName":"Groupe Nestle Chocapic","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451424,"BrandName":"groupe nestle chocapic"}],"$$hashKey":"object:5606"},{"Id":466995,"Name":"Milka Mini Eggs","DisplayName":"Milka Mini Eggs","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":466995,"BrandName":"milka mini eggs"}],"$$hashKey":"object:5608"},{"Id":463040,"Name":"Milka Alpenmilk","DisplayName":"Milka Alpenmilk","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":463040,"BrandName":"milka alpenmilk"}],"$$hashKey":"object:5610"},{"Id":451425,"Name":"Groupe Nestle Chocapic Chocapic Std","DisplayName":"Groupe Nestle Chocapic Chocapic Std","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451425,"BrandName":"groupe nestle chocapic chocapic std"}],"$$hashKey":"object:5612"},{"Id":441063,"Name":"Ritz Family","DisplayName":"Ritz Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":441063,"BrandName":"ritz family"}],"$$hashKey":"object:5614"},{"Id":436623,"Name":"Haribo","DisplayName":"Haribo","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436623,"BrandName":"haribo"}],"$$hashKey":"object:5616"},{"Id":463041,"Name":"Milka Hazelnut","DisplayName":"Milka Hazelnut","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":463041,"BrandName":"milka hazelnut"}],"$$hashKey":"object:5618"},{"Id":451421,"Name":"Snack Others","DisplayName":"Snack Others","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451421,"BrandName":"snack others"}],"$$hashKey":"object:5620"},{"Id":440987,"Name":"Cadbury Finger Family","DisplayName":"Cadbury Finger Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":440987,"BrandName":"cadbury finger family"}],"$$hashKey":"object:5622"},{"Id":446045,"Name":"Milka Petit Oeufs","DisplayName":"Milka Petit Oeufs","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":446045,"BrandName":"milka petit oeufs"}],"$$hashKey":"object:5624"},{"Id":446047,"Name":"Milka Rice","DisplayName":"Milka Rice","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":446047,"BrandName":"milka rice"}],"$$hashKey":"object:5626"},{"Id":501669,"Name":"Cadbury Finger Class","DisplayName":"Cadbury Finger Class","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":501669,"BrandName":"cadbury finger class"}],"$$hashKey":"object:5628"},{"Id":436629,"Name":"Tic Tac","DisplayName":"Tic Tac","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436629,"BrandName":"tic tac"}],"$$hashKey":"object:5630"},{"Id":451429,"Name":"Groupe Nestle Fitness Fitness Chocolat","DisplayName":"Groupe Nestle Fitness Fitness Chocolat","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451429,"BrandName":"groupe nestle fitness fitness chocolat"}],"$$hashKey":"object:5632"},{"Id":446049,"Name":"Milka Tendre Milk","DisplayName":"Milka Tendre Milk","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":446049,"BrandName":"milka tendre milk"}],"$$hashKey":"object:5634"},{"Id":501376,"Name":"Lu Guet Apens","DisplayName":"Lu Guet Apens","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":501376,"BrandName":"lu guet apens"}],"$$hashKey":"object:5636"},{"Id":450872,"Name":"Milka Oeuf Coque","DisplayName":"Milka Oeuf Coque","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":450872,"BrandName":"milka oeuf coque"}],"$$hashKey":"object:5638"},{"Id":451430,"Name":"Groupe Nestle Fitness Fitness Delice Choco Lait","DisplayName":"Groupe Nestle Fitness Fitness Delice Choco Lait","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451430,"BrandName":"groupe nestle fitness fitness delice choco lait"}],"$$hashKey":"object:5640"},{"Id":436631,"Name":"Chupa Chups Solinest","DisplayName":"Chupa Chups Solinest","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436631,"BrandName":"chupa chups solinest"}],"$$hashKey":"object:5642"},{"Id":436632,"Name":"Fisherman's Friend Solinest","DisplayName":"Fisherman's Friend Solinest","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436632,"BrandName":"fisherman's friend solinest"}],"$$hashKey":"object:5644"},{"Id":451431,"Name":"Groupe Nestle Fitness Fitness Nature","DisplayName":"Groupe Nestle Fitness Fitness Nature","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451431,"BrandName":"groupe nestle fitness fitness nature"}],"$$hashKey":"object:5646"},{"Id":462954,"Name":"Milka Fantaisy","DisplayName":"Milka Fantaisy","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462954,"BrandName":"milka fantaisy"}],"$$hashKey":"object:5648"},{"Id":450342,"Name":"Lu Bastogne","DisplayName":"Lu Bastogne","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":450342,"BrandName":"lu bastogne"}],"$$hashKey":"object:5650"},{"Id":462955,"Name":"Milka Mmmax","DisplayName":"Milka Mmmax","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":462955,"BrandName":"milka mmmax"}],"$$hashKey":"object:5652"},{"Id":451432,"Name":"Groupe Nestle Fitness Other Brands","DisplayName":"Groupe Nestle Fitness Other Brands","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451432,"BrandName":"groupe nestle fitness other brands"}],"$$hashKey":"object:5654"},{"Id":451426,"Name":"Crackers","DisplayName":"Crackers","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451426,"BrandName":"crackers"}],"$$hashKey":"object:5656"},{"Id":451427,"Name":"Crackers Basiques","DisplayName":"Crackers Basiques","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451427,"BrandName":"crackers basiques"}],"$$hashKey":"object:5658"},{"Id":451433,"Name":"Groupe Nestle Golden Grahams","DisplayName":"Groupe Nestle Golden Grahams","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451433,"BrandName":"groupe nestle golden grahams"}],"$$hashKey":"object:5660"},{"Id":501340,"Name":"Milka Moments Praline","DisplayName":"Milka Moments Praline","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":501340,"BrandName":"milka moments praline"}],"$$hashKey":"object:5662"},{"Id":463952,"Name":"Lu BIO Bisc Marbre","DisplayName":"Lu BIO Bisc Marbre","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":463952,"BrandName":"lu bio bisc marbre"}],"$$hashKey":"object:5664"},{"Id":463953,"Name":"Lu BIO Nappe Choc Noir","DisplayName":"Lu BIO Nappe Choc Noir","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":1,"BrandId":463953,"BrandName":"lu bio nappe choc noir"}],"$$hashKey":"object:5666"},{"Id":445875,"Name":"Toblerone Family","DisplayName":"Toblerone Family","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":2,"BrandId":445875,"BrandName":"toblerone family"}],"$$hashKey":"object:5668"},{"Id":451434,"Name":"Groupe Nestle Golden Grahams Other","DisplayName":"Groupe Nestle Golden Grahams Other","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":95,"BrandId":451434,"BrandName":"groupe nestle golden grahams other"}],"$$hashKey":"object:5670"},{"Id":436636,"Name":"Ricola Solinest","DisplayName":"Ricola Solinest","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":3,"BrandId":436636,"BrandName":"ricola solinest"}],"$$hashKey":"object:5672"},{"Id":451428,"Name":"Crackers Sophistiques","DisplayName":"Crackers Sophistiques","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451428,"BrandName":"crackers sophistiques"}],"$$hashKey":"object:5674"},{"Id":451429,"Name":"Crackers SticksEtBretzels","DisplayName":"Crackers SticksEtBretzels","Selection":null,"BrandMappings":[{"CountryId":4,"CategoryId":94,"BrandId":451429,"BrandName":"crackers sticksetbretzels"}],"$$hashKey":"object:5676"}],"SelectionText":"Multiple"},{"Id":6,"Name":"segments","Selection":[{"Id":1,"Name":"SEGMENT 1","DisplayName":"SEGMENT 1","Selection":[{"Id":445759,"Name":"Total Chocolate Market","DisplayName":"Total Chocolate Market","Selection":null,"SegmentMappings":[{"CountryId":4,"CategoryId":2,"SegmentId":445759,"Type":1,"SegmentName":"total chocolate market"}]}],"$$hashKey":"object:6282"},{"Id":1,"Name":"SEGMENT 1","DisplayName":"SEGMENT 1","Selection":[{"Id":445813,"Name":"GUMS AND CANDIES","DisplayName":"GUMS AND CANDIES","Selection":null,"SegmentMappings":[{"CountryId":4,"CategoryId":3,"SegmentId":445813,"Type":1,"SegmentName":"gums and candies"}]}],"$$hashKey":"object:6285"},{"Id":1,"Name":"SEGMENT 1","DisplayName":"SEGMENT 1","Selection":[{"Id":0,"Name":"Total Segment","DisplayName":"Total Segment","Selection":null,"SegmentMappings":[{"CountryId":4,"CategoryId":94,"SegmentId":0,"Type":1,"SegmentName":"total segment"},{"CountryId":4,"CategoryId":95,"SegmentId":0,"Type":1,"SegmentName":"total segment"},{"CountryId":4,"CategoryId":96,"SegmentId":0,"Type":1,"SegmentName":"total segment"}]}],"$$hashKey":"object:6288"}],"SelectionText":"Multiple | None"},{"Id":7,"Name":"kpi","Selection":[{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":8,"Name":"Penetration","DisplayName":"Absolute: Penetration","Selection":null}]}],"SelectionText":"absolute: penetration"},{"Id":8,"Name":"channel/retailer","Selection":[],"SelectionText":"None"}]'
+2023-04-17 15:35:49,835 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:35:50,331 [12] DEBUG  Application (null) (null) - CrossTab API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:35:50,470 [12] DEBUG  Application (null) (null) - DECLARE @A TVP_BRAND,@B TVP_BRAND,@C TVP_BRAND 
+INSERT INTO @A VALUES ( 1,  4, 1, 440761)
+INSERT INTO @A VALUES ( 2,  4, 2, 445872)
+INSERT INTO @A VALUES ( 3,  4, 94, 451408)
+INSERT INTO @A VALUES ( 4,  4, 95, 451408)
+INSERT INTO @A VALUES ( 5,  4, 3, 436604)
+INSERT INTO @A VALUES ( 6,  4, 95, 451409)
+INSERT INTO @A VALUES ( 7,  4, 1, 441048)
+INSERT INTO @A VALUES ( 8,  4, 2, 445874)
+INSERT INTO @A VALUES ( 8,  4, 1, 440900)
+INSERT INTO @A VALUES ( 9,  4, 95, 451410)
+INSERT INTO @A VALUES ( 10,  4, 3, 436607)
+INSERT INTO @A VALUES ( 11,  4, 95, 451411)
+INSERT INTO @A VALUES ( 12,  4, 2, 462948)
+INSERT INTO @A VALUES ( 13,  4, 1, 441050)
+INSERT INTO @A VALUES ( 14,  4, 2, 462949)
+INSERT INTO @A VALUES ( 15,  4, 95, 451418)
+INSERT INTO @A VALUES ( 15,  4, 94, 451559)
+INSERT INTO @A VALUES ( 16,  4, 3, 436608)
+INSERT INTO @A VALUES ( 17,  4, 95, 451419)
+INSERT INTO @A VALUES ( 18,  4, 94, 451413)
+INSERT INTO @A VALUES ( 19,  4, 2, 462950)
+INSERT INTO @A VALUES ( 20,  4, 1, 441052)
+INSERT INTO @A VALUES ( 21,  4, 2, 462951)
+INSERT INTO @A VALUES ( 22,  4, 94, 451414)
+INSERT INTO @A VALUES ( 23,  4, 95, 451420)
+INSERT INTO @A VALUES ( 24,  4, 94, 451415)
+INSERT INTO @A VALUES ( 25,  4, 2, 462952)
+INSERT INTO @A VALUES ( 26,  4, 1, 441053)
+INSERT INTO @A VALUES ( 27,  4, 94, 451416)
+INSERT INTO @A VALUES ( 28,  4, 3, 436618)
+INSERT INTO @A VALUES ( 28,  4, 2, 445891)
+INSERT INTO @A VALUES ( 29,  4, 2, 482079)
+INSERT INTO @A VALUES ( 30,  4, 2, 463038)
+INSERT INTO @A VALUES ( 31,  4, 3, 436619)
+INSERT INTO @A VALUES ( 32,  4, 94, 451417)
+INSERT INTO @A VALUES ( 33,  4, 1, 441055)
+INSERT INTO @A VALUES ( 34,  4, 1, 450431)
+INSERT INTO @A VALUES ( 35,  4, 95, 451424)
+INSERT INTO @A VALUES ( 36,  4, 2, 466995)
+INSERT INTO @A VALUES ( 37,  4, 2, 463040)
+INSERT INTO @A VALUES ( 38,  4, 95, 451425)
+INSERT INTO @A VALUES ( 39,  4, 1, 441063)
+INSERT INTO @A VALUES ( 40,  4, 3, 436623)
+INSERT INTO @A VALUES ( 41,  4, 2, 463041)
+INSERT INTO @A VALUES ( 42,  4, 94, 451421)
+INSERT INTO @A VALUES ( 43,  4, 1, 440987)
+INSERT INTO @A VALUES ( 44,  4, 2, 446045)
+INSERT INTO @A VALUES ( 45,  4, 2, 446047)
+INSERT INTO @A VALUES ( 46,  4, 1, 501669)
+INSERT INTO @A VALUES ( 47,  4, 3, 436629)
+INSERT INTO @A VALUES ( 48,  4, 95, 451429)
+INSERT INTO @A VALUES ( 49,  4, 2, 446049)
+INSERT INTO @A VALUES ( 50,  4, 1, 501376)
+INSERT INTO @A VALUES ( 51,  4, 2, 450872)
+INSERT INTO @A VALUES ( 52,  4, 95, 451430)
+INSERT INTO @A VALUES ( 53,  4, 3, 436631)
+INSERT INTO @A VALUES ( 54,  4, 3, 436632)
+INSERT INTO @A VALUES ( 55,  4, 95, 451431)
+INSERT INTO @A VALUES ( 56,  4, 2, 462954)
+INSERT INTO @A VALUES ( 57,  4, 1, 450342)
+INSERT INTO @A VALUES ( 58,  4, 2, 462955)
+INSERT INTO @A VALUES ( 59,  4, 95, 451432)
+INSERT INTO @A VALUES ( 60,  4, 94, 451426)
+INSERT INTO @A VALUES ( 61,  4, 94, 451427)
+INSERT INTO @A VALUES ( 62,  4, 95, 451433)
+INSERT INTO @A VALUES ( 63,  4, 2, 501340)
+INSERT INTO @A VALUES ( 64,  4, 1, 463952)
+INSERT INTO @A VALUES ( 65,  4, 1, 463953)
+INSERT INTO @A VALUES ( 66,  4, 2, 445875)
+INSERT INTO @A VALUES ( 67,  4, 95, 451434)
+INSERT INTO @A VALUES ( 68,  4, 3, 436636)
+INSERT INTO @A VALUES ( 69,  4, 94, 451428)
+INSERT INTO @A VALUES ( 70,  4, 94, 451429)
+INSERT INTO @B VALUES ( 1,  4, 2, 445759)
+INSERT INTO @B VALUES ( 2,  4, 3, 445813)
+INSERT INTO @B VALUES ( 3,  4, 94, 0)
+INSERT INTO @B VALUES ( 3,  4, 95, 0)
+INSERT INTO @B VALUES ( 3,  4, 96, 0)
+
+2023-04-17 15:35:50,483 [12] DEBUG  Application (null) (null) - [USP_mdlz_crosstab_nested] '1','3|2|8','4','1|2|3|94|95|96','-1001','@A','@B','@C','8','1','','','1'
+2023-04-17 15:36:17,663 [26] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 15:36:17,672 [26] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 15:39:46,626 [18] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 15:39:46,633 [18] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 15:39:49,474 [18] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:39:49,481 [18] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 15:39:49,752 [18] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:39:52,815 [54] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:39:52,820 [54] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 15:39:53,813 [98] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:39:53,821 [98] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96','Demographics'
+2023-04-17 15:44:50,682 [12] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 15:44:50,688 [12] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 15:44:53,152 [54] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:44:53,165 [54] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 15:44:55,248 [54] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:44:57,258 [50] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:44:57,265 [50] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 15:44:58,134 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:44:58,143 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96','Demographics'
+2023-04-17 15:58:05,291 [50] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 15:58:05,304 [50] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 15:58:08,096 [98] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:58:08,111 [98] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 15:58:09,922 [98] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 15:58:11,333 [40] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:58:11,338 [40] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 15:58:12,100 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:58:12,109 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96','Demographics'
+2023-04-17 15:58:59,343 [36] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:58:59,351 [36] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96|99','Demographics'
+2023-04-17 15:59:12,547 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 15:59:14,987 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96|99','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 16:08:56,115 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:08:56,122 [29] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:08:59,379 [71] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:08:59,390 [71] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:09:01,879 [71] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96|99','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 16:09:03,482 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:09:03,489 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:09:06,389 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:09:06,396 [24] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96|99','Demographics'
+2023-04-17 16:11:24,700 [60] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:11:24,710 [60] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:11:27,845 [60] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:11:27,856 [60] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:11:28,141 [60] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96|99','-1001','8|32|5|11|65|77|50|53|15|16','','1001','Demographics','','','',''
+2023-04-17 16:11:29,606 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:11:29,612 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:11:31,243 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:11:31,251 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|4','1|2|3|94|95|96|99','Demographics'
+2023-04-17 16:13:04,578 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:14:18,565 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96|99','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:18:34,844 [71] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:18:36,845 [71] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|4','1|2|3|94|95|96|99','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:19:25,431 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:19:25,441 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1','2','Demographics'
+2023-04-17 16:19:27,092 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:19:28,859 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1','2','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:19:40,880 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:19:40,887 [29] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:19:42,644 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:19:42,650 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:19:42,965 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1','2','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:19:45,384 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:19:45,389 [24] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:19:45,692 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:19:45,703 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1','2','Demographics'
+2023-04-17 16:20:38,476 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:20:38,483 [29] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:20:40,413 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:20:40,420 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:20:40,740 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1','2','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:20:43,783 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:20:43,791 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:20:44,178 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:20:44,189 [57] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1','2','Demographics'
+2023-04-17 16:21:03,231 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:21:03,237 [29] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:21:04,588 [67] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:21:04,594 [67] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:21:04,915 [67] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1','2','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:21:07,253 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:21:07,258 [24] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:21:07,556 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:21:07,562 [57] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1','2','Demographics'
+2023-04-17 16:21:25,161 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:21:25,165 [29] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:21:26,399 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:21:26,405 [59] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:21:26,692 [59] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1','2','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:21:28,979 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:21:28,984 [24] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:21:29,278 [61] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:21:29,286 [61] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1','2','Demographics'
+2023-04-17 16:21:59,589 [66] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:21:59,595 [66] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','2','Demographics'
+2023-04-17 16:22:01,202 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:22:03,114 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','2','-1001','8|32|5|11|65|77|50|53|15|16|24|25|36|37|33|6|12|66|78|54','','1001','Demographics','','','',''
+2023-04-17 16:23:14,430 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:23:16,253 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','2','-1001','8','','1001','Demographics','','','',''
+2023-04-17 16:28:49,258 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:28:49,272 [29] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:28:52,309 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:28:52,321 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:28:54,073 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','2','-1001','8','','1001','Demographics','','','',''
+2023-04-17 16:28:55,856 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:28:55,861 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:28:56,172 [63] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:28:56,183 [63] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','2','Demographics'
+2023-04-17 16:29:39,071 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:29:39,081 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 16:29:51,867 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:29:53,911 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','1|2|3|94|95','-1001','8','','1001','Demographics','','','',''
+2023-04-17 16:52:25,883 [25] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:52:25,903 [25] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:52:34,334 [25] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:52:34,348 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:52:36,400 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','1|2|3|94|95','-1001','8','','1001','Demographics','','','',''
+2023-04-17 16:52:38,537 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:52:38,545 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:52:48,537 [25] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:52:48,846 [25] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 16:53:25,818 [25] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 16:53:25,824 [25] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 16:53:27,436 [25] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:53:27,442 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 16:53:27,714 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','1|2|3|94|95','-1001','8','','1001','Demographics','','','',''
+2023-04-17 16:53:28,905 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:53:28,912 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 16:53:30,490 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 16:53:30,498 [43] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 17:08:06,886 [96] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 17:08:06,897 [96] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 17:08:14,728 [96] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:08:14,747 [96] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 17:08:17,147 [96] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','1|2|3|94|95','-1001','8','','1001','Demographics','','','',''
+2023-04-17 17:08:18,867 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:08:18,872 [34] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 17:08:20,038 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:08:20,048 [34] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 17:14:44,399 [55] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 17:14:44,412 [55] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 17:14:52,351 [96] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:14:52,365 [96] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 17:14:54,277 [96] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','1|2|3|94|95','-1001','8','','1001','Demographics','','','',''
+2023-04-17 17:15:03,655 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:15:03,662 [9] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 17:15:05,531 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:15:05,544 [55] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 17:22:02,509 [34] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 17:22:02,519 [34] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 17:22:19,324 [69] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:22:19,337 [69] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 17:22:22,111 [69] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','1|2|3|94|95','-1001','8','','1001','Demographics','','','',''
+2023-04-17 17:22:23,817 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:22:23,824 [34] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 17:22:26,847 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:22:26,857 [34] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 17:22:43,613 [62] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 17:22:43,618 [62] DEBUG  Application (null) (null) - User Is already Validated : sabat.ullah@kantar.com
+2023-04-17 17:22:45,261 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:22:45,267 [34] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','238','','0'
+2023-04-17 17:22:45,541 [34] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5|6','1|2|3|94|95','-1001','8','','1001','Demographics','','','',''
+2023-04-17 17:22:46,631 [68] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:22:46,636 [68] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 17:22:47,575 [62] DEBUG  Application (null) (null) - FilterPanel API initiated by User sabat.ullah@kantar.com
+2023-04-17 17:22:47,582 [62] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5|6','1|2|3|94|95','Demographics'
+2023-04-17 18:52:02,432 [1] DEBUG  Application (null) (null) - Application Started
+2023-04-17 18:52:04,276 [9] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 18:52:04,342 [9] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-04-17 18:52:04,467 [11] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-04-17 18:52:18,236 [13] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-04-17 18:52:20,790 [10] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 18:52:20,812 [10] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 18:52:41,706 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 18:52:41,851 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 18:52:42,247 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 18:52:45,056 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 18:52:45,064 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 18:52:51,156 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 18:52:51,168 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 18:53:16,435 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 18:53:18,452 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 18:55:07,255 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 18:55:09,214 [10] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:07:42,672 [32] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:07:42,693 [32] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:07:53,967 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:07:53,984 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:07:56,670 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:08:03,737 [33] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:08:03,743 [33] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:08:12,436 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:08:12,452 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 19:08:21,589 [39] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:08:21,594 [39] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:08:22,876 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:08:22,882 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:08:23,213 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:08:25,728 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:08:25,736 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:08:31,838 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:08:31,845 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 19:14:06,817 [42] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:14:06,824 [42] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:14:18,622 [36] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:14:18,633 [36] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:14:19,413 [36] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:14:26,222 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:14:26,226 [43] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:14:30,722 [36] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:14:30,729 [36] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 19:20:34,918 [50] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:20:34,926 [50] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:20:42,385 [48] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:20:42,392 [48] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:20:44,695 [48] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:20:48,498 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:20:48,505 [46] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:20:54,872 [48] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:20:54,881 [48] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 19:25:11,769 [55] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:25:11,776 [55] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:25:14,267 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:25:14,275 [51] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:25:14,549 [51] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:25:16,973 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:25:16,979 [55] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:25:21,055 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:25:21,062 [55] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 19:25:44,685 [51] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:25:44,690 [51] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:25:45,866 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:25:45,873 [57] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:25:46,133 [57] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:25:48,181 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:25:48,185 [43] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:25:53,916 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:25:53,923 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 19:29:31,322 [51] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:29:31,331 [51] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:29:34,350 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:29:34,359 [51] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:29:36,234 [51] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95|96','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:29:40,363 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:29:40,367 [55] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:29:43,936 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:29:43,942 [55] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95|96','Channel'
+2023-04-17 19:30:29,902 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:30:29,910 [55] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95','Channel'
+2023-04-17 19:30:31,900 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:30:35,585 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 19:43:54,213 [28] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 19:43:54,221 [28] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 19:43:55,999 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:43:56,011 [30] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 19:43:57,950 [30] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Cannot open server 'uat-ep-ne-sql01' requested by the login. Client with IP address '117.99.233.73' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetDataExplorerData(Int32 ModuleId, Int32 userId) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 655
+ClientConnectionId:0cf10864-2b74-4247-b72a-6211555277a7
+Error Number:40615,State:1,Class:14
+2023-04-17 19:43:58,001 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:43:58,007 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:43:59,297 [28] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Cannot open server 'uat-ep-ne-sql01' requested by the login. Client with IP address '117.99.233.73' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetMarketCategoryData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 439
+ClientConnectionId:64cf93f4-9e36-49ea-8574-9a9e7df458db
+Error Number:40615,State:1,Class:14
+2023-04-17 19:44:21,373 [28] ERROR  Application (null) (null) - System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at BAL.FilterPanel.MarketCategoryData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\FilterPanel.cs:line 781
+   at MondelezDashboard.Controllers.API.FilterPanelController.GetMarketCategory() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\FilterPanelController.cs:line 122
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-04-17 19:44:23,014 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 19:44:23,021 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 19:44:24,636 [30] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Cannot open server 'uat-ep-ne-sql01' requested by the login. Client with IP address '117.99.233.73' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetMarketCategoryData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 439
+ClientConnectionId:e343f810-19af-45c8-97e5-6b5346f761a1
+Error Number:40615,State:1,Class:14
+2023-04-17 19:44:26,482 [30] ERROR  Application (null) (null) - System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at BAL.FilterPanel.MarketCategoryData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\FilterPanel.cs:line 781
+   at MondelezDashboard.Controllers.API.FilterPanelController.GetMarketCategory() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\FilterPanelController.cs:line 122
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-04-17 22:45:00,203 [1] DEBUG  Application (null) (null) - Application Started
+2023-04-17 22:45:02,326 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 22:45:02,405 [11] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-04-17 22:45:02,611 [14] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-04-17 22:45:40,355 [11] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-04-17 22:45:42,806 [14] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 22:45:42,819 [14] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 22:45:48,940 [17] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 22:45:49,116 [17] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 22:45:49,478 [17] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-17 22:45:52,549 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 22:45:52,556 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 22:45:55,723 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 22:45:55,735 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95','Channel'
+2023-04-17 22:47:03,727 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 22:47:05,601 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1003','','Channel','','','',''
+2023-04-17 23:18:45,601 [44] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 23:18:45,606 [44] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 23:18:47,402 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:18:47,413 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 23:18:49,413 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1003','','Channel','','','',''
+2023-04-17 23:18:58,178 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:18:58,182 [46] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 23:19:01,749 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:19:01,757 [44] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95','Channel'
+2023-04-17 23:22:54,112 [41] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 23:22:54,121 [41] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 23:22:57,041 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:22:57,048 [41] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 23:22:57,337 [41] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1003','','Channel','','','',''
+2023-04-17 23:23:00,496 [58] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:23:00,500 [58] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 23:23:03,676 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:23:03,682 [41] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95','Channel'
+2023-04-17 23:23:16,731 [41] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-17 23:23:16,735 [41] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-17 23:23:17,842 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:23:17,849 [55] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-17 23:23:18,198 [55] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3|94|95','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1003','','Channel','','','',''
+2023-04-17 23:23:20,905 [59] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:23:20,909 [59] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-17 23:23:23,700 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:23:23,705 [41] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3|94|95','Channel'
+2023-04-17 23:25:33,615 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:25:33,622 [57] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3','Channel'
+2023-04-17 23:25:36,447 [55] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-17 23:25:38,936 [55] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''

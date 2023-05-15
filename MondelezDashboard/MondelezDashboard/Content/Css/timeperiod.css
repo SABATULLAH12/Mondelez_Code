@@ -1,0 +1,141 @@
+﻿.vertical-align-parent {
+    white-space:nowrap;
+}
+.vertical-align-parent:before {
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.vertical-align {
+    display:inline-block;
+    vertical-align:middle;
+    white-space:normal;
+}
+
+.tp-rewamp-container {
+    width:100%;
+    height:100%;
+}
+.tp-child-container {
+    width:100%;
+}
+.tp-rewamp-half {
+    width:50%;
+    height:100%;
+    margin:auto;
+    display:inline-block;
+    padding: 0 3%;
+    position:relative;
+}
+.multiple .tp-rewamp-half {
+    box-shadow: 19px 0px 22px -28px #111;
+}
+
+.multiple .tp-rewamp-half:after {
+    content: '';
+    position: absolute;
+    background: url(../Image/Mondelez_Sprite_old.png) no-repeat -1210px -60px;
+    width: 14px;
+    height: 7px;
+    top: calc(50% - 4px);
+}
+
+.multiple .tp-rewamp-half:first-child:after {
+    left:calc(99% - 14px);
+    transform: rotateZ(90deg);
+}
+
+.multiple .tp-rewamp-half:last-child:after {
+    left:1%;
+    transform: rotateZ(-90deg);
+}
+
+.tp-rewamp-section{
+    width:100%;
+    height:100%;
+}
+
+.tp-month-container {
+    width:100%;
+    height:5vw;
+    font-size:0;
+}
+
+.tp-item {    
+    display:inline-block;
+    vertical-align:top;
+    font-size:0.9vw;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.tp-month {
+    height:50%;
+    width:calc(100% / 6);
+}
+
+.tp-quarter {
+    height:100%;
+    width:calc(100% / 4);
+}
+    .tp-item > div
+     {
+        width:100%;
+        text-align:center;
+    }
+    .tp-item.disabled {
+        pointer-events:none; 
+        color:lightgray;
+    }
+    .tp-item.active {
+        color:#C2337A;   
+    }
+
+.tp-quarter-container {
+    width:100%;
+    height:2.5vw;
+    font-size:0;
+}
+
+.tp-weeks-container {
+    width:100%;
+}
+
+.month-name-container {
+    position:relative;
+}
+
+.tp-item.active .month-name-container:after {
+    content:'';
+    width:3vw;
+    height:0.3vh;
+    background-color:#C2337A;
+    position:absolute;
+    left: calc(50% - 1.5vw);
+    top:100%;
+}
+
+.tp-selected {
+    width: 100%;
+    font-size: 0.9vw;
+    text-align: center;
+    font-weight: bold;
+    color:#C2337A;
+    padding: 1% 0;
+}
+
+.tp-from-to {
+    width: 100%;
+    font-size: 0.9vw;
+    text-align: center;
+    font-weight: bold;
+    color:#C2337A;
+    padding-top:1%;
+}
+
+
+tp-weeks .selected_range {
+    display:none;
+}

@@ -1,0 +1,24 @@
+<div class="alert-maincontainer">
+  <div class="alert-header">
+    <div class="alert-Iconcontainer"></div>
+    <div class="alter-text-header">
+      CONFIRM
+    </div>
+    <div class="alter-IconMainHeader"><div class="alter-IconHeader" (click)="activeModal.dismiss('Cross click')">X</div></div>
+
+  </div>
+  <div class="modal-body alert-bodymaincontainer">
+    <div class="alert-bodycontainer">
+      <p>
+        {{validationMessage}}
+      </p>
+      <div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="vertical-center deletebuttoncontainer">
+    <div  class="Deletebuttontext" (click)="deleteConfirm()"><span class="spantext">Delete</span></div>
+  </div>
+</div>

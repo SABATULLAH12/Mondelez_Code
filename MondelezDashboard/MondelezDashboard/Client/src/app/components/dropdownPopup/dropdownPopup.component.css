@@ -1,0 +1,404 @@
+drop-dropdown-area {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+
+::ng-deep .modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+::ng-deep .drop-add-text-header {
+  width: 500px;
+  height: 100%;
+  display: flex;
+}
+
+::ng-deep .drop-modal-header {
+  background: rgba(193, 193, 193, 0.15) !important;
+  border-style: Solid !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  border-width: 0.5px !important;
+  width: 500px !important;
+  
+}
+
+  ::ng-deep.modal-header .drop-btn-close {
+    box-shadow: none !important;
+  }
+
+.Dropdownpopupmaincontainer {
+  /*width: 100%;
+  height: 100%;
+  background-color: #fff;*/
+  width: 86%;
+  position: relative;
+  left: 9%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  top: 7%;
+}
+.close-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Eropanel_Sprite_Popup_Close.svg)no-repeat;
+  background-size: contain;
+  width: 1.9rem;
+  height: 1.5rem;
+  margin-top: 0.8rem;
+}
+.header-container {
+  width: 100%;
+  position: relative;
+  height: 2.3rem;
+  display: flex;  
+}
+.header-text {
+  height: 100%;
+  display: flex;
+  justify-content: unset;
+  width: 90%;
+  align-items: center;
+  border-bottom: 1.5px solid #bbb9b9;
+  margin-left: 2.7%;
+  font-family: Montserrat-Regular;
+  font-size: 1.125rem;
+  padding-left: 5px;
+}
+.modal-body-con {
+  width: 90%;
+  border: 1px solid #4d4d4d4d;
+  margin-left: 5%;
+  margin-top: 2%;
+  /*  border: 1px solid #4d4d4d4d;
+  margin-left: 4%;
+  margin-top: 4px;*/
+}
+.search-container {
+  height: 2.4rem;
+  width: 100%;
+  padding-top: 2.5%;
+  display:flex;
+}
+.search-sub-container {
+  background: #fcfcfc;
+  border: 1px solid #4d4d4d4d;
+  height: 1.5625rem;
+  display: flex;
+  margin-left: 5%;
+  width: 92.3%;
+  padding-left: 1%;
+  font-size: 0.75rem;
+  color: #303030;
+}
+.search-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg)no-repeat;
+  background-size: contain;
+  width: 2.2vh;
+  height: 2.2vh;
+  top: 19.3%;
+  left: -10%;
+}
+
+.btn-container {
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+  padding-bottom: 3%;
+}
+::ng-deep .treeview-container {
+
+  width: 94.3%;
+  margin-left: 5%;
+  margin-top: 2px;
+  padding-left: 2.5%;
+  padding-bottom: 2%;
+}
+::ng-deep .treeview-text {
+  padding-left: 5%!important;
+}
+.main-btns-con {
+  width: 87%;
+  display: flex;
+  position: relative;
+  padding-left: 10%;
+  padding-top: 2%;
+}
+
+.select-all-btn {
+  background: #F2F2F2;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 9.0625rem;
+  height: 1.5rem;
+  border-radius: 0.725rem;
+  font-family: Montserrat-Regular;
+  font-size: 0.625rem;
+  color: #303030;
+  display: flex;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.active-select-all-btn {
+  font-family: Montserrat-Regular;
+  font-size: 0.625rem;
+  color: #E18719;
+  background: #FCF4EB;
+  border: 1px Solid #E18719;
+  width: 9.0625rem;
+  height: 1.5rem;
+  border-radius: 0.725rem;
+  display: flex;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.expand-btn-con {
+  background: #F2F2F2;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 9.0625rem;
+  height: 1.5rem;
+  border-radius: 0.725rem;
+  font-family: Montserrat-Regular;
+  font-size: 0.625rem;
+  color: #303030;
+  display: flex;
+  margin-left: 4%;
+  cursor: pointer;
+}
+.active-expand-btn-con {
+  font-family: Montserrat-Regular;
+  font-size: 0.625rem;
+  color: #E18719;
+  background: #FCF4EB;
+  border: 1px Solid #E18719;
+  width: 9.0625rem;
+  height: 1.5rem;
+  border-radius: 0.725rem;
+  display: flex;
+  margin-left: 4%;
+  cursor: pointer;
+}
+
+.select-all-btn-text {
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+}
+.expand-btn-text {
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+}
+.select-all-btn-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Select_Deselect_Grey.svg)no-repeat;
+  background-size: contain;
+  width: 3.5vh;
+  height: 2.5vh;
+  margin-left: 8%;
+  margin-top: 4.7%;
+}
+.active-select-all-btn-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Select_Deselect_orange.svg)no-repeat;
+  background-size: contain;
+  width: 3.5vh;
+  height: 2.5vh;
+  margin-left: 8%;
+  margin-top: 4.7%;
+}
+.expand-btn-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Expand_Collapse_icon_grey.svg)no-repeat;
+  background-size: contain;
+  width: 2vh;
+  height: 2.5vh;
+  margin-left: 8%;
+  margin-top: 4.7%;
+}
+.active-expand-btn-icon{
+  position: relative;
+  background: url(/Content/Image/Mondelez_Expand_Collapse_icon_orange.svg)no-repeat;
+  background-size: contain;
+  width: 2vh;
+  height: 2.5vh;
+  margin-left: 8%;
+  margin-top: 4.7%;
+}
+
+.check-label {
+  font-family: Montserrat-Regular;
+  font-size: 0.725rem;
+  color: #414042;
+}
+
+.item-text:hover {
+  color: #e18719;
+  background: #fcf4eb;
+  border: 1px solid #e18719;
+  border-radius: 0.725rem;
+  padding-right: 5px;
+}
+.active-check-label {
+  font-family: Montserrat-Regular;
+  font-size: 0.725rem;
+  color: #414042;
+  font-weight: bold;
+}
+.ok-btn {
+  background: #FCF4EB;
+  border: 1px Solid #E18719;
+  width: 4.5625rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+  font-family: Montserrat-Regular;
+  font-size: 0.8125rem;
+  color: #E18719;
+  display: flex;
+  align-items: center;
+}
+.active-ok-btn {
+  font-weight: bold;
+  font-size: 0.8125rem;
+  color: #FFFFFF;
+  background: #E18719;
+  border: 1px Solid #A35D11;
+  width: 4.5625rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+  display: flex;
+  align-items: center;
+}
+.cancel-btn {
+  background: #fcf4eb;
+  border: 1px solid #e18719;
+  width: 4.7625rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+  font-family: Montserrat-Regular;
+  font-size: .8125rem;
+  color: #e18719;
+  display: flex;
+  margin-left: 9%;
+  align-items: center;
+  padding-left: 11px;
+}
+.btn-con {
+  display: flex;
+  padding-left: 32%;
+}
+.ok-btn-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Save_Orange.svg)no-repeat;
+  background-size: contain;
+  width: 1.5vh;
+  height: 1.5vh;
+  margin-left: 8%;
+  margin-top: 1%;
+}
+.active-ok-btn-icon {width: 86%;
+  position: relative;
+  left: 19%;
+  height: 100%;
+  background-color: #fff;
+  margin-top: 4%;
+  border-radius: 6px;
+  position: relative;
+  background: url(/Content/Image/Mondelez_Eropanel_Sprite_Save_White.svg)no-repeat;
+  background-size: contain;
+  width: 1.5vh;
+  height: 1.5vh;
+  margin-left: 8%;
+  margin-top: 1%;
+}
+.cancel-btn-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Cancel_Orange.svg)no-repeat;
+  background-size: contain;
+  width: 1.5vh;
+  height: 1.5vh;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.validation-msg {
+  position: relative;
+  top: -37%;
+  width: 100%;
+  display: inline-block;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 4%;
+  font-weight: bold;
+  font-size: 0.8vw;
+  color: black;
+  white-space: pre-line;
+}
+.disable-text {
+  pointer-events: none;
+  background: #F2F2F2!important;
+  border: 1px solid rgba(0, 0, 0, 0.3)!important;
+  width: 9.0625rem!important;
+  height: 1.5rem!important;
+  border-radius: 0.725rem;
+  font-family: Montserrat;
+  font-size: 0.625rem;
+  color: #303030;
+  display: flex;
+  margin-left: 4%;
+}
+
+
+.check-box {
+  accent-color: #e9e6e3;
+ 
+}
+.row-item {
+  font-family: Montserrat-Regular;
+  font-size: 0.725rem;
+  color: #414042;
+}
+.active-items{
+    font-weight:bold;
+}
+.checked-items {
+  color: #e18719;
+  background: #fcf4eb;
+  border: 1px solid #e18719;
+  border-radius: 0.725rem;
+  padding-right: 5px;
+ 
+}
+.box-con {
+  position: relative;
+  top: -0.3vh;
+}
+
+::ng-deep.Dropdownpopupmaincontainer .treeview-header{
+    height:5rem;
+}
+.disable-selectall-btn{
+ pointer-events:none!important;
+}

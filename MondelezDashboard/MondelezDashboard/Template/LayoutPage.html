@@ -1,0 +1,83 @@
+﻿<div class="master_layout" ng-controller="LayoutController" ng-init="showLoader=false;" ng-click="clickLayout();" ng-cloak>
+    <div class="tool_logo" ng-click="$event.stopPropagation();clickLayout();"></div>
+    <div class="containerView" ui-view="container-view"></div>
+    <div id="loader_container" ng-show="showLoader" ng-click="$event.stopPropagation()">
+        <img src="../Content/Image/Loader.gif" id="loader_image" class="center" />
+    </div>
+    <div id="loader_container_storyBoard" ng-show="showStoryBardLoader" ng-click="$event.stopPropagation()">
+        <img src="../Content/Image/Loader.gif" id="loader_image" class="center" />
+    </div>
+    <div id="loader_container_storyBoard_ltd" ng-show="showStoryBardLtdLoader" ng-click="$event.stopPropagation()">
+        <img src="../Content/Image/Loader.gif" id="loader_image" class="center" />
+    </div>
+    <div id="alert_background" ng-show="alert.show" class="ng-hide" ng-click="$event.stopPropagation();alert.onClose();" ng-style="alert.style">
+        <div class="alert_container center" ng-style= "{width:alert.htmlText_show ? '35%':'27%' ,height:alert.header=='Support'? '30%':'28%'}" ng-click="$event.stopPropagation();">
+            <div class="alert_header">
+                <div class="header_text center_next_ele">
+                    <div ng-if="!alert.htmlText_show" class="alert_icon"></div>
+                    <span ng-bind="alert.header" class="alert_header_text"></span>
+                </div>
+                <div class="close_button" ng-click="alert.onClose()"></div>
+            </div>
+            <div ng-if="!alert.htmlText_show" class="alert_body"><span ng-bind="alert.message"></span></div>
+            <div ng-if="alert.htmlText_show" ng-bind-html="alert.message" ng-style= "{height:alert.header=='Support'? 'auto':'60%'}"class="alert_body"></div>
+            <div class="alert_footer">
+                <div class="alert_submit" ng-click="alert.button1.onSuccess(alert.button1.SumbitParams,true);alert.show = false;" ng-show="alert.button1.Show">
+                    <span>{{alert.button1.Value}}</span><div class="alert_close_icon"></div>
+                </div>
+                <div class="alert_submit" ng-click="alert.show = false;setLoader(false);" ng-show="alert.button2.Show">
+                    <span>{{alert.button2.Value}}</span><div class="alert_close_icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subscribe_Container" ng-show="isShowSubscriptionPopup">
+        <div class="subscribe_popup center">
+            <div class="subscribe_popup_Header">
+                <div class="subscribe_popup_HeaderText">Mail subscription</div>
+                <div class="close_button" ng-click="isShowSubscriptionPopup = false"></div>
+            </div>
+            <div class="search_Item">
+                <div class="searchImgSub"></div>
+                <div class="searchBoxSub">
+                    <input type="text" class="searchSubText" value="" placeholder="search" ng-model="subscriptionSearchText" />
+                </div>
+            </div>
+            <div class="subscribe_Toggle">
+                <span class="Toggle">
+                    <span ng-click="$event.stopPropagation();IsReportToggle=true" ng-class="{'Selected':IsReportToggle,'disabled':false}">Report</span>
+                    <span ng-click="$event.stopPropagation();IsReportToggle=!IsReportToggle" ng-class="{'ToggleLeft':IsReportToggle ,'ToggleRight':!IsReportToggle }"></span>
+                    <span ng-click="$event.stopPropagation();IsReportToggle=false" ng-class="{'Selected':!IsReportToggle,'disabled':false}">Data Upload</span>
+                </span>
+            </div>
+            <div class="subscribe_body">
+                <div class="subscribe_body_Selection">
+                    <!--data-simplebar data-simplebar-auto-hide="false"-->
+                    <div class="subscribe_body_SelectionRight">
+                        <div class="itemList" ng-repeat="items in SubscriptionData| searchSubscriptionItems: subscriptionSearchText" title="{{items.DisplayName}}">
+                            <div class="checkBoxImg" ng-click="SelectedSubscriptionItem(items, $index)" ng-class="{Selected: ((IsReportToggle && items.IsSubscribedToReport) || (!IsReportToggle && items.IsSubscribedToDataLoad))}"></div>
+                            <div class="itemName" ng-click="SelectedSubscriptionItem(items, $index)" ng-class="{Selected:items.IsSubscribedToDataLoad}">{{items.DisplayName}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe_CommonReports" ng-show="IsReportToggle">
+                <div class="itemList" title="Common Reports" >
+                    <div class="checkBoxImg" ng-click="IsSubscribedToCommonReports = !IsSubscribedToCommonReports " ng-class="{Selected:IsSubscribedToCommonReports}"></div>
+                    <div class="userName" ng-click="IsSubscribedToCommonReports = !IsSubscribedToCommonReports" ng-class="{Selected:IsSubscribedToCommonReports}">Click here to Subscribe Common Reports</div>
+                </div>
+            </div>
+            <div class="subscribe_footer">
+                <div class="submit_subscribe_FooterDiv" ng-click="SaveSubscriptionData()" ng-mouseover="isSubscribeColored = true" ng-mouseleave="isSubscribeColored = false"
+                     ng-class="{colored:isSubscribeColored == true}">
+                    <div class="share_FooterText">Submit</div>
+                </div>
+                <div class="cancel_subscribe_FooterDiv" ng-click="isShowSubscriptionPopup = false" ng-mouseover="isCancelSubscribe = true" ng-mouseleave="isCancelSubscribe = false"
+                     ng-class="{colored:isCancelSubscribe == true}">
+                    <div class="cancel_shareStory_FooterText">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\DAL.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\DAL.pdb
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\Entites.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\AQLogger.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\log4net.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\Entites.pdb
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\obj\Debug\DAL.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\obj\Debug\DAL.pdb
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\obj\Debug\DAL.csproj.CopyComplete

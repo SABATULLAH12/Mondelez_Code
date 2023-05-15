@@ -1,0 +1,3 @@
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\obj\Release\MondelezDashboard.csprojAssemblyReference.cache
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\obj\Release\MondelezDashboard.Utilities.Constants.resources
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\obj\Release\MondelezDashboard.csproj.GenerateResource.cache

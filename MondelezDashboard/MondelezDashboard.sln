@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MondelezDashboard", "MondelezDashboard\MondelezDashboard.csproj", "{2E653AD4-24D8-465F-A978-8ACD7238CE2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MondelezDashboard.Tests", "MondelezDashboard.Tests\MondelezDashboard.Tests.csproj", "{46E7ABB1-8BB9-4C10-A010-DEC6245041B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{AFA55096-E733-483D-AB78-D618FE60A72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{BF7CC60A-8EDF-4E08-8D12-FC7C0BE92DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entites", "Entites\Entites.csproj", "{99DDF32C-28DB-4332-ADF5-9C0A7577A402}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E653AD4-24D8-465F-A978-8ACD7238CE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E653AD4-24D8-465F-A978-8ACD7238CE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E653AD4-24D8-465F-A978-8ACD7238CE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E653AD4-24D8-465F-A978-8ACD7238CE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E7ABB1-8BB9-4C10-A010-DEC6245041B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E7ABB1-8BB9-4C10-A010-DEC6245041B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E7ABB1-8BB9-4C10-A010-DEC6245041B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E7ABB1-8BB9-4C10-A010-DEC6245041B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA55096-E733-483D-AB78-D618FE60A72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA55096-E733-483D-AB78-D618FE60A72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA55096-E733-483D-AB78-D618FE60A72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA55096-E733-483D-AB78-D618FE60A72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7CC60A-8EDF-4E08-8D12-FC7C0BE92DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7CC60A-8EDF-4E08-8D12-FC7C0BE92DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7CC60A-8EDF-4E08-8D12-FC7C0BE92DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7CC60A-8EDF-4E08-8D12-FC7C0BE92DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DDF32C-28DB-4332-ADF5-9C0A7577A402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DDF32C-28DB-4332-ADF5-9C0A7577A402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DDF32C-28DB-4332-ADF5-9C0A7577A402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DDF32C-28DB-4332-ADF5-9C0A7577A402}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

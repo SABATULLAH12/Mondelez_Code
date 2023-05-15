@@ -1,0 +1,116 @@
+<!-- <div class="MainTableDiv" [style]="{'height':tableHeight+'vh','width':tableWidth+'vw','position':'relative'}">
+  <div class="topcontainer" [style]="{'height':'calc('+ numOfRowsInColumnHeader*rowHeight+'%)'}">
+    <div class="emptyDiv" [style]="{'width':'calc('+ numOfColumnsInRowHeader*rowWidth+'%)','border-width':'0px 1px 1px 0px','border-style': 'solid','border-color':'rgba(167, 169, 172, 0.5)'}"></div>
+     <div id="rightHeader" #rightHeader class="columnHeader" [style]="{'width':'calc(100% - '+ numOfColumnsInRowHeader*rowWidth+'%)','border':'1px solid rgba(167, 169, 172, 0.5)','border-left':'none','border-top-color':'transparent','border-right-color':'transparent'}">
+      <div class="columnLevelScrollContainer" [style]="{'height':'100%','width':'calc('+cellWidth+' * '+columnListCount+')','background-color': '#F4F4F4'}">
+      <div class="columnLevel" *ngFor="let level of OutputData.ColumnList;let levelInd=index" [ngStyle]="{'height':'calc((100%) /'+OutputData.ColumnList.length+((levelInd+1)==OutputData.ColumnList.length?'':'')+')','width':'100%','box-sizing':'border-box'}">
+        <div class="columnLevelSubContainer" *ngFor="let item of numSequence(level.RepeatTimes);let repeatInd=index">
+          <div class="columnLevelElements" *ngFor="let element of level.DistinctValues;let i=index" [ngStyle]="{'width':'calc('+cellWidth+' * '+level.WidthTimes+')','border-bottom':((levelInd+1)==OutputData.ColumnList.length)?'none':'1px solid rgba(167, 169, 172, 0.5)','border-right':((repeatInd+1)==level.RepeatTimes && (i+1)==level.DistinctValues.length)?'none':'1px solid rgba(167, 169, 172, 0.5)'}">
+            <div class="center txtOverflow" [title]="element">
+              {{element}}
+            </div>
+            <div *ngIf="(levelInd+1)==OutputData.ColumnList.length" class="columnHeaderLine"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+     </div>
+  </div>
+  <div class="bottomContainer" [style]="{'height':'calc(100% - '+ numOfRowsInColumnHeader*rowHeight+'%)'}">
+    <div id="leftBody" #leftBody class="rowHeader" [style]="{'width':'calc('+ numOfColumnsInRowHeader*rowWidth+'%)','border':'1px dashed rgba(167, 169, 172, 0.5)','border-top':'none','border-left':'1px solid transparent'}">
+      <div class="rowLevelScrollContainer" [style]="{'height':'calc('+cellheight+' * '+rowListCount+')'}">
+      <div class="rowLevel" *ngFor="let level of OutputData.RowList;let levelInd=index" [ngStyle]="{'width':'calc('+100/OutputData.RowList.length+'%)'}">
+        <div class="rowLevelSubContainer" *ngFor="let item of numSequence(level.RepeatTimes);let repeatInd=index">
+          <div class="rowLevelElements" *ngFor="let element of level.DistinctValues;let i=index" [ngStyle]="{'height':'calc('+cellheight+' * '+level.WidthTimes+')','border-right':((levelInd+1)==OutputData.RowList.length)?'none':'1px dashed rgba(167, 169, 172, 0.5)','border-bottom':((repeatInd+1)==level.RepeatTimes && (i+1)==level.DistinctValues.length)?'none':'1px dashed rgba(167, 169, 172, 0.5)'}">
+            <div class="center txtOverflow" [title]="element">
+              {{element}}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="rightBody" #rightBody class="Data"  [style]="{'width':'calc(100% - '+ numOfColumnsInRowHeader*rowWidth+'%)','border':'1px dashed rgba(167, 169, 172, 0.5)','border-top':'none','border-left':'none','border-right-color':'transparent'}">
+      <div class="dataLevelScrollContainer" [style]="{'height':'calc('+cellheight+' * '+rowListCount+')','width':'calc('+cellWidth+' * '+columnListCount+')'}">
+      <div class="dataLevel" *ngFor="let item of numSequence(datarowNumber); let groupIndex = index; let firstGroup = first; trackBy: onTrackByGroupId" [ngStyle]="{'width':'100%','height':cellheight}">
+        <div class="dataLevelSubContainer" *ngFor="let item of numSequence(datacolNumber); let itemIndex = index; let firstItem = first; trackBy: onTrackByItemId" [ngStyle]="{'height':'100%','border-right':((itemIndex+1)==datacolNumber)?'none':'1px dashed rgba(167, 169, 172, 0.5)','border-bottom':((groupIndex+1)==datarowNumber)?'none':'1px dashed rgba(167, 169, 172, 0.5)'}">
+          <div class="center txtOverflow">
+            {{data[num(firstGroup && firstItem)]}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id="yScrollContainer" #yScrollBar class="yScrollContainer" [style]="{'position':'absolute','height':'calc(100% - '+ numOfRowsInColumnHeader*rowHeight+'%)','width':'10px','right':'-1vw','top':'calc('+numOfRowsInColumnHeader*rowHeight +'%)','overflow':'auto'}" (scroll)="onScrollY('leftBody','rightBody', $event)">
+    <div class="yScrollBar" [style]="{'height':'calc('+cellheight+' * '+rowListCount+')'}">
+    </div>
+  </div>
+  <div id="xScrollContainer" #xScrollBar class="xScrollContainer" [style]="{'position':'absolute','width': 'calc(100% - '+ numOfColumnsInRowHeader*rowWidth+'%)','height':'10px','left':'calc('+ numOfColumnsInRowHeader*rowWidth+'%)','bottom':'-1.5vh','overflow':'auto'}" (scroll)="onScrollX('rightBody','rightHeader', $event)">
+    <div class="xScrollBar" [style]="{'width': 'calc('+cellWidth+' * '+columnListCount+')','height':'10px'}">
+    </div>
+  </div>
+</div> -->
+<ng-container *ngIf="showtable">
+  <div *ngIf="!hideTable" class="MainTableDiv" [style]="{'height':tableHeight+'vh','width':tableWidth+'vw','position':'relative'}">
+    <div class="topcontainer" [style]="{'height':'calc('+ numOfRowsInColumnHeader*rowHeight+'%)'}">
+      <div class="emptyDiv" [style]="{'width':'calc('+ numOfColumnsInRowHeader*rowWidth+'%)'}"></div>
+      <div id="rightHeader" #rightHeader class="columnHeader" [style]="{'width':'calc(100% - '+ numOfColumnsInRowHeader*rowWidth+'%)'}">
+        <div class="columnLevelScrollContainer" [style]="{'height':'100%','width':'calc('+cellWidth+' * '+columnListCount+')'}">
+          <div class="columnLevel" *ngFor="let level of OutputData.ColumnList;let levelInd=index" [ngStyle]="{'height':'calc((100%) /'+OutputData.ColumnList.length+((levelInd+1)==OutputData.ColumnList.length?'':'')+')'}">
+            <div class="columnLevelSubContainer" *ngFor="let item of numSequence(level.RepeatTimes);let repeatInd=index">
+              <div class="columnLevelElements" *ngFor="let element of level.DistinctValues;let i=index" [ngStyle]="{'width':'calc('+cellWidth+' * '+level.WidthTimes+')','border-bottom':((levelInd+1)==OutputData.ColumnList.length)?'none':'1px solid rgba(167, 169, 172, 0.5)','border-right':((repeatInd+1)==level.RepeatTimes && (i+1)==level.DistinctValues.length)?'none':'1px solid rgba(167, 169, 172, 0.5)'}">
+                <div class="center txtOverflow" [title]="element">
+                  {{element}}
+                </div>
+                <div *ngIf="(levelInd+1)==OutputData.ColumnList.length" class="columnHeaderLine"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomContainer" [style]="{'height':'calc(100% - '+ numOfRowsInColumnHeader*rowHeight+'%)'}">
+      <div id="leftBody" #leftBody class="rowHeader" [style]="{'width':'calc('+ numOfColumnsInRowHeader*rowWidth+'%)'}">
+        <div class="rowLevelScrollContainer" [style]="{'height':'calc('+cellheight+' * '+this.tableDataRowCount+')'}">
+          <div class="rowLevel" *ngFor="let level of OutputData.RowList;let levelInd=index" [ngStyle]="{'width':'calc('+100/OutputData.RowList.length+'%)'}">
+            <div class="rowLevelSubContainer" *ngFor="let item of numSequence(level.RepeatTimes);let repeatInd=index">
+              <div class="rowLevelElements" *ngFor="let element of level.DistinctValues;let i=index" [ngStyle]="{'display':(getRowHeaderHeightCount(level.LevelId,repeatInd+1,element)==0)?'none':'block','height':'calc('+cellheight+' * '+getRowHeaderHeightCount(level.LevelId,repeatInd+1,element)+')','border-right':((levelInd+1)==OutputData.RowList.length)?'none':'1px dashed rgba(167, 169, 172, 0.5)','border-bottom':((repeatInd+1)==level.RepeatTimes && (i+1)==level.DistinctValues.length)?'none':'1px dashed rgba(167, 169, 172, 0.5)'}">
+                <div class="center txtOverflow" [style]="{'text-align':'left','padding':'0px 0.3vw','white-space': 'pre'}" [title]="element">
+                  {{level.DistinctLevelValues[i]}}
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rightBody" #rightBody class="Data" [style]="{'width':'calc(100% - '+ numOfColumnsInRowHeader*rowWidth+'%)'}">
+        <div class="dataLevelScrollContainer" [style]="{'height':'calc('+cellheight+' * '+this.tableDataRowCount+')','width':'calc('+cellWidth+' * '+columnListCount+')'}">
+          <div class="dataLevel" *ngFor="let item of numSequence(this.tableDataRowCount); let groupIndex = index; let firstGroup = first; trackBy: onTrackByGroupId" [ngStyle]="{'width':'100%','height':cellheight}">
+            <div class="dataLevelSubContainer" *ngFor="let item of numSequence(datacolNumber); let itemIndex = index; let firstItem = first; trackBy: onTrackByItemId" [ngStyle]="{'height':'100%','border-right':((itemIndex+1)==datacolNumber)?'none':'1px dashed rgba(167, 169, 172, 0.5)','border-bottom':((groupIndex+1)==datarowNumber)?'none':'1px dashed rgba(167, 169, 172, 0.5)'}">
+              <div class="center txtOverflow" [class.sampleSizeValidation]="checkSamplesize(samplesizeData[groupIndex][itemIndex])">
+                {{(samplesizeData[groupIndex][itemIndex]<20)&&(tableData[groupIndex][itemIndex]!="NA")?lowsamplesize:tableData[groupIndex][itemIndex]}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="yScrollContainer" #yScrollBar class="yScrollContainer" [style]="{'height':'calc(100% - '+ numOfRowsInColumnHeader*rowHeight+'%)','top':'calc('+numOfRowsInColumnHeader*rowHeight +'%)'}" (scroll)="onScrollY('leftBody','rightBody', $event)">
+      <div class="yScrollBar" [style]="{'height':'calc('+cellheight+' * '+tableDataRowCount+' / '+this.scrollYTimes+')'}">
+      </div>
+    </div>
+    <div id="xScrollContainer" #xScrollBar class="xScrollContainer" [style]="{'width': 'calc(100% - '+ numOfColumnsInRowHeader*rowWidth+'%)','left':'calc('+ numOfColumnsInRowHeader*rowWidth+'%)'}" (scroll)="onScrollX('rightBody','rightHeader', $event)">
+      <div class="xScrollBar" [style]="{'width': 'calc('+cellWidth+' * '+columnListCount+')','height':'10px'}">
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+
+
+
+

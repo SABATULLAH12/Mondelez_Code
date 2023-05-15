@@ -1,0 +1,22 @@
+﻿<div class="deepdive_container ng-scope" ng-controller="DeepDiveController">
+    <div id="output_container"  ng-show="showOutput" ng-class="{'showShadow':showOutput}">
+        <div class="output_header" ng-show="showOutput">
+            <div class="chart_title" ng-style="{width:IsTrend?'70%':'64%'}">&nbsp;<span>{{chartTitle}}</span></div>
+            <div class="quick_icon add_StoryBoard" ng-click="showStoryBoardSave()" title="Add to Storyboard"></div>
+            <div class="quick_icon barchart_icon" ng-class="{'active':!isColumnChart}" ng-show="!IsTrend" ng-click="changeChartType('bar')" title="Bar Chart"></div>
+            <div class="quick_icon columnchart_icon" ng-class="{'active':isColumnChart}" ng-show="!IsTrend" ng-click="changeChartType('column')" title="Column Chart"></div>
+            <div class="quick_icon excel_icon" title="Export to Excel" ng-click="ExportToExcel()"></div>
+            <div class="quick_icon ppt_icon" ng-click="ExportToPPT()" title="Export to PPT"></div>
+            <div class="ss-showdata-label-toggle ">
+                <span class="ss-showdata-label-maintext">Show Data:</span>
+                <span class="ss-showdata-label-endpart">
+                    <span class="ss-showdata-label-subtext">Hide</span>
+                    <span ng-class="{'ToggleLeft':!IsDataLabelVisible,'ToggleRight':IsDataLabelVisible}" ng-click="ShowHideDataLabel()"></span>
+                    <span class="ss-showdata-label-subtext">Show</span>
+                </span>
+            </div>
+        </div>
+        <div id="chart_container" ng-show="true">
+        </div>
+    </div>
+</div>

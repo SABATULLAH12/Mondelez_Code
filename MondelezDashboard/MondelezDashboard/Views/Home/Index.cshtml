@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Mondelez Purchase Behaviour System";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    sessionStorage['LoginPage'] = '@ViewBag.LoginPage';
+    sessionStorage['LoginPageURL'] = '@ViewBag.LoginPageURL';
+    sessionStorage['IsSSo'] = '@ViewBag.IsSSO';
+</script>
+
+<div class="master_layout" ui-view></div>

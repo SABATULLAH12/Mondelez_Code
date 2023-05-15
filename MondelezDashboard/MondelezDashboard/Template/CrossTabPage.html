@@ -1,0 +1,228 @@
+﻿<div class="crosstab_container ng-scope" ng-click="clickCrossTabBody($event);" ng-controller="CrossTabController">
+    <div class="output_header_top">
+        <div class="output_header_button_container" title="Save Current Selection" ng-click="CrossTabOpenSaveSelectionPopup()"><span class="output_header_button_text">SAVE SELECTION</span></div>
+        <div class="output_header_button_container" title="Open Saved Selection" ng-class="{colored:showMySelections == true}" ng-click="CrossTabOpenSelection()"><span class="output_header_button_text">MY SELECTION</span></div>
+        <div ng-if="showLTDIcon" class="output_header_button_container"  ng-style="{background: (showLTData?'#E18719':''),color:(showLTData?'white':'')}"  title="Time Info" ng-click="showLTDataFunc()"><span class="output_header_button_text">Time Info</span></div>
+        <div class="LTD_list" ng-show="showLTData" ng-style="{height: 'calc(100% * '+ (LTData.length + 1) +')'}">
+                <div class="LTD_list_row LTD_row_border" style="background: rgba(79, 33, 112,0.9);color: white;" ng-style="{height: 'calc(100% / '+ (LTData.length + 1) +')'}">
+                    <div class="LTD_list_column">Market</div>
+                    <div class="LTD_list_column">Category</div>
+                    <div class="LTD_list_column">Latest Time Period</div>
+                </div>
+            <div class="LTD_body_container">
+                <div class="LTD_list_row LTD_row_border" ng-repeat="item in LTData" ng-style="{height: 'calc(100% / '+ (LTData.length + 1) +')'}">
+                    <div class="LTD_list_column LTD_list_column_border">{{item.MarketName}}</div>
+                    <div class="LTD_list_column LTD_list_column_border">{{item.CategoryName}}</div>
+                    <div class="LTD_list_column">{{item.TimePeriodName==""||item.TimePeriodName==null?'NA':item.TimePeriodName}}</div>
+                </div>
+            </div>  
+                
+
+        </div>
+    </div>
+    <div id="output_container" on-size-changed="onReSize" ng-show="showOutput" ng-class="{'showShadow':showOutput}">    
+        <div class="output_header" ng-show="showOutput == true">
+            <div class="output_header_crescent"></div>
+            <div class="crosstab_title">&nbsp;<span>{{crossTabTitle}}</span></div>
+            <div class="quick_icon excel_icon" title="Export to Excel" ng-click="ExportToExcel()"></div>
+        </div>
+
+        <div class="crosstabBodyDiv">
+            <div class="crosstabTableDiv">
+                <div id="crosstabTableContent" class="crosstabTable">
+                    <div class="leftHeader" ng-show="crossTabData.data.length > 0"></div>
+                    <div class="rightHeader" ng-show="crossTabData.data.length > 0">
+                        <div class="row-item">
+                            <div ng-repeat="item in crossTabData.columnHeaderData" ng-style="{width: crossTabData.rowWidth}" class="row-item-div row-item-head-div">
+                                <div class="row-item-head-content" ng-attr-title="{{item.value}}">{{TrimString(item.value,20)}}</div>
+                                <div class="row-item-head-colorline" ng-style="{'background-color': item.headerColor}"></div>
+                                <!--<div class="row-item-head-sub-colorline" ng-style="{'background-color': item.headerColor}"></div>-->
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="leftBody">                       
+
+                    </div>
+                    <div class="rightBody" onscroll="reposVertical(this);" tabindex="0" style="overflow: hidden; outline: none;">
+                                               
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="CrossTab_Save_Container" ng-show="isSaveToCrossTab">
+        <div class="SaveSelection_Popup center" ng-click="openSaveSelectionDropDown(false)">
+            <div class="SaveSelection_Header">
+                <div class="SaveSelection_HeaderText">Save Selection</div>
+                <div class="close_button" ng-click="isSaveToCrossTab = false"></div>
+            </div>
+            <div class="new_SelectionName">
+                <div class="titleDiv">TABLE NAME</div>
+                <div class="inputDiv">
+                    <input type="text" class="SelectionNameInput" ng-model="mySelectionResponse.SelectionTitle" value="" maxlength="50" ng-pattern="/^[a-zA-Z\s0-9_-]*$/" />
+                </div>
+            </div>
+            <div class="SELECT_TAG">
+                <div class="titleDiv">SELECT TAG</div>
+                <div class="SELECT_TAG_Options">
+                    <div class="SELECT_TAG_Option" ng-repeat="item in TAG_Options">
+                        <div ng-class="{'SingleRadioUnSelected':!item.IsSelected ,'SingleRadioSelected':item.IsSelected }" ng-click="SelectTagOption(item.Id)"></div>
+                        <div class="SELECT_TAG_Options_Name" ng-class="{'SELECT_TAG_Option_Selected':item.IsSelected}" ng-click="SelectTagOption(item.Id)">{{item.DisplayName}}</div>
+                    </div>
+                </div>
+                <div class="inputDiv" ng-if="TAG_Options[0].IsSelected">
+                    <input type="text" class="SelectionNameInput" ng-model="mySelectionResponse.AddToTagName" value="" maxlength="50" ng-pattern="/^[a-zA-Z\s0-9_-]*$/" />
+                </div>
+                <div class="inputDiv" style="min-height: 19%;" ng-if="TAG_Options[1].IsSelected" ng-click="$event.stopPropagation(); openSaveSelectionDropDown(true)">
+                    <div  class="DropDowntabText" >{{mySelectionResponse.AddToTagName}}</div>
+                    <div ng-class="{'CrossTabSaveSelectionDropDownIcon':openSaveSelectionDropDown(),'CrossTabSaveSelectionDropDownIconup':!openSaveSelectionDropDown()}" class="CrossTabSaveSelectionDropDownIcon"></div>
+                    <div class="TAG_Story_list_DropDown_container" ng-if="openSaveSelectionDropDown()">
+                        <div class="TAG_Story_list_item" ng-repeat="item in crossTabMySelections.Tags" ng-click="$event.stopPropagation();SelectTAG_Story_list_item(true,item);"><span ng-attr-title="{{item.TagName.toUpperCase()}}">{{item.TagName}}</span></div>
+                        <div class="TAG_Story_list_item_NotFound" ng-if="crossTabMySelections.Tags.length==0"><span>NO TAGS FOUND</span></div>
+                    </div>
+                </div>
+                <div class="inputDiv" style="min-height: 19%;" ng-if="TAG_Options[2].IsSelected" ng-click="$event.stopPropagation();openSaveSelectionDropDown(true)">
+                    <div class="DropDowntabText" >{{mySelectionResponse.AddToStoryName}}</div>
+                    <div ng-class="{'CrossTabSaveSelectionDropDownIcon':openSaveSelectionDropDown(),'CrossTabSaveSelectionDropDownIconup':!openSaveSelectionDropDown()}" class="CrossTabSaveSelectionDropDownIcon"></div>
+                    <div class="TAG_Story_list_DropDown_container"  ng-if="openSaveSelectionDropDown()">
+                        <div class="TAG_Story_list_item" ng-repeat="item in crossTabMySelections.Storys" ng-click="$event.stopPropagation();SelectTAG_Story_list_item(false,item)"><span ng-attr-title="{{item.StoryName.toUpperCase()+getSuffixForStory(item).toUpperCase()}}">{{item.StoryName+getSuffixForStory(item)}}</span></div>
+                        <div class="TAG_Story_list_item_NotFound" ng-if="crossTabMySelections.Storys.length==0"><span>NO STORY FOUND</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="SaveSelectionOptions">
+                <div  class="editStoryName_Yes" ng-click="crossTabSaveSelection()" ng-mouseover="isSaveToCrossTabSave = true" ng-mouseleave="isSaveToCrossTabSave = false"
+                     ng-class="{colored:isSaveToCrossTabSave == true}">
+                    <div class="editText"><div style="float:left;position:relative;" >Save</div><div class="save_button_Icon"></div></div>
+                </div>
+                <div class="editStoryName_No" ng-click="isSaveToCrossTab = false" ng-mouseover="isCancelSaveSelection = true" ng-mouseleave="isCancelSaveSelection = false"
+                     ng-class="{colored:isCancelSaveSelection == true}">
+                    <div class="cancelText"><div style="float:left;position:relative;">Cancel</div><div class="cancel_button_Icon"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="CrossTab_Save_Container" ng-show="showMySelections">
+        <div class="SaveSelection_Popup center" ng-click="myselection_output_DropDown_Open=false;">
+            <div class="SaveSelection_Header">
+                <div class="SaveSelection_HeaderText">My Selection - {{IsTagStoryView?(isTagMySelections?'Tag View':'Story View'):'Table View'}}</div>
+                <div class="close_button" ng-click="showMySelections = false"></div>
+            </div>
+            <div class="myselection_outputView">
+               <div class="myselection_output_head">
+                    <div class="myselection_output_HeadItem" ng-click="$event.stopPropagation();IsTagStoryView? OpenClosemyselection_dropDown(): IsTagStoryView= true;"  ng-class="{'TagStoryNotSelected':!IsTagStoryView}">
+                        {{isTagMySelections?'TAG VIEW':'STORY VIEW'}}<div ng-class="{'CrossTabMySelectionDropDownIcon':myselection_output_DropDown_Open,'CrossTabMySelectionDropDownIconup':!myselection_output_DropDown_Open}"></div>
+                        <div class="myselection_output_DropDown_container" ng-show="myselection_output_DropDown_Open">
+                            <div class="myselection_output_DropDown_item" ng-click="isTagMySelections=true;ClearCrossTabSaveSelection();">TAG VIEW</div>
+                            <div class="myselection_output_DropDown_item" ng-click="isTagMySelections=false;ClearCrossTabSaveSelection();">STORY VIEW</div>
+                        </div>        
+                    </div>
+                    <div class="myselection_output_HeadItem" ng-class="{'TagStoryNotSelected':IsTagStoryView}" style="border-left: 1px solid;" ng-click="IsTagStoryView = false;">
+                        <div>Table View</div>
+                    </div>
+               </div>
+                
+               <div ng-if="IsTagStoryView" class="IsTagStoryView">
+                   <div ng-if="isTagMySelections" style="width:100%;height:100%">
+                       <div class="isTagMySelections_left">
+                           <div class="isTagMySelections_left_SearchContainer">
+                               <div style="float:left;width:15%;margin-top: 2%;font-weight: bold;">Tags</div>
+                               <div style="margin-top:1%;" class="BrandSearchBox" ng-click="$event.stopPropagation();">
+                                   <input class="BrandTextbox" ng-model="TagSearchText" placeholder="Search Tag" ng-keyup="ClearCrossTabSaveSelection()">
+                                   <img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg">
+                               </div>
+                           </div>
+                           <div class="isTagMySelections_left_body">
+                               <div class="isTagMySelections_left_item" ng-repeat="item in crossTabMySelectionsMapped.Tags | filter: {TagName : TagSearchText}">
+                                <div class="isTagMySelections_left_item_Radio" ng-class="{'SingleRadioUnSelected':!item.IsSelected ,'SingleRadioSelected':item.IsSelected}" ng-click="SelectTagOrStory(item)"></div>
+                                <div class="isTagMySelections_left_item_Name" ng-click="SelectTagOrStory(item)" ng-attr-title="{{item.TagName.toUpperCase()}}">{{item.TagName}}</div>
+                                <div class="isTagMySelections_left_item_Delete" ng-click="DeleteTagOrSelection(true,false,item)" ng-attr-title="DELETE"></div>
+                               </div>
+                               <div class="isTagMySelections_left_item" ng-show="(crossTabMySelectionsMapped.Tags | filter:{TagName : TagSearchText}).length == 0">
+                                   <div class="isTagMySelections_left_item_Name" style="cursor:default;"> No Tags Found</div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="isTagMySelections_right">
+                           <div class="isTagMySelections_right_body">
+                               <div class="isTagMySelections_left_item"><div style="float:left;width:15%;font-weight: bold;">Tables</div></div>
+                               <div class="isTagMySelections_left_item" ng-repeat="item in SelectedTagOrStorySelectionsList">
+                                   <div class="isTagMySelections_left_item_Radio" ng-class="{'SingleRadioUnSelected':!item.IsSelected ,'SingleRadioSelected':item.IsSelected}" ng-click="SelectSelection(item)"></div>
+                                   <div class="isTagMySelections_left_item_Name" ng-click="SelectSelection(item)" ng-attr-title="{{item.SelectionTitle.toUpperCase()}}">{{item.SelectionTitle}}</div>
+                                   <div class="isTagMySelections_left_item_Delete" ng-click="DeleteTagOrSelection(false,false,item)" ng-attr-title="DELETE"></div>
+                               </div>
+                               <!--<div class="isTagMySelections_left_item" ng-show="SelectedTagOrStorySelectionsList.length == 0">
+                                   <div class="isTagMySelections_left_item_Name" style="cursor:default;"></div>
+                               </div>-->
+                           </div>
+                       </div>
+                   </div>
+                   <div ng-if="!isTagMySelections" style="width:100%;height:100%">
+                       <div class="isTagMySelections_left">
+                           <div class="isTagMySelections_left_SearchContainer">
+                               <div style="float:left;width:15%;margin-top: 2%;font-weight: bold;">Story</div>
+                               <div style="margin-top:1%;" class="BrandSearchBox" ng-click="$event.stopPropagation();">
+                                   <input class="BrandTextbox" ng-model="StorySearchText" placeholder="Search Story" ng-keyup="ClearCrossTabSaveSelection()">
+                                   <img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg">
+                               </div>
+                           </div>
+                               <div class="isTagMySelections_left_body">
+                                   <div class="isTagMySelections_left_item" ng-repeat="item in crossTabMySelectionsMapped.Storys | filter: {StoryName : StorySearchText}">
+                                       <div class="isTagMySelections_left_item_Radio" ng-class="{'SingleRadioUnSelected':!item.IsSelected ,'SingleRadioSelected':item.IsSelected}" ng-click="SelectTagOrStory(item)"></div>
+                                       <div class="isTagMySelections_left_item_Name" ng-click="SelectTagOrStory(item)" ng-attr-title="{{item.StoryName.toUpperCase()+getSuffixForStory(item).toUpperCase()}}">{{item.StoryName+getSuffixForStory(item)}}</div>
+                                   </div>
+                                   <div class="isTagMySelections_left_item" ng-show="(crossTabMySelectionsMapped.Storys | filter:{StoryName : StorySearchText}).length == 0">
+                                       <div class="isTagMySelections_left_item_Name" style="cursor:default;"> No Story Found</div>
+                                   </div>
+                               </div>
+                           </div>
+                       <div class="isTagMySelections_right">
+                           <div class="isTagMySelections_right_body">
+                               <div class="isTagMySelections_left_item"><div style="float:left;width:15%;font-weight: bold;">Tables</div></div>
+                               <div class="isTagMySelections_left_item" ng-repeat="item in SelectedTagOrStorySelectionsList">
+                                   <div class="isTagMySelections_left_item_Radio" ng-class="{'SingleRadioUnSelected':!item.IsSelected ,'SingleRadioSelected':item.IsSelected}" ng-click="SelectSelection(item)"></div>
+                                   <div class="isTagMySelections_left_item_Name" ng-click="SelectSelection(item)" ng-attr-title="{{item.SelectionTitle.toUpperCase()}}">{{item.SelectionTitle}}</div>
+                                   <div class="isTagMySelections_left_item_Delete" ng-click="DeleteTagOrSelection(false,true,item)" ng-attr-title="DELETE"></div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div ng-if="!IsTagStoryView" style="width:100%;height:100%">
+                   <div class="TagStoryTableView_SearchContainer">
+                       <div style="float:left;width:15%;margin-top: 2%;font-weight: bold;">Tables</div>
+                       <div style="margin-top:1%;" class="BrandSearchBox" ng-click="$event.stopPropagation();">
+                           <input class="BrandTextbox" ng-model="TableSearchText" placeholder="Search Tables" ng-keyup="ClearCrossTabSaveSelection()">
+                           <img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg">
+                       </div>
+                       
+                   </div>
+                   <div class="TagStoryTableViewContainer">
+                       <div class="TagStoryTableView_item" ng-repeat="item in crossTabMySelectionsMapped.AllSelection| filter: {SelectionTitle : TableSearchText}">
+                           <div class="TagStoryTableView_item_Radio" ng-class="{'SingleRadioUnSelected':!item.IsSelected ,'SingleRadioSelected':item.IsSelected}" ng-click="SelectTableViewSelection(item)"></div>
+                           <div class="TagStoryTableView_item_Name" ng-click="SelectTableViewSelection(item)" ng-attr-title="{{TagStoryTableViewItemName(item).toUpperCase()}}">{{TagStoryTableViewItemName(item)}}</div>
+                           <div class="TagStoryTableView_item_Delete" ng-click="DeleteTagOrSelection(false,!item.IsTag,item)" ng-attr-title="DELETE"></div>
+                       </div>
+                       <div class="TagStoryTableView_item" ng-show="(crossTabMySelectionsMapped.AllSelection| filter: {SelectionTitle : TableSearchText}).length == 0">
+                           <div class="TagStoryTableView_item_Name" style="cursor:default;"> No Tables Found</div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <div class="SaveSelectionOptions">
+                <div class="editStoryName_Yes" ng-click="crossTabMakeSelection()" ng-mouseover="isSaveToCrossTabSave = true" ng-mouseleave="isSaveToCrossTabSave = false"
+                     ng-class="{colored:isSaveToCrossTabSave == true}">
+                    <div class="editText"><div style="float:left;position:relative;">View</div></div>
+                </div>
+                <div class="editStoryName_No" ng-click="CrossTabSaveSelectionExcelDownload()" ng-mouseover="isCancelSaveSelection = true" ng-mouseleave="isCancelSaveSelection = false"
+                     ng-class="{colored:isCancelSaveSelection == true}">
+                    <div class="cancelText"><div style="float:left;position:relative;">Download</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

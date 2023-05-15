@@ -1,0 +1,173 @@
+2023-04-23 13:33:02,684 [1] DEBUG  Application (null) (null) - Application Started
+2023-04-23 13:33:08,882 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-23 13:33:08,964 [11] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-04-23 13:33:09,149 [13] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-04-23 13:33:37,056 [11] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-04-23 13:33:39,913 [13] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-23 13:33:39,933 [13] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-23 13:33:53,928 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:33:53,947 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-23 13:33:54,256 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-23 13:33:56,629 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:33:56,635 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-23 13:34:00,502 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:34:00,519 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3','Channel'
+2023-04-23 13:51:02,299 [21] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-23 13:51:02,312 [21] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-23 13:51:06,395 [21] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:51:06,409 [21] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-23 13:51:08,260 [21] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-23 13:51:10,220 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:51:10,221 [24] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-23 13:51:12,312 [21] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:51:12,317 [21] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3','Channel'
+2023-04-23 13:57:37,295 [25] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-23 13:57:37,300 [25] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-23 13:57:39,865 [33] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:57:39,868 [33] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-23 13:57:40,133 [33] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-23 13:57:45,720 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:57:45,723 [26] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-23 13:57:46,913 [31] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:57:46,918 [31] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3','Channel'
+2023-04-23 13:58:09,208 [8] DEBUG  Application (null) (null) - CrossTab API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:58:45,858 [8] ERROR  Application (null) (null) - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BAL.CrossTab.GenerateCrossTabExcelDataExplorer(String templatePath, DataExplorerTableDetails outputData) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\CrossTab.cs:line 469
+   at BAL.CrossTab.ExportToExcelDataExplorer(DataExplorerTableDetails request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\CrossTab.cs:line 81
+   at MondelezDashboard.Controllers.API.CrossTabController.ExportToExcelDataExplorer(DataExplorerTableDetails request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\CrossTabController.cs:line 49
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-04-23 13:58:47,313 [10] DEBUG  Application (null) (null) - CrossTab API initiated by User revathi.k@aqinsights.com
+2023-04-23 13:58:50,373 [10] ERROR  Application (null) (null) - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BAL.CrossTab.GenerateCrossTabExcelDataExplorer(String templatePath, DataExplorerTableDetails outputData) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\CrossTab.cs:line 469
+   at BAL.CrossTab.ExportToExcelDataExplorer(DataExplorerTableDetails request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\CrossTab.cs:line 81
+   at MondelezDashboard.Controllers.API.CrossTabController.ExportToExcelDataExplorer(DataExplorerTableDetails request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\CrossTabController.cs:line 49
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-04-23 14:03:52,203 [38] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-23 14:03:52,211 [38] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-23 14:03:53,512 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:03:53,516 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-23 14:03:55,418 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-23 14:03:57,420 [37] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:03:57,423 [37] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-23 14:03:58,164 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:03:58,168 [32] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3','Channel'
+2023-04-23 14:06:48,408 [38] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-23 14:06:48,415 [38] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-23 14:06:49,657 [37] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:06:49,661 [37] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-23 14:06:51,832 [37] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Cannot open server 'uat-ep-ne-sql01' requested by the login. Client with IP address '223.228.251.37' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetDataExplorerData(Int32 ModuleId, Int32 userId) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 655
+ClientConnectionId:b1146bd7-1a98-41db-9a2e-e955adaabfbf
+Error Number:40615,State:1,Class:14
+2023-04-23 14:06:51,868 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:06:51,872 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-23 14:06:53,231 [29] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Cannot open server 'uat-ep-ne-sql01' requested by the login. Client with IP address '223.228.251.37' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetMarketCategoryData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 439
+ClientConnectionId:ad81162c-6e89-4eec-b50c-07a91821ff30
+Error Number:40615,State:1,Class:14
+2023-04-23 14:07:16,865 [29] ERROR  Application (null) (null) - System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at BAL.FilterPanel.MarketCategoryData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\FilterPanel.cs:line 781
+   at MondelezDashboard.Controllers.API.FilterPanelController.GetMarketCategory() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\FilterPanelController.cs:line 122
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-04-23 14:07:20,451 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:07:20,456 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-23 14:07:23,246 [38] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-04-23 14:07:23,261 [38] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-04-23 14:07:33,482 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:07:33,487 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-04-23 14:07:33,769 [38] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2|3|4|5','1|2|3','-1001','8|32|5|11|77|50|53|15|16|24|25|92|95','1001','','Channel','','','',''
+2023-04-23 14:07:36,508 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:07:36,514 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-04-23 14:07:37,946 [38] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-04-23 14:07:38,030 [38] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_HARMONIZED] '1|2|3|4|5','1|2|3','Channel'
+2023-04-23 14:07:41,319 [38] DEBUG  Application (null) (null) - CrossTab API initiated by User revathi.k@aqinsights.com

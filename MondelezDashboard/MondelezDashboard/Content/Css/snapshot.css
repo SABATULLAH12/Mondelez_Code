@@ -1,0 +1,491 @@
+﻿.ss-main {
+    width: 100%;
+    height: 94%;
+    margin: auto;
+    position:absolute;
+}
+.ss-main-type{
+    width: 100%;
+    height: 100%;
+}
+
+.ss-row-header{
+    width: 100%;
+    min-height: 5%;
+    padding: 4px;
+    padding-right: 9vh;
+}
+.ss-row-body{
+    width: 100%;
+    height: 96%;
+    position: absolute;
+}
+.ss-row {
+    width: 100%;
+    height: 40%;
+    padding-bottom: 1%;
+    overflow: hidden;
+    padding-left: 2%;
+    padding-top: 3px;
+}
+.ss-row-body-contanier{
+    width: 49%;
+    height: 49%;
+    position:relative;
+    padding:0.7%;
+    margin-left:0.5%;
+    float:left;
+}
+.ss-row-body-left-contanier{
+    width: 30%;
+    height: 99%;
+    padding: 0.9%;
+    position: relative;
+    float: left;
+}
+.ss-row-body-middle-contanier{
+    width: 30%;
+    height: 99%;
+    padding: 0.9%;
+    position: relative;
+    float: left;
+}
+.ss-row-body-right-contanier{
+    width: 20%;
+    height: 99%;
+    position: relative;
+    float: left;
+    padding: 0.9%;
+}
+.ss-row-body-contanier-value-split{
+    width: 98.5%;
+    height: 49%;
+    position:relative;
+    padding:0.7%;
+    margin-left:0.5%;
+    float:left;
+}
+.ss-row-middle-cell{
+    float: left;
+    position: relative;
+    padding-top: 1%;
+    font-weight: bold;
+    width: 100%;
+    height: 48%;
+    box-shadow: 0px 0px 8px #888888;
+    border:1px inset black;
+}
+.ss-row-right-cell{
+    float: left;
+    position: relative;
+    padding-top: 1%;
+    font-weight: bold;
+    width: 100%;
+    height: 48%;
+    box-shadow: 0px 0px 8px #888888;
+    border:1px inset black;
+}
+
+.ss-row-cell {
+    float: left;
+    position: relative;
+    padding-top: 1%;
+    width: calc(92% / 2);
+    height: 50.5%;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 8px #888888;
+    border:1px inset black;
+}
+.ss-widget-header-div {
+    width: 100%;
+    height: 13%;
+}
+
+.ss-widget-popup-header{
+    width: 100%;
+    height: 13%;
+    padding-top:1%;
+}
+.ss-popup-body{
+    width: 100%;
+    height: 85%;
+}
+.ss-popup-brand {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.ss-widget-popup-header-text {
+    width: 60%;
+    position: relative;
+    float: left;
+    font-size: 3vh;
+    font-weight: normal;
+    border-bottom: 1px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ss-widget-div {
+    width: 96%;
+    height: 85%;
+    left: 2%;
+    font-size: 0.73vw;
+    color: #303030;
+    position: relative;
+}
+.ss-widget-header {
+    width: 81%;
+    margin-left: 3%;
+    border-bottom: 1px solid;
+    float: left; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ss-widget-note{
+    font-size:1.3vh;
+}
+.ss-widget-icon {
+    float: right;
+    margin-right: 4%;
+    margin-top: 0%;
+    border-radius: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.ss-widget-popup-container {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.ss-widget-popup {
+    background: #F9F8F7;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+    width: 75%;
+    height: 73%;
+    padding: 0 0.8%;
+    margin: auto;
+    font-size:0.73vw;
+}
+
+.ss-widget-popup-container:before {
+    width: 100%;
+    height: 13.5%;
+    content: '';
+    display: block;
+}
+.ss-row-header-icon{
+    float: right;
+    cursor: pointer;
+    width: 5vh;
+    height: 4vh;
+    background-size: 4vh;
+}
+.ss-showdata-label-toggle {
+    width: 30vh;
+    height: 4vh;
+    font-size: 0.7vw;
+    font-weight: normal;
+    display: inline-block;
+    text-align: center;
+    float:right;
+    background: #eaeaea;
+    padding: 0.7Vh;
+    border-radius: 5vh;
+    margin-right: 1vh;
+}
+.ss-showdata-label-maintext {
+    width: 40%;
+    font-size: 0.8vw;
+    color: #000000;
+    font-weight: normal;
+    float: left;
+}
+.ss-showdata-label-endpart {
+    width: 59%;
+    font-size: 0.8vw;
+    color: #000000;
+    font-weight: normal;
+    float: left;
+}
+.ss-showdata-label-subtext {
+    width: 31%;
+    font-size: 0.8vw;
+    color: #000000;
+    font-weight: normal;
+    display: inline-block;
+    text-align: center;
+}
+.ppt_icon {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_PPT_Grey.svg) no-repeat;
+    background-size: 4vh;
+}
+.ppt_icon:hover {
+    background: url(../Image/Mondelez_Eropanel_Sprite_PPT_icon.svg) no-repeat;
+    background-size: 4vh;
+}
+.deepdive_navigate_icon{
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_Chart_Grey.svg) no-repeat;
+    background-size: 4vh;
+}
+.deepdive_navigate_icon:hover {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_Chart_Orange.svg) no-repeat;
+    background-size: 4vh;
+}
+.Expand_Widgit_icon {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_Expand_Grey.svg) no-repeat;
+    background-size: 4vh;
+}
+.Expand_Widgit_icon:hover {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_Expand_Orange.svg) no-repeat;
+    background-size: 4vh;
+}
+
+.Collapse_Widget_icon{
+    background: url(../Image/Mondelez_Eropanel_Round_Collapse_Grey.svg) no-repeat;
+    background-size: 4vh;
+}
+
+.Collapse_Widget_icon:hover{
+    background: url(../Image/Mondelez_Eropanel_Round_Collapse_purple.svg) no-repeat;
+    background-size: 4vh;
+}
+
+.ShowDataLabel_icon {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_PPT_Grey.svg) no-repeat;
+    background-size: 4vh;
+}
+.ShowDataLabel_icon_Active {
+    background: url(../Image/Mondelez_Eropanel_Sprite_PPT_icon.svg) no-repeat;
+    background-size: 4vh;
+}
+
+.excel_icon {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_Excel_Grey.svg) no-repeat;
+    background-size: 4vh;
+}
+.excel_icon:hover {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Excel_icon.svg) no-repeat;
+    background-size: 4vh;
+}
+.add_StoryBoard {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_Story_board_Grey.svg) no-repeat;
+    background-size: 4vh;
+}
+.add_StoryBoard:hover {
+    background: url(../Image/Mondelez_Eropanel_Sprite_Round_Story_board_purple.svg) no-repeat;
+    background-size: 4vh;
+}
+
+/*chart realted*/
+.labelMain{
+    height: auto;
+    width: auto;
+    min-height: 20px;
+    background: rgba(255,255,255,0.9);
+}
+
+.labelText{
+    height: auto;
+    width: auto;
+    text-align:center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.labelData{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color :red;
+}
+.labelLine{
+    position: absolute;
+    height: 3px;
+    width: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #623F23;
+}
+
+.shadow1{
+    background: url('../Image/Mondelez_Eropanel_V Shadow 3.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 20px;
+}
+.chart-tooltip {
+    text-align:center;
+    text-align: center;
+    background-color: white;
+    padding: 6px;
+    z-index: 9999 !important;
+    font-weight:bold;
+    color:#000000;
+}
+
+.chart-tooltip:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    background: white;
+}
+
+    .chart-tooltip > div {
+        position:relative;
+    }
+
+table {
+  border-collapse: collapse;
+  min-width: 100px;
+  font-size:1.5vh;
+  font-weight:bolder;
+  box-shadow: 0px 0px 10px #888888;
+}
+td,th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 3px;
+}
+.Warning_Icon{
+    background: url('../Image/Mondelez_Eropanel_Sprite_warning_icon.svg') no-repeat;
+    background-size: contain;
+    height: 2vh;
+    width: 2vw;
+}
+
+.Warning_Icon_png{
+    background: url('../Image/Mondelez_Eropanel_Sprite_warning_icon-01.png') no-repeat;
+    background-size: contain;
+    height: 2vh;
+    width: 2vw;
+}
+
+.ss-row-cell-header-button{
+    position: relative;
+    background: #E18719;
+    border-style: Solid;
+    border-color: #A35D11;
+    border-width: 1px;
+    border-radius: 3vh;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    margin-right: 1%;
+    align-items: center;
+    padding: 1%;
+    padding-right: 2%;
+    float: right;
+    width: 28vh;
+    height: 4vh;
+}
+.ss-row-cell-header-button:hover {
+    opacity:0.9;
+    cursor:pointer;
+}
+
+.ss-row-cell-header-button-image {
+    position: relative;
+    float: left;
+    width: 3vh;
+    height: 3vh;
+    float: left;
+    top: 0.2vh;
+}
+.How-Does-the-Brand-Grow-Image {
+    background: url('../Image/GrowthOpportunity/Mondelez_Eropanel_Sprite_How Does the Brand Grow-.svg') no-repeat;
+    background-size: contain;
+}
+
+.ss-row-cell-header-button-text{
+    position: relative;
+    float: left;
+    width: 90%;
+    font-family: Montserrat;
+    font-size: 1.4vh;
+    color: #FFFFFF;
+    left: 4%;
+}
+
+
+.ss-row-cell-LTA-button{
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 0.8vw;
+    line-height: 3vh;
+    letter-spacing: 1.22px;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-color: rgba(77,77,77,0.3);
+    border-radius: 14px;
+    width: 13vw;
+    height: 4vh;
+    margin-right: 2%;
+}
+.ss-row-cell-LTA-button:hover {
+    background: #E18719;
+    cursor:pointer;
+    color:white;
+}
+
+.LTD_list{
+    top: 7%;
+    right: 8px;
+    left: 59%;
+    position: absolute;
+    background: white;
+    width: 35%;
+    border: 1px solid black;
+    font-family: 'Oswald';
+    font-size: 0.9vw;
+    z-index: 1;
+    max-height: 24vh;
+}
+.LTD_list_row{
+    width: 100%;
+    display: -webkit-inline-box;
+    color: black;
+    white-space: nowrap;
+    position: relative;
+    font-weight: normal;
+    min-height:6vh;
+}
+.LTD_body_container{
+    overflow-y:auto;
+    max-height:18vh;
+}
+
+.LTD_row_border:not(:last-child){
+    border-bottom:1px solid black;
+}
+
+.LTD_list_column{
+    width:25%;
+    text-align: center;
+    padding-top:1.5vh;
+}
+
+.LTD_list_column_border{
+    border-right:1px solid black;
+}

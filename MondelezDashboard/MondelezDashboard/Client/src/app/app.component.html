@@ -1,0 +1,5 @@
+
+<div id="loader_container" *ngIf="isLoading | async" ng-click="$event.stopPropagation()">
+  <img src="../../../Content/Image/Loader.gif" id="loader_image" class="center" />
+</div>
+<app-dataexplorer></app-dataexplorer>

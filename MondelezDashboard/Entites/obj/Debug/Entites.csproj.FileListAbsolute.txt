@@ -1,0 +1,9 @@
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\bin\Debug\Entites.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\bin\Debug\Entites.pdb
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\bin\Debug\AQLogger.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\bin\Debug\log4net.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\obj\Debug\Entites.dll
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\obj\Debug\Entites.pdb
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\obj\Debug\Entites.csprojAssemblyReference.cache
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\obj\Debug\Entites.csproj.CoreCompileInputs.cache
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\Entites\obj\Debug\Entites.csproj.CopyComplete

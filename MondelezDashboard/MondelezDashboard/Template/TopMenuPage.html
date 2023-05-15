@@ -1,0 +1,143 @@
+﻿<div class="top_menu_layout" ng-controller="TopMenuController" ng-click="clickBody();clickLayout($event);" ng-init="settings_list[0].IsHidden = $parent.isSSO">
+    <div class="top_menu_1" ng-mouseleave="showSettings=false">
+        <div class="top_menu_1_container">
+            <div ng-repeat="item in modules" class="menu_item" ng-title="item.title" ng-class="[replaceWhiteSpace(item.Name),{'active':item.isActive==true,'disabled':item.IsDisabled,'hovered':item.show,'other_hovered':isAnyMenuHovered,'leaf':(item.Children === undefined||item.Children == null||item.Children.length==0)}]" ng-hide="item.IsHidden" ng-click="clickModule(item,modules)">
+                <div class="top_border"></div>
+                <div class="top_menu_left_border center"></div>
+                <span ng-bind="item.Name"></span>
+                <div class="menu_icon"></div>
+                <div class="bottom_symbol"></div>
+            </div>
+        </div>
+        <div class="icons vertical_center rightTopIcons">
+            <div class="topmenu_icons" ng-repeat="item in topmenuIcons" ng-class="[replaceWhiteSpace(item.Name)]" ng-click="item.Handler()" ng-hide="item.IsHidden" ng-attr-title="{{item.Name}}"><div></div></div>
+            <div class="notification"></div>
+            <div class="homeIconDiv">
+                <div class="home" ng-click="$event.stopPropagation();redirectToHome()"></div>
+            </div>
+            <div class="settingsIconDiv">
+                <div class="settings" ng-mouseenter="showSettings=true"></div>
+            </div>
+            <!--<div class="home" ng-click="$event.stopPropagation();redirectToHome()"></div>
+            <div class="settings" ng-mouseenter="showSettings=true">-->
+            </div>
+        <div class="settings_list" ng-show="showSettings" ng-mouseleave="showSettings=false" ng-style="{height: 'calc(100% * '+ getSettingsLength() +')'}">
+            <div class="settings_pointer">
+                <div class="settings_pointer_inner_half"></div>
+            </div>
+            <div ng-repeat="item in settings_list" class="settings_list_item" ng-class="replaceWhiteSpace(item.Name)" ng-click="item.Handler()" ng-style="{height: 'calc(100% / '+ getSettingsLength() +')'}" ng-hide="item.IsHidden">
+                <div class="left_border vertical_center"></div>
+                <div class="settings_list_icon">
+                    <div class="center"></div>
+                </div>
+                <div class="settings_list_text">
+                    <span class="vertical_center" ng-bind="item.Name"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top_menu_2" ng-mouseleave="hideSubMenu();showSettings=false">
+    </div>
+
+    
+    <div class="storyboard_Save_Container" ng-show="isSavetoStory">
+        <div class="save_storyBoard center" ng-class="{showExistingStories:showExistingStoryName == true}">
+            <div class="save_storyBoard_Header">
+                <div class="save_storyBoard_HeaderText">Save Story</div>
+                <div class="close_button" ng-click="isSavetoStory = false"></div>
+            </div>
+            <div class="save_storyBoard_Options">
+                <div ng-repeat="item in saveStoryOptions" class="save_storyBoard_Option {{item}}" ng-click="clickSaveStoryBoardOption(item, $index)">
+                    <div class="save_storyBoard_OptionsText" ng-model="saveStoryOpt" ng-value="item" ng-class="{selected : $index == selectedOption}">
+                        <div class="optionText">{{item}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="save_storyBoard_Opt">
+                <div class="save_storyBoard_OptText" ng-show="showNewStoryName">Story Name</div>
+                <div class="save_storyBoard_Opt_New" ng-show="showNewStoryName">
+                    <input type="text" class="storyName" value="" ng-model="newStoryName" maxlength="50" ng-pattern="/^[a-zA-Z\s0-9_-]*$/" />
+                </div>
+                <div class="save_storyBoard_OptText" ng-show="showExistingStoryName" ng-if="error ==''">Select Story</div>
+                <!--data-simplebar data-simplebar-auto-hide="false"-->
+                <div class="save_storyBoard_Opt_Existing" ng-show="showExistingStoryName" style="overflow-y: auto;">
+                    <div ng-bind="error" ng-if="error !=''" class="noStory_Msg"></div>
+                    <div class="existingStoryOpt" ng-repeat="story in storyNames" ng-model="existingStoryName"
+                         ng-click="selectExistingStories($index,story.StoryID)" value="{{story.StoryID}}" ng-class="{storySelected : $index == selectedStory}">
+                        <div class="optionText" title="{{story.StoryName.toUpperCase()}}">{{story.StoryName + getSuffixForStory(story) }}</div>
+                    </div>
+                </div>
+                <div class="save_storyBoard_popup_Footer" ng-show="showExistingStoryName">
+                    <span>* Shared Stories.</span>
+                </div>
+            </div>
+            <div class="save_storyBoard_Footer">
+                <div class="save_storyBoard_FooterDiv" ng-click="saveSlideToStory()" ng-mouseover="isSaveColored = true" ng-mouseleave="isSaveColored = false" ng-class="{colored:isSaveColored == true}">
+                    <div class="save_storyBoard_FooterText">Save</div>
+                    <div class="save_storyBoard_FooterIcon" ng-class="{colored:isSaveColored == true}"></div>
+                </div>
+                <div class="cancel_storyBoard_FooterDiv" ng-click="isSavetoStory = false" ng-mouseover="isCancelColored = true" ng-mouseleave="isCancelColored = false" ng-class="{colored:isCancelColored == true}">
+                    <div class="cancel_storyBoard_FooterText">Cancel</div>
+                    <div class="cancel_storyBoard_FooterIcon" ng-class="{colored:isCancelColored == true}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top_menu_container">
+        <div class="containerView" ui-view="filterpanal-view"></div>
+    </div>
+    <div class="footer" ng-class="{'expanded':true}">
+        <div class="storyboard_footer" ng-show="storyboardFooter == true" ng-click="$event.stopPropagation();">
+            <span class="storyboard_footer_leftlabel">Caution:</span>
+            <span>Downloading/Auto-updating a story with more than 10 outputs may take some time depending on number of outputs saved. Do not close the browser while Downloading/Auto-updating</span>
+        </div>
+        <div class="footer_ss" ng-show="sampleSize.enable" ng-click="$event.stopPropagation();">
+            <div class="footer_ss_text" ng-click="sampleSize.showTable = !sampleSize.showTable;latestAvailable.showTable = false;"><span>Sample Size</span></div>
+            <div class="footer_ss_table" ng-show="sampleSize.showTable">
+                <table>
+                    <tr class="footer_ss_group_head">
+                        <th class="footer_ss_cell" ng-if="sampleSize.colHeaders.length > 0"></th>
+                        <th ng-repeat="colH in sampleSize.colHeaders" class="footer_ss_cell">
+                            &nbsp;{{colH}}&nbsp;
+                        </th>
+                    </tr>
+                    <tr ng-repeat="row in sampleSize.rows" class="footer_ss_row">
+                        <td ng-repeat="cell in row track by $index" class="footer_ss_cell">
+                            {{cell}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer_ss" ng-show="latestAvailable.enable" ng-click="$event.stopPropagation();">
+            <div class="footer_ss_text" ng-click="latestAvailable.showTable = !latestAvailable.showTable;sampleSize.showTable=false;"><span>Time Info</span></div>
+            <div class="footer_ss_table" ng-show="latestAvailable.showTable">
+                <table>
+                    <tr class="footer_ss_group_head">
+                        <th class="footer_ss_cell" ng-if="latestAvailable.colHeaders.length > 0"></th>
+                        <th ng-repeat="colH in latestAvailable.colHeaders" class="footer_ss_cell">
+                            &nbsp;{{colH}}&nbsp;
+                        </th>
+                    </tr>
+                    <tr ng-repeat="row in latestAvailable.rows" class="footer_ss_row">
+                        <td ng-repeat="cell in row track by $index" class="footer_ss_cell">
+                            {{cell}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div ng-click="showFooter = !showFooter" ng-show="showFooterIcon" class="footer-info-icon">
+
+        </div>
+    </div>
+   
+     <div class="foot-notes" ng-if="storyboardFooter != true">
+        <div ng-repeat="item in footNotes" ng-class="{'foot-notes-div':item.show === undefined || item.show()}" ng-show="showFooter" >
+            <div  class="foon_note" ng-class="{'top':item.style === undefined ||item.style()}"  ng-show="item.show === undefined || (item.show() || setFooterIcon())" ng-bind-html="item.html"></div>
+        </div>
+    </div>
+
+</div>
+

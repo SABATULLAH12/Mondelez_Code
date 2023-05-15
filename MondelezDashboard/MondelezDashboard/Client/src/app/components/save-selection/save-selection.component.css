@@ -1,0 +1,395 @@
+header {
+  height: 45px;
+  background-color: #f0f2f4;
+}
+
+.header-close {
+  display: inline-block;
+  font-size: 27px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+
+::ng-deep .modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content-savesel {
+  width: 800px !important;
+  margin: auto !important;
+  margin-top: 0 !important;
+  position: fixed;
+  top: 10%;
+  left: 18.5%;
+  z-index: 1067;
+  height: 300px;
+  margin-left: -10%;
+}
+
+.modal-content {
+ position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  /* border: 1px solid #0003; */
+  border-radius: 3.3rem !important;
+  outline: 0;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+}
+.radio-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.saveselectionmain-conatiner {
+  background: #F9F8F7 !important;
+  border-radius: 10px !important;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) !important;
+  width: 94.5% !important;
+  height: 114%;
+  padding: 0 0.8% !important;
+}
+
+
+.header {
+  border-bottom: 1px solid;
+  position: relative;
+  padding: 5px;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: Montserrat;
+  font-size: .925rem;
+  color: #303030;
+  width: 96%;
+  height: 10.9%;
+}
+
+.textheader {
+  font-weight: bold;
+}
+
+.newselectionmaincontainer {
+  height: 33%;
+  width: 100%;
+  border-bottom: 1px dashed;
+  margin-top: 1.5%;
+  padding: 0 1.5% !important;
+}
+
+.new_SelectionNameContainer {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+  /* margin-left: 2%; */
+  font-family: Montserrat;
+  font-size: 1vw;
+  color: #303030;
+}
+
+.new_SelectionNameConatiner {
+  width: 100%;
+  position: relative;
+  top: 7%;
+}
+
+.selecttextcontainer {
+  border: 1px solid #d3d3d3;
+  height: 27px;
+  outline: none;
+ 
+  width: 100%;
+  margin-top: 7px;
+}
+
+.selecttagcontainer {
+  height: 34px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 1vw;
+  color: #303030;
+}
+.radio-btns{
+  display: flex;
+  grid-gap: 4rem;
+  gap: 5rem;
+}
+.radio-btn-maincontainer {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 1;
+  display: inline-block;
+  /* vertical-align: middle; */
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+  font-family: Montserrat;
+  font-size: .725rem;
+  color: #303030;
+  font-family: Montserrat;
+  font-size: 0.725rem;
+  color: #303030;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.radio-btn-container {
+  display: flex;
+}
+.radiotext {
+  margin-right: 6px;
+}
+/*.radio-btn-container {
+}*/
+
+  .radiotext:active {
+    font-family: Montserrat;
+    font-size: 0.725rem;
+    color: #E18719;
+  }
+
+.TagMaincontainer {
+  width: 100%;
+  height: 65%;
+  margin-top: 3%;
+  padding: 0 1.5% !important;
+}
+.buttonmaincontainer {
+  padding: 4px 25%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.btn-design:hover {
+  font-weight: 400;
+  font-size: 1.66vh;
+  line-height: 15.68px;
+  letter-spacing: .11px;
+  width: 42%;
+  height: 11%;
+  cursor: pointer;
+  padding: 1% 0;
+  float: left;
+  font-family: Montserrat;
+  font-size: .8125rem;
+  background: #E18719;
+  border: 1px Solid #A35D11;
+  border-radius: 0.8125rem;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  color: #FFFFFF;
+  width: 6.2rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+}
+
+.btn-design {
+  font-weight: 400;
+  font-size: 1.66vh;
+  line-height: 15.68px;
+  letter-spacing: .11px;
+  /*border: 1px solid;
+  border-radius: 11px;
+  width: 42%;
+  height: 11%;*/
+  /* display: inline-block; */
+  cursor: pointer;
+  padding: 1% 0;
+  float: left;
+  font-family: Montserrat;
+  font-size: .8125rem;
+  color: #e18719;
+  background: #FCF4EB;
+  border: 1px Solid #E18719;
+  width: 6.2rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+}
+.subcontainer {
+  width: 100%;
+  height: 18%;
+  margin-top: 7%;
+  display:flex;
+}
+/*.firstcontainer {
+ 
+  margin-left: -23%;
+}
+.secondcontainer {
+  margin-left: 10%;
+}*/
+.btn-iconcontainer-save {
+  background-image: url('/Client/src/assets/Images/Mondelez_Save_Oange.svg');
+  position: relative;
+  float: right;
+  width: 3vh;
+  height: 2vh;
+  top: 8px;
+  left: -28%;
+  background-repeat: no-repeat;
+}
+.firstcontainer:hover .btn-iconcontainer-save {
+  background-image: url(/Content/Image/Mondelez_Save_White.svg);
+  position: relative;
+  float: right;
+  width: 3vh;
+  height: 2vh;
+  top: 8px;
+  left: -28%;
+  background-repeat: no-repeat;
+}
+
+  .btn-iconcontainer-CancelIcon {
+    background-image: url('/Client/src/assets/Images/Mondelez_Cancel_Orange.svg');
+    position: relative;
+    width: 2vh;
+    height: 2vh;
+    float: right;
+    right: 21%;
+    top: 7.8px;
+    background-repeat: no-repeat;
+  }
+
+.secondcontainer:hover .btn-iconcontainer-CancelIcon {
+  background-image: url(/Content/Image/Mondelez_Eropanel_Sprite_Cancel_White.svg);
+  position: relative;
+  width: 2vh;
+  height: 2vh;
+  float: right;
+  right: 21%;
+  top: 8px;
+  background-repeat: no-repeat;
+}
+
+.Icontextcontainer {
+  position: relative;
+  left: -13%;
+}
+
+/*.btn-iconcontainer-save {
+  position: relative;
+  float: right;
+  width: 10vh;
+  height: 2vh;
+  left: 24%;
+  top: -18px;
+  background-repeat: no-repeat;
+}*/
+
+.Icontextcontainer-cancel
+{
+      position: relative;
+    left: -5%;
+}
+
+.Dropdown-optionContainer {
+  top: 75%;
+  width: 91.5%;
+  left: 4.3%;
+  min-height: 2vh;
+  max-height: 25vh;
+  position: absolute;
+  background: #F9F8F7;
+  border: 1px solid;
+  border-radius: 4%;
+  white-space: normal;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow-y: scroll;
+  /* display: inline-block; */
+  vertical-align: middle;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.DropdownContainer {
+
+  width: 109rem !important;
+}
+.selection-IconMainHeader {
+  font-size: 1.56rem;
+  color: #e18719;
+  text-transform: lowercase;
+  position: absolute;
+  font-family: monospace;
+  top: -8px;
+  left: 94%;
+  width: 6%;
+  height: -6px;
+  text-align: center;
+  border-bottom: 2px solid;
+  cursor: pointer;
+}
+
+label>.radiotext:checked {
+  font-family: Montserrat;
+  font-size: 0.725rem;
+  color: #E18719;
+}
+
+.selecttagorstorycontainer {
+  height: 27px;
+  margin-top: 7px;
+}
+.radiotext:checked, .radiotext:focus{
+  accent-color: chocolate;
+}
+.radio-btn-container>.radiotext:checked {
+  color: #e18719;
+}
+.add-text-header
+{
+  border:none
+}
+option:active{
+  background-color:grey;
+}
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: left;
+}
+.radio-btn-container_colored {
+  color: #e18719 !important;
+}

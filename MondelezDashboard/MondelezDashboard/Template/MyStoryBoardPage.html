@@ -1,0 +1,238 @@
+﻿<div class="storyboard_container" ng-controller="MyStoryBoardController" ng-init="LoadStoriesOfUser();">
+    <div class="story_BoardDetails" draggrble-container>
+        <div class="story_Header">
+            <div class="search_Story" ng-show="isStoryAvailable == true">
+                <div class="searchImg"></div>
+                <div class="searchBox">
+                    <input type="text" class="searchText" value="" placeholder="search" ng-model="searchStory" ng-keyup="RemoveStorySelection()" />
+                </div>
+            </div>
+            <div class="story_Options" ng-class="{noStories: isStoryAvailable == false}">
+                <div class="story_Option {{items.Name}}" ng-repeat="items in submodules">
+                    <div class="option {{items.Name}}" ng-class="{selected: items.Isselected == true}" ng-click="ViewSavedOrSharedStory(items.Name);$event.stopPropagation()">
+                        <span>{{items.Name}}</span><span class="drop_img" ng-if="items.SUB.length > 0" ng-show="true||items.Isselected == false"></span>
+                        <div ng-if="items.SUB.length > 0" class="subOpt">
+                            <div class="sub_Options" ng-show="showSubItems == true" ng-repeat="subItem in items.SUB" ng-click="ViewSharedStories(subItem.Name);$event.stopPropagation()"
+                                 ng-class="{isSelcted:subItem.Isselected == true}" ng-mouseover="subItem.Isselected = true" ng-mouseleave="subItem.Isselected = false">{{subItem.Name}}</div>
+                        </div>
+                        <div ng-if="items.SUB.length > 0" class="selected_SubItem" ng-show="showSelectedSubOption == true" ng-bind="selectedSubItem" ng-click="$event.stopPropagation()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story_ErrMsg" ng-bind="noStory_Error" ng-if="noStory_Error != ''"></div>
+        <!------------------------------------List of stories----------------------------------------------->
+        <div class="story_Details" ng-show="isStoryAvailable == true">
+            <!------------------------------------List of stories------------------------------------------->
+            <div class="stories">
+                <div class="story" ng-repeat="story in storyNames | searchStories: searchStory" ng-class="{selectedStory:$index == showStory}" @*ng-style="{'width':'calc(100% / '+ StoryCount +')'" *@>
+                    <div class="storyNames" ng-click="LoadSlides(story.StoryID, $index)" ng-style= "{width:selectedSubItem == 'Shared with me' ? '50%':'40%'}" ng-bind="story.StoryName" title="{{story.StoryName.toUpperCase() + (selectedSubItem == 'Shared with me' ? '\n' + story.CreUser.toUpperCase()  : '') }}"></div>
+                    <div class="story_Actions" ng-class="{'isCreativeEvaluation': selectedChildModule == 'CREATIVEEVALUATION'}">
+                        <div class="story_CrossTab" ng-click="NavigateToCrossTab(story)" ng-class="{selectedStory:$index == showStory}" title="Download Crosstab Tables"></div>
+                        <div class="storyUpdate" ng-if="selectedChildModule != 'CREATIVEEVALUATION'" ng-class="{selectedStory:$index == showStory}" ng-click="UpdateStoryPopUp(story.StoryID,$index)" title="Auto-update "></div>
+                        <div class="storyDownload" ng-class="{selectedStory:$index == showStory}" ng-click="DownloadStory(story.StoryID,$index)" title="Download Entire Story"></div>
+                        <div class="storyEdit" ng-if="selectedSubItem != 'Shared with me'" ng-class="{selectedStory:$index == showStory}" ng-click="ViewEditStoryName(story.StoryID,$index)" title="Rename Story"></div>
+                        <div class="storyShare" ng-class="{selectedStory:$index == showStory}" ng-click="ShareStoryView(story.StoryID,$index)" title="Share Story"></div>
+                        <div class="storyDelete"  ng-class="{selectedStory:$index == showStory}" ng-click="DeleteStoryPop(story.StoryID,$index)" title="Delete Story"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stories_Navigator">
+                <div class="leftNavigator" ng-click="leftScroll()" ng-class="{leftNavigatorSelected: isLeftNavigatorSelected == true}" ng-mouseover="isLeftNavigatorSelected = true" ng-mouseleave="isLeftNavigatorSelected = false"></div>
+                <div class="rightNavigator" ng-click="righScroll()" ng-class="{rightNavigatorSelected: isRightNavigatorSelected == true}" ng-mouseover="isRightNavigatorSelected = true" ng-mouseleave="isRightNavigatorSelected = false"></div>
+            </div>
+        </div>
+        <!------------------------------------Block of Slides under each story------------------------------>
+        <!--data-simplebar data-simplebar-auto-hide="false"-->
+        <div class="slide_Container" ng-show="isStoryAvailable == true" >
+            <!--Bind the slide images from scripts-->
+            <div class="slide_Div" ng-repeat="items in slidesOfStory" drop-container ng-style="{'width':'calc(96% / '+ slideCountInRow +')','height':'calc(91%/'+ slideCountInCol+')'}">
+                <div class="slideItem" draggable-item draggable="true">
+                    <div class="slide_Header">
+                        <div class="slide_Header_Title" title="{{items.Title}}">
+                            <div class="slide_Title">{{items.Title}}</div>
+                        </div>
+                        <div class="slide_Funct">
+                            <div class="slide_View" ng-click="ViewSlideScale(items.SlideID)" title="Expand"></div>
+                            <div class="slide_Info" ng-click="showSlideInfo(items.SlideID,items)" title="Selection Info"></div>
+                            <div class="slide_EditView" ng-click="ViewSlide(items.SlideID,items)" title="Go To Origin Module"></div>
+                            <div class="slide_Select" ng-click="SelectSlide(items.SlideID, $index)" title="Select" ng-class="{isSlideSelected: items.isSlideSelected == true}"></div>
+                        </div>
+                    </div>
+                    <div class="slide_Body {{items.Title}}" @*ng-attr-currentImage="{{ items.SlideID == selectedScaleSlide ? true:undefined }}" *@ Id="{{items.SlideID}}" slideId="{{items.SlideID}}" @*ng-class="{viewSlide: viewSlideZoom == true && items.SlideID == selectedScaleSlide, center:viewSlideZoom == true && items.SlideID == selectedScaleSlide}" >
+                        <img class="slide_Img" src="{{items.slideImg}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide_Actions" ng-show="isStoryAvailable == true">
+            <div class="select_allslides" ng-click="SelectAllSlides()" ng-class="{allSlidesSelected:isallSlidesSelected == true}">
+                <span>Select all Slides</span>
+            </div>
+            <div class="slide_actns">
+                <div class="download_slides" ng-mouseover="isdownloadSlides = true" ng-mouseleave="isdownloadSlides = false" ng-class="{downloadSlides:isdownloadSlides == true }"
+                     ng-click="DownloadSlides()">
+                    <div class="downloadImg"><!--@*<div class="icon"></div>*@--></div>
+                    <div class="footerText">Download</div>
+                    <div class="footerSubText">selected output</div>
+                </div>
+                <div class="delete_slides" ng-mouseover="isdeleteSlides = true" ng-mouseleave="isdeleteSlides = false" ng-class="{deleteSlides:isdeleteSlides == true }"
+                     ng-click="DeleteSelectedSlides()">
+                    <div class="deleteImg"></div>
+                    <div class="footerText">Delete</div>
+                    <div class="footerSubText">selected output</div>
+                </div>
+                <div class="save_story" ng-mouseover="isSaveAsNewStory = true" ng-mouseleave="isSaveAsNewStory = false" ng-class="{saveStory:isSaveAsNewStory == true }"
+                     ng-click="saveStoryPopup = true;saveStoryName=''">
+                    <div class="saveStoryImg"></div>
+                    <div class="footerText">Save As</div>
+                    <div class="footerSubText">selected Story</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="deleteStoryOrSlideAndUpdateAlert" ng-show="showDeleteAlert == true">
+        <div class="deleteStoryOrSlide_Popup center">
+            <div class="deleteClose" ng-click="showDeleteAlert = false" ng-show="showDeleteOptions == true">
+                <div class="delete"></div>
+            </div>
+            <div class="deleteText" ng-bind="deleteUpdateText" ng-class="{isUpdateText: showDeleteOptions == false}" ng-show="showDeleteOptions == true"></div>
+            <div class="UpdateAlert" ng-bind="deleteUpdateText" ng-show="showDeleteOptions == false"></div>
+            <div class="deleteOptions" ng-show="showDeleteOptions == true">
+                <div class="delete_Yes" ng-click="deleteStory(isStoryDelete,isUpdateStory)" ng-mouseover="isYesColored = true" ng-mouseleave="isYesColored = false"
+                     ng-class="{colored:isYesColored == true}">Yes</div>
+                <div class="delete_No" ng-click="showDeleteAlert = false" ng-mouseover="isNoColored = true" ng-mouseleave="isNoColored = false"
+                     ng-class="{colored:isNoColored == true}">No</div>
+            </div>
+        </div>
+    </div>
+    <div class="edit_StoryName" ng-show="showStoryNameEdit == true">
+        <div class="editStoryName_Popup center">
+            <div class="editStoryName_Header">
+                <div class="editStory_HeaderText">Edit Story Name</div>
+                <div class="close_button" ng-click="showStoryNameEdit = false"></div>
+            </div>
+            <div class="new_StoryName">
+                <div class="titleDiv">Enter Story Name</div>
+                <div class="inputDiv">
+                    <input type="text" class="editStoryInput" ng-model="newStoryName" value="" maxlength="50" ng-pattern="/^[a-zA-Z\s0-9_-]*$/" />
+                </div>
+            </div>
+            <div class="EditOptions">
+                <div class="editStoryName_Yes" ng-click="editStoryName()" ng-mouseover="isStoryEdit = true" ng-mouseleave="isStoryEdit = false"
+                     ng-class="{colored:isStoryEdit == true}">
+                    <div class="editText">Save</div>
+                </div>
+                <div class="editStoryName_No" ng-click="showStoryNameEdit = false" ng-mouseover="isCancelStoryEdit = true" ng-mouseleave="isCancelStoryEdit = false"
+                     ng-class="{colored:isCancelStoryEdit == true}">
+                    <div class="cancelText">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="edit_StoryName" ng-show="saveStoryPopup == true">
+        <div class="editStoryName_Popup center">
+            <div class="editStoryName_Header">
+                <div class="editStory_HeaderText">Story Name</div>
+                <div class="close_button" ng-click="saveStoryPopup = false"></div>
+            </div>
+            <div class="new_StoryName">
+                <div class="titleDiv">Enter Story Name</div>
+                <div class="inputDiv">
+                    <input type="text" class="editStoryInput" ng-model="saveStoryName" value="" maxlength="50" ng-pattern="/^[a-zA-Z\s0-9_-]*$/" />
+                </div>
+            </div>
+            <div class="EditOptions">
+                <div class="editStoryName_Yes" ng-click="saveASNewStory()" ng-mouseover="isStoryEdit = true" ng-mouseleave="isStoryEdit = false"
+                     ng-class="{colored:isStoryEdit == true}">
+                    <div class="editText">Save</div>
+                </div>
+                <div class="editStoryName_No" ng-click="saveStoryPopup = false" ng-mouseover="isCancelStoryEdit = true" ng-mouseleave="isCancelStoryEdit = false"
+                     ng-class="{colored:isCancelStoryEdit == true}">
+                    <div class="cancelText">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideInformation_Container" ng-show="showSlideInformation == true">
+        <div class="slideInformation center">
+            <div class="slideInformation_Header">
+                <div class="slideInformation_HeaderText">Information</div>
+                <div class="close_button" ng-click="showSlideInformation = false"></div>
+            </div>
+            <div class="slide_Information" data-simplebar data-simplebar-auto-hide="false">
+                <div class="slideInfo_Items {{Value.Key.replace('/','_')}}" ng-style="{'height':'calc(100%/'+ slideInfoJson.length+')'}" ng-repeat="(Key,Value) in slideInfoJson">
+                    <div class="slideInfo_Icon">
+                        <div class="{{Value.Key.replace('/','_')}} icon"></div>
+                    </div>
+                    <div class="slideInfo_Key">{{Value.Key}}</div>
+                    <div class="slideInfo_seperator"></div>
+                    <div class="slideInfo_Data">{{Value.Value}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="share_Container" ng-show="isShareStory == true">
+        <div class="share_Story center">
+            <div class="search_User">
+                <div class="searchImg"></div>
+                <div class="searchBox">
+                    <input type="text" class="searchText" value="" placeholder="search" ng-model="searchUser" />
+                </div>
+            </div>
+            <div class="share_Story_Header">
+                <div class="share_Story_HeaderText">Share Story</div>
+                <div class="close_button" ng-click="isShareStory = false"></div>
+            </div>
+            <div class="share_StoryBody">
+                <div class="share_StoryBody_Header_Div" >
+                    <div class="share_StoryBody_Header">Share With</div>
+                </div>
+                
+                <div class="share_StoryBody_Selection">
+                    <div class="share_StoryBody_SelectionLeft">
+                        <div class="leftDiv">Individual</div>
+                    </div>
+                    <!--data-simplebar data-simplebar-auto-hide="false"-->
+                    <div class="share_StoryBody_SelectionRight">
+                        <div class="userList" ng-repeat="items in usersList | searchUsers: searchUser" title="{{items.UserName}}" @*ng-model="userSelected" *@>
+                            <div class="pointIcon" ng-class="{firstUser:$index == 0}"></div>
+                            <div class="checkBoxImg" ng-click="SelectedUsers(items, $index)" ng-class="{Selected:items.isSelected}"></div>
+                            <div class="userName" ng-click="SelectedUsers(items, $index)" ng-class="{Selected:items.isSelected}">{{items.UserName}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="share_Footer">
+                <div class="share_Story_FooterDiv" ng-click="ShareStory()" ng-mouseover="isShareColored = true" ng-mouseleave="isShareColored = false"
+                     ng-class="{colored:isShareColored == true}">
+                    <div class="share_FooterText">Share</div>
+                    <div class="share_FooterIcon" ng-class="{colored:isShareColored == true}"></div>
+                </div>
+                <div class="cancel_shareStory_FooterDiv" ng-click="isShareStory = false" ng-mouseover="isCancelShare = true" ng-mouseleave="isCancelShare = false"
+                     ng-class="{colored:isCancelShare == true}">
+                    <div class="cancel_shareStory_FooterText">Cancel</div>
+                    <div class="cancel_shareStory_FooterIcon" ng-class="{colored:isCancelShare == true}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideView_Container" ng-show="viewSlideZoom == true">
+        <div class="slideView center">
+            <div class="slideView_Header">
+                <div class="slideView_HeaderText" ng-bind="slideViewTitle" title="{{slideViewTitle}}"></div>
+                <div class="close_button" ng-click="viewSlideZoom = false"></div>
+            </div>
+            <!--@*<div class="deleteClose view" ng-click="viewSlideZoom = false">
+                <div class="delete"></div>
+            </div>*@-->
+            <div class="img_Div">
+                <img class="slide_Img" ng-src="{{selectedSlideView}}" />
+            </div>
+        </div>
+    </div>
+</div>

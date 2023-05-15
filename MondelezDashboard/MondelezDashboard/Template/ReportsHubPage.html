@@ -1,0 +1,117 @@
+﻿<div class="RH_container" ng-controller="ReportsHubController" ng-click="RHLayoutClicked()">
+
+    <div class="RH_UploadFileDiv" ng-click="displayFileUploadPopUp()" ng-style="getReportsHubDiv();">
+        <div class="RH_uploadImgContainer" title="Upload Reports"></div>
+        <div class="RH_uploadReportsText">Upload Reports</div>
+    </div>
+    <div class="RH_UploadPopUpDiv">
+
+        <div id="RH_UploadPopUp">
+            <div class="RH_UploadHeading">
+                <span class="RH_UploadHeadText"><strong>Upload Files To Report hub</strong></span>
+                <div id="RH_closeContainer" ng-click="hidePopUp()">
+                    <div class="RH_UploadPopUpClose" ng-click="hidePopUp()"></div>
+                </div>
+            </div>
+            <div id="left_container">
+                <div class="RH_UploadNameHead">File names</div>
+                <div class="RH_UploadFileNames"></div>
+            </div>
+
+            <div id="right_container">
+                <input type="file" id="file" name="file" multiple
+                       onchange="angular.element(this).scope().getFileDetails(this) " ng-style="getUploadReportsHubStyles();" class="RH_UploadFileButton" />
+                <input type="button" ng-click="uploadFiles()" value="Upload" ng-style="getUploadReportsHubStyles();" class="RH_UploadButton" ng-disabled="dsblBtn" accept-charset="UTF-8" />
+            </div>
+            <div id="bottom_container" class="RH_UploadSuccessDiv">
+                <div id="RH_UploadSuccessMsg">files uploaded successfully</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="RH_selection_Container">
+        <div class="RH_selection_bar">
+            <span>SELECTIONS : </span>
+            <span ng-repeat="item in FilterPanel" ng-if="item.Selection.length>0">
+                <span ng-if="$index != 0">||</span>
+                <span>{{item.Name.toLowerCase()=='time interval'? item.Selection[0].Name +" - "+ TimePeriodResponse.From.Name +"-"+ TimePeriodResponse.To.Name:(item.Selection.length>1? "multiple "+item.Name :item.Selection[0].Name)}}</span>
+            </span>
+        </div>
+    </div>
+    <div class="RH_Filter_Container">
+        <div ng-repeat="item in FilterPanel" class="RH_Filters" ng-click="$event.stopPropagation();SelectFilterType(item,FilterPanel,$index)"
+             ng-style="{width:(100 / FilterPanel.length) + '%'}" ng-class="[replaceWhiteSpace(item.Name),{'active':!item.IsOpen,'open':item.IsOpen}]">
+            <div class="RH_Filters_TopHeader"></div>
+            <div class="RH_Filters_ImageBox">
+                <div class="RH_Filters_Image"></div>
+            </div>
+            <div class="RH_Filters_ImageShadow">
+                <div class="RH_Filters_Bottom_Image"></div>
+            </div>
+            <div class="RH_Filters_FilterName">{{item.Name}}</div>
+            <div ng-show="item.IsOpen" onclick="event.stopPropagation();" class="RH_Filters_DropDownContainerHeader" ng-if="item.Name.toLowerCase()!='time interval'">
+                <div class="RH_Filters_DropDownItem RH_Filters_FilterName" style="cursor:default;color:#C2337A">{{item.Name}}</div>
+            </div>
+            <div ng-show="item.IsOpen" onclick="event.stopPropagation();" class="RH_Filters_DropDownContainer" ng-if="item.Name.toLowerCase()!='time interval'">
+                <div class="RH_Filters_DropDownItem RH_Filters_items" ng-if="item.Data.length>1" ng-click="SelectAll(item)">
+                    <span class="RH_Filters_items_text">SELECT All</span>
+                    <span class="RH_Filters_items_CheckBox" ng-class="{'MultiRadioUnSelected':item.IsMulti && !IfAllSelected(item.Data) ,'MultiRadioSelected':item.IsMulti && IfAllSelected(item.Data) }"></span>
+                </div>
+                <div class="RH_Filters_DropDownItem RH_Filters_items" ng-repeat="item1 in item.Data" ng-click="SelectSubFilterData(item1,item)">
+                    <span class="RH_Filters_items_text">{{item1.Name}}</span>
+                    <span class="RH_Filters_items_CheckBox" ng-class="{'SingleRadioUnSelected':(!item.IsMulti && !item1.IsSelected ),'SingleRadioSelected':(!item.IsMulti && item1.IsSelected ),'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }"></span>
+                </div>
+            </div>
+            <div ng-show="item.IsOpen" onclick="event.stopPropagation();" class="RH_Filters_TP_DropDownContainer" ng-if="item.Name.toLowerCase()=='time interval'">
+                <div class="RH_Filters_DropDownItem RH_Filters_FilterName" style="cursor:default;color:#C2337A">{{item.Name}}</div>
+                <div class="RH_Filters_TP_DropDownItem" ng-repeat="item1 in item.Data" ng-click="SelectSubFilterData(item1,item)">
+                    <span class="RH_Filters_items_CheckBox" ng-class="{'SingleRadioUnSelected':(!item.IsMulti && !item1.IsSelected ),'SingleRadioSelected':(!item.IsMulti && item1.IsSelected ),'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }"></span>
+                    <span class="RH_Filters_TP_items_text">{{item1.Name}}</span>
+                </div>
+            </div>
+            <div ng-show="item.IsOpen" onclick="event.stopPropagation();" class="RH_Filters_TP_level2_DropDownContainer" ng-if="item.Name.toLowerCase()=='time interval' && item.Selection.length>0">
+                <div class="RH_Filters_TP_items" style="cursor:default;">
+                    <span class="RH_Filters_TP_items_text">FROM</span>
+                </div>
+                <div class="RH_Filters_TP_items" style="cursor:default;">
+                    <span class="RH_Filters_TP_items_text">To</span>
+                </div>
+                <div class="RH_Filters_TP_items RH_Filters_TP_items_border" ng-click="ShowTPDropDown[0]=!ShowTPDropDown[0];ShowTPDropDown[1]=false">
+                    <span class="RH_Filters_TP_items_text">{{TimePeriodResponse.From.Name}}</span>
+                    <span class="RH_Filters_TP_DropDownIcon" ng-class="{'RH_Filters_TP_DropDownIcon_Active':(item.IsOpen && ShowTPDropDown[0] && item.Name.toLowerCase()=='time interval' && item.Selection.length>0)}"></span>
+                </div>
+                <div class="RH_Filters_TP_items RH_Filters_TP_items_border" style="left: 4%;" ng-click="ShowTPDropDown[1]=!ShowTPDropDown[1];ShowTPDropDown[0]=false">
+                    <span class="RH_Filters_TP_items_text">{{TimePeriodResponse.To.Name}}</span>
+                    <span class="RH_Filters_TP_DropDownIcon" ng-class="{'RH_Filters_TP_DropDownIcon_Active':(item.IsOpen && ShowTPDropDown[1] && item.Name.toLowerCase()=='time interval' && item.Selection.length>0)}"></span>
+                </div>
+            </div>
+            <div onclick="event.stopPropagation();" class="RH_Filters_TP_level3_1_DropDownContainer" ng-if="(item.IsOpen && ShowTPDropDown[0] && item.Name.toLowerCase()=='time interval' && item.Selection.length>0)">
+                <div class="RH_Filters_DropDownItem RH_Filters_items" ng-repeat="item1 in TimePeriodFrom"><span class="RH_Filters_items_text" ng-click="SelectTimePeriod(true,item1)">{{item1.Name}}</span></div>
+            </div>
+            <div onclick="event.stopPropagation();" class="RH_Filters_TP_level3_2_DropDownContainer" ng-if="(item.IsOpen && ShowTPDropDown[1] && item.Name.toLowerCase()=='time interval' && item.Selection.length>0)">
+                <div class="RH_Filters_DropDownItem RH_Filters_items" ng-repeat="item1 in TimePeriodTo"><span class="RH_Filters_items_text" ng-click="SelectTimePeriod(false,item1)">{{item1.Name}}</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="RH_Output_Container">
+        <div class="RH_Output_Header_Container">
+            <span class="RH_Output_Header_Container_HeaderText"> AVAILABLE REPORTS</span>
+            <span class="RH_Output_Header_Container_SelectAll" ng-if="FilteredLinkList.length>0" ng-click="SelectAllFilteredLink()"><span ng-class="{'MultiRadioUnSelected': !IfAllSelected(FilteredLinkList) ,'MultiRadioSelected': IfAllSelected(FilteredLinkList) }"></span> SELECT ALL</span>
+        </div>
+        <div class="RH_Output_Body_Container">
+            <div class="RH_Output_Body_NoData" ng-if="FilteredLinkList.length==0">
+                NO REPORTS FOUND FOR THIS SELECTION.
+            </div>
+            <div class="RH_Output_Body_Row" ng-repeat="item in FilteredLinkList" ng-click="item.IsSelected = !item.IsSelected">
+                <span class="RH_FileName_CheckBox" ng-class="{'MultiRadioUnSelected':!item.IsSelected ,'MultiRadioSelected':item.IsSelected }"></span>
+                <span class="RH_FileName">{{item.Name}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="RH_Output_Body_Row_Count_Container"> Showing {{FilteredLinkList.length}} out of {{FileLinks.length}} Reports </div>
+    <div class="RH_Buttons_Container">
+        <div class="RH_Buttons" ng-click="DownloadSelected()"><span class="RH_Buttons_Text">DOWNLOAD</span><span class="RH_Icon_Download"></span></div>
+        <div class="RH_Buttons" ng-click="ClearAll()"><span class="RH_Buttons_Text">CLEAR</span><span class="RH_Icon_Clear"></span></div>
+    </div>
+</div>

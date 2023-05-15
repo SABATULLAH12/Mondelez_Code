@@ -1,0 +1,40 @@
+﻿<div class="home_container" ng-controller="HomeController" ng-init="settings_list[0].IsHidden = $parent.isSSO">
+    <div class="module_container">
+        <div class="functional_Icons_logout">
+            <div class="settingsIconDiv">
+                <div class="homeIcon" ng-click="$event.stopPropagation();AuthLandingPage()"></div>
+            </div>
+        </div>
+        <div class="functional_Icons">
+            <div class="logoutIcon" ng-click="$event.stopPropagation();logout()"></div>
+            <div class="settingsIconDiv">
+                <div class="settingsIcon" ng-mouseenter="showSettings=true"></div>
+            </div>
+        </div>
+        <div ng-repeat="module in modules" ng-style="metricStyle" ng-click="$event.stopPropagation();clickModule(module);" ng-hide="module.IsHidden" class="modules" ng-class="{'disabled':module.IsDisabled}">
+            <div class="metric" ng-class="replaceWhiteSpace(module.Name)" ng-mousemove="showToolTip(module.Name)" ng-mouseleave="hideToolTip()">
+                <div class="metric_icon"><div class="metric_center"></div></div>
+                <div class="metric_text">{{module.Name}}</div>
+                <div class="metric_underline"><div class="metric_center"></div></div>
+            </div>
+            <div class="module_shadow"></div>
+        </div>
+        <div class="moduleToolTip" id="moduleToolTip">
+            <div class="moduleToolTipText"></div>
+        </div>
+    </div>
+    <div class="settings_list" ng-show="showSettings" ng-mouseleave="showSettings=false" ng-style="{height: 'calc(6% * '+ getSettingsLength() +')'}">
+        <div class="settings_pointer">
+            <div class="settings_pointer_inner_half"></div>
+        </div>
+        <div ng-repeat="item in settings_list" class="settings_list_item" ng-class="replaceWhiteSpace(item.Name)" ng-click="item.Handler()" ng-style="{height: 'calc(100% / '+ getSettingsLength() +')'}" ng-hide="item.IsHidden">
+            <div class="left_border vertical_center"></div>
+            <div class="settings_list_icon">
+                <div class="center"></div>
+            </div>
+            <div class="settings_list_text">
+                <span class="vertical_center" ng-bind="item.Name"></span>
+            </div>
+        </div>
+    </div>
+</div>

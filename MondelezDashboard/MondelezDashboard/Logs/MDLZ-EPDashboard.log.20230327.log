@@ -1,0 +1,537 @@
+2023-03-27 12:00:53,974 [1] DEBUG  Application (null) (null) - Application Started
+2023-03-27 12:00:56,487 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:00:56,555 [11] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-03-27 12:00:56,767 [13] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-03-27 12:01:29,764 [11] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-03-27 12:01:33,224 [13] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:01:33,274 [13] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:02:16,322 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:02:16,595 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:02:16,934 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '1|2','2','-1001','5','','','Demographics','','','',''
+2023-03-27 12:02:17,419 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:02:17,426 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:02:17,833 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:02:17,842 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|2','2','Demographics'
+2023-03-27 12:02:33,801 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:02:33,804 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2','Demographics'
+2023-03-27 12:02:39,847 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:02:39,850 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:04:09,076 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:04:09,087 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:04:26,181 [15] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:04:26,185 [15] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:16:39,878 [12] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:16:39,885 [12] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:16:44,895 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:16:44,913 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:16:47,044 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:16:47,783 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:16:47,786 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:16:48,615 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:16:48,714 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:17:14,565 [12] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:17:14,572 [12] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:17:22,296 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:17:22,309 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:17:22,608 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:17:23,414 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:17:23,418 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:17:23,924 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:17:23,929 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:24:47,134 [27] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:24:47,139 [27] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:24:52,631 [25] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:24:52,634 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:24:54,592 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:24:55,093 [25] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:24:55,098 [25] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:24:55,393 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:24:55,397 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:33:36,208 [32] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:33:36,216 [32] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:33:41,292 [25] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:33:41,303 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:33:43,215 [25] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:33:43,718 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:33:43,723 [32] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:33:44,067 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:33:44,081 [41] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:33:51,814 [28] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:33:51,818 [28] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:33:53,550 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:33:53,553 [28] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:33:53,828 [28] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:33:54,263 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:33:54,268 [34] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:33:54,564 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:33:54,568 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:39:59,869 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:39:59,879 [29] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:40:08,522 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:08,529 [41] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:40:10,497 [41] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:40:11,036 [41] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:11,040 [41] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:40:11,480 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:11,492 [44] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3','Segment'
+2023-03-27 12:40:16,592 [29] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:40:16,714 [29] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:40:25,909 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:25,929 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:40:26,242 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:40:26,828 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:26,900 [44] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:40:27,279 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:27,285 [44] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3','Segment'
+2023-03-27 12:40:34,627 [44] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:40:34,632 [44] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:40:43,941 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:43,946 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:40:44,247 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:40:44,953 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:45,013 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:40:45,387 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:45,395 [46] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3','Segment'
+2023-03-27 12:40:55,671 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:40:55,676 [44] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:41:10,326 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:41:10,333 [44] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94','Segment'
+2023-03-27 12:41:34,870 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:41:34,875 [29] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001','5|8|11','','','Segment','','','',''
+2023-03-27 12:41:45,621 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:41:45,626 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94','Demographics'
+2023-03-27 12:41:59,955 [50] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:41:59,965 [50] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001','5|8|11','','','Demographics','','','',''
+2023-03-27 12:42:19,628 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:42:19,634 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:42:54,714 [46] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:42:54,719 [46] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:42:58,171 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:42:58,177 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:42:58,468 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:42:59,071 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:42:59,076 [47] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:42:59,426 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:42:59,433 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94','Demographics'
+2023-03-27 12:43:17,547 [46] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:43:17,572 [46] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:43:21,329 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:43:21,336 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:43:21,616 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:43:22,117 [49] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:43:22,122 [49] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:43:22,460 [42] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:43:22,466 [42] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94','Demographics'
+2023-03-27 12:43:43,740 [46] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:43:43,749 [46] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:43:45,627 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:43:45,633 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:43:45,927 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001|5131|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:43:46,364 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:43:46,370 [47] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:43:46,692 [50] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:43:46,698 [50] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94','Segment'
+2023-03-27 12:44:12,160 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:44:12,205 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001|5131|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:45:43,518 [47] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:45:43,525 [47] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:45:45,940 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:45:45,946 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:45:46,233 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001|5131|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:45:46,758 [50] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:45:46,766 [50] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:45:47,123 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:45:47,158 [43] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94','Segment'
+2023-03-27 12:45:53,695 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:45:53,707 [47] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94','-1001|5131|5134','5|8|11','','','Segment','','','',''
+2023-03-27 12:49:26,397 [42] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:49:26,404 [42] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:49:30,984 [52] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:49:30,994 [52] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:49:33,036 [52] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001','5','','','Segment','','','',''
+2023-03-27 12:49:33,589 [52] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:49:33,593 [52] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:49:33,890 [31] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:49:33,896 [31] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3','Segment'
+2023-03-27 12:49:51,228 [52] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:49:51,243 [52] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94|95','Segment'
+2023-03-27 12:50:15,208 [42] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:50:15,214 [42] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3|94|95','Demographics'
+2023-03-27 12:50:38,959 [31] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:50:38,964 [31] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3|94|95','-1001|5131|5134','5','','1','Demographics','','','',''
+2023-03-27 12:52:43,748 [52] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:52:43,756 [52] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:52:45,322 [42] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:52:45,327 [42] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:52:45,652 [42] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:52:46,268 [39] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:52:46,271 [39] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:52:46,544 [40] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:52:46,551 [40] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:53:17,501 [42] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:53:17,507 [42] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:53:20,163 [42] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:53:20,169 [42] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:53:20,450 [42] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:53:21,100 [39] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:53:21,106 [39] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:53:21,424 [48] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:53:21,428 [48] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:55:18,632 [40] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:55:18,640 [40] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:55:21,372 [40] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:55:21,377 [40] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:55:21,677 [40] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 12:55:22,456 [39] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:55:22,463 [39] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:55:22,761 [48] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:55:22,768 [48] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:58:13,590 [40] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:58:13,597 [40] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:58:17,945 [40] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:58:17,951 [40] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:58:19,989 [40] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','11','Demographics','','','',''
+2023-03-27 12:58:20,480 [39] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:58:20,485 [39] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:58:20,766 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:58:20,772 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 12:58:26,999 [40] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 12:58:27,004 [40] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 12:58:28,490 [48] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:58:28,500 [48] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 12:58:28,781 [48] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','11','Demographics','','','',''
+2023-03-27 12:58:29,362 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:58:29,367 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 12:58:29,667 [23] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 12:58:29,674 [23] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 13:28:23,009 [1] DEBUG  Application (null) (null) - Application Started
+2023-03-27 13:28:25,072 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:28:25,142 [11] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-03-27 13:28:25,291 [13] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-03-27 13:28:49,470 [11] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-03-27 13:28:52,114 [13] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:28:52,129 [13] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:28:57,699 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:28:58,107 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:28:58,464 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134','5|8|11','1|34','','Channel','','','',''
+2023-03-27 13:28:59,472 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:28:59,481 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:28:59,867 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:28:59,883 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Channel'
+2023-03-27 13:29:08,920 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:29:08,924 [11] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:29:11,533 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:29:11,589 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:29:11,911 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134','5|8|11','1|34','','Channel','','','',''
+2023-03-27 13:29:26,324 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:29:26,330 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:29:26,633 [15] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:29:26,639 [15] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Channel'
+2023-03-27 13:33:43,902 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:33:43,910 [11] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:33:46,919 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:33:46,925 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:33:47,230 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 13:33:48,001 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:33:48,008 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:33:48,294 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:33:48,302 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Segment'
+2023-03-27 13:34:32,757 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:34:32,765 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:34:33,047 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134','5|8|11','','','Demographics','','','',''
+2023-03-27 13:34:33,733 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:34:33,739 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:34:34,022 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:34:34,027 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:34:43,658 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:34:43,671 [11] DEBUG  Application (null) (null) - [USP_mdlz_GetModule_Selections] '154'
+2023-03-27 13:34:44,086 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter] ''
+2023-03-27 13:35:48,883 [20] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:35:48,904 [20] DEBUG  Application (null) (null) - [USP_mdlz_StoreModule_Selections] '154','3','[{"Id":0,"Name":"column","Selection":[{"Id":1,"Name":"Markets","DisplayName":"Markets","Selection":null}],"SelectionText":"markets"},{"Id":1,"Name":"row","Selection":[{"Id":101,"Name":"Level 1","DisplayName":"Level 1","Selection":[{"Id":3,"Name":"Category","DisplayName":"Category","Selection":null}]},{"Id":102,"Name":"Level 2","DisplayName":"Level 2","Selection":[{"Id":2,"Name":"Brands","DisplayName":"Brands","Selection":null}]}],"SelectionText":"Category - Brands"},{"Id":2,"Name":"markets","Selection":[{"Id":1,"Name":"Austria","DisplayName":"Austria","Selection":null},{"Id":6,"Name":"Ireland","DisplayName":"Ireland","Selection":null},{"Id":7,"Name":"Italy","DisplayName":"Italy","Selection":null},{"Id":11,"Name":"Russia","DisplayName":"Russia","Selection":null}],"SelectionText":"Multiple"},{"Id":3,"Name":"category","Selection":[{"Id":2,"Name":"Chocolate","DisplayName":"Chocolate","Selection":null},{"Id":4,"Name":"Cream Cheese","DisplayName":"Cream Cheese","Selection":null}],"SelectionText":"Multiple"},{"Id":4,"Name":"time period","Selection":[{"Id":1,"Name":"MAT","DisplayName":"MAT","Selection":[{"Id":-1001,"Name":"Latest Time period available","DisplayName":"Latest Timeperiod","Selection":null}]}],"SelectionText":"MAT - Latest Time period available"},{"Id":5,"Name":"Brands","Selection":[{"Id":443613,"Name":"Ritter Sport Nuss Klasse","DisplayName":"Ritter Sport Nuss Klasse","Selection":null,"BrandMappings":[{"CountryId":1,"CategoryId":2,"BrandId":443613,"BrandName":"ritter sport nuss klasse"}],"$$hashKey":"object:934"},{"Id":439889,"Name":"Philadelphia Classic","DisplayName":"Philadelphia Classic","Selection":null,"BrandMappings":[{"CountryId":7,"CategoryId":4,"BrandId":439889,"BrandName":"philadelphia classic"}],"$$hashKey":"object:936"}],"SelectionText":"Multiple"},{"Id":6,"Name":"segments","Selection":[],"SelectionText":"None | None"},{"Id":7,"Name":"kpi","Selection":[{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":8,"Name":"Penetration","DisplayName":"Absolute: Penetration","Selection":null}]}],"SelectionText":"absolute: penetration"},{"Id":8,"Name":"demographics","Selection":[],"SelectionText":"None"}]'
+2023-03-27 13:35:49,258 [22] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:35:49,906 [21] DEBUG  Application (null) (null) - CrossTab API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:35:49,953 [21] DEBUG  Application (null) (null) - DECLARE @A TVP_BRAND,@B TVP_BRAND,@C TVP_BRAND 
+INSERT INTO @A VALUES ( 1,  1, 2, 443613)
+INSERT INTO @A VALUES ( 2,  7, 4, 439889)
+
+2023-03-27 13:35:49,958 [21] DEBUG  Application (null) (null) - [USP_mdlz_crosstab_nested] '1','3|2','1|6|7|11','2|4','-1001','@A','@B','@C','8','1','','','0'
+2023-03-27 13:36:12,152 [20] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:36:12,159 [20] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:37:45,507 [27] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:37:45,514 [27] DEBUG  Application (null) (null) - [USP_mdlz_StoreModule_Selections] '154','3','[{"Id":0,"Name":"column","Selection":[{"Id":1,"Name":"Markets","DisplayName":"Markets","Selection":null}],"SelectionText":"markets"},{"Id":1,"Name":"row","Selection":[{"Id":101,"Name":"Level 1","DisplayName":"Level 1","Selection":[{"Id":3,"Name":"Category","DisplayName":"Category","Selection":null}]},{"Id":102,"Name":"Level 2","DisplayName":"Level 2","Selection":[{"Id":2,"Name":"Brands","DisplayName":"Brands","Selection":null}]}],"SelectionText":"Category - Brands"},{"Id":2,"Name":"markets","Selection":[{"Id":1,"Name":"Austria","DisplayName":"Austria","Selection":null},{"Id":6,"Name":"Ireland","DisplayName":"Ireland","Selection":null},{"Id":7,"Name":"Italy","DisplayName":"Italy","Selection":null},{"Id":11,"Name":"Russia","DisplayName":"Russia","Selection":null},{"Id":12,"Name":"Spain","DisplayName":"Spain","Selection":null},{"Id":2,"Name":"Belgium","DisplayName":"Belgium","Selection":null}],"SelectionText":"Multiple"},{"Id":3,"Name":"category","Selection":[{"Id":2,"Name":"Chocolate","DisplayName":"Chocolate","Selection":null},{"Id":4,"Name":"Cream Cheese","DisplayName":"Cream Cheese","Selection":null}],"SelectionText":"Multiple"},{"Id":4,"Name":"time period","Selection":[{"Id":1,"Name":"MAT","DisplayName":"MAT","Selection":[{"Id":-1001,"Name":"Latest Time period available","DisplayName":"Latest Timeperiod","Selection":null}]}],"SelectionText":"MAT - Latest Time period available"},{"Id":5,"Name":"Brands","Selection":[{"Id":443346,"Name":"Total Chocolate Market","DisplayName":"Total Chocolate Market","Selection":null,"BrandMappings":[{"CountryId":1,"CategoryId":2,"BrandId":443346,"BrandName":"total chocolate market"}],"$$hashKey":"object:2068"},{"Id":443348,"Name":"Milka Family","DisplayName":"Milka Family","Selection":null,"BrandMappings":[{"CountryId":1,"CategoryId":2,"BrandId":443348,"BrandName":"milka family"}],"$$hashKey":"object:2070"},{"Id":464824,"Name":"Milka","DisplayName":"Milka","Selection":null,"BrandMappings":[{"CountryId":1,"CategoryId":2,"BrandId":464824,"BrandName":"milka"}],"$$hashKey":"object:2072"},{"Id":443351,"Name":"Milka Alpenmilk","DisplayName":"Milka Alpenmilk","Selection":null,"BrandMappings":[{"CountryId":1,"CategoryId":2,"BrandId":443351,"BrandName":"milka alpenmilk"}],"$$hashKey":"object:2074"},{"Id":443352,"Name":"Milka Hazelnut","DisplayName":"Milka Hazelnut","Selection":null,"BrandMappings":[{"CountryId":1,"CategoryId":2,"BrandId":443352,"BrandName":"milka hazelnut"}],"$$hashKey":"object:2076"}],"SelectionText":"Multiple"},{"Id":6,"Name":"segments","Selection":[],"SelectionText":"None | None"},{"Id":7,"Name":"kpi","Selection":[{"Id":1,"Name":"Absolute","DisplayName":"Absolute","Selection":[{"Id":8,"Name":"Penetration","DisplayName":"Absolute: Penetration","Selection":null}]}],"SelectionText":"absolute: penetration"},{"Id":8,"Name":"demographics","Selection":[],"SelectionText":"None"}]'
+2023-03-27 13:37:45,809 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:37:46,511 [26] DEBUG  Application (null) (null) - CrossTab API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:37:46,516 [26] DEBUG  Application (null) (null) - DECLARE @A TVP_BRAND,@B TVP_BRAND,@C TVP_BRAND 
+INSERT INTO @A VALUES ( 1,  1, 2, 443346)
+INSERT INTO @A VALUES ( 2,  1, 2, 443348)
+INSERT INTO @A VALUES ( 3,  1, 2, 464824)
+INSERT INTO @A VALUES ( 4,  1, 2, 443351)
+INSERT INTO @A VALUES ( 5,  1, 2, 443352)
+
+2023-03-27 13:37:46,520 [26] DEBUG  Application (null) (null) - [USP_mdlz_crosstab_nested] '1','3|2','1|6|7|11|12|2','2|4','-1001','@A','@B','@C','8','1','','','0'
+2023-03-27 13:39:06,742 [25] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:39:06,750 [25] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:39:10,525 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:10,533 [24] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:39:10,831 [24] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:39:11,518 [27] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:11,534 [27] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:39:11,874 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:11,885 [26] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:39:22,071 [27] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:39:22,080 [27] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:39:24,250 [27] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:24,258 [27] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:39:24,538 [27] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:39:25,103 [37] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:25,111 [37] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:39:25,407 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:25,415 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:39:43,570 [27] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:39:43,575 [27] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:39:45,245 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:45,251 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:39:45,516 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:39:46,161 [27] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:46,167 [27] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:39:46,456 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:39:46,463 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:46:30,591 [26] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:46:30,601 [26] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:46:33,734 [27] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:46:33,742 [27] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:46:35,763 [27] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134|5137|5140|5144|5147','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:46:36,443 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:46:36,450 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:46:36,757 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:46:36,767 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:47:00,412 [27] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:47:00,419 [27] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:47:02,182 [27] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:47:02,189 [27] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:47:02,468 [27] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134|5137|5140|5144|5147','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:47:02,959 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:47:02,967 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:47:03,304 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:47:03,312 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:53:38,717 [18] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:53:38,722 [18] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:53:42,003 [18] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:53:42,011 [18] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:53:42,332 [18] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134|5137|5140|5144|5147','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:53:42,950 [39] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:53:42,957 [39] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:53:43,326 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:53:43,336 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:56:33,361 [43] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:56:33,371 [43] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:56:37,109 [50] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:56:37,116 [50] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:56:37,974 [50] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134|5137|5140|5144|5147','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:56:38,595 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:56:38,603 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:56:38,931 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:56:38,939 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:56:41,911 [38] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:56:41,919 [38] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:56:44,488 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:56:44,495 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:56:44,803 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134|5137|5140|5144|5147','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:56:45,136 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:56:45,143 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:56:45,454 [49] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:56:45,461 [49] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:57:05,113 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:57:05,188 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001|5134|5137|5140','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:57:19,783 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:57:19,790 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001','5|8|11','','1','Demographics','','','',''
+2023-03-27 13:57:38,183 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:57:38,192 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001','8','','1','Demographics','','','',''
+2023-03-27 13:58:11,679 [43] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 13:58:11,685 [43] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 13:58:13,191 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:58:13,198 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 13:58:13,491 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3','-1001','8','','1','Demographics','','','',''
+2023-03-27 13:58:13,827 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:58:13,835 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 13:58:14,115 [49] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:58:14,122 [49] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3','Demographics'
+2023-03-27 13:58:33,023 [50] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:58:33,031 [50] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-03-27 13:58:57,010 [50] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 13:58:57,017 [50] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94','-1001|5131','5','','1','Demographics','','','',''
+2023-03-27 14:02:42,741 [57] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:02:42,750 [57] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:02:45,907 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:02:45,912 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:02:46,204 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94','-1001|5131','5','','1','Demographics','','','',''
+2023-03-27 14:02:47,295 [62] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:02:47,301 [62] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:02:47,585 [61] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:02:47,590 [61] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-03-27 14:05:17,134 [64] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:05:17,144 [64] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:05:20,672 [43] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:05:20,679 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:05:20,957 [43] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94','-1001|5131','5','','1','Demographics','','','',''
+2023-03-27 14:05:21,877 [66] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:05:21,886 [66] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:05:22,227 [63] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:05:22,236 [63] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-03-27 14:05:43,143 [63] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:05:43,150 [63] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:05:45,036 [63] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:05:45,043 [63] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:05:45,325 [63] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94','-1001|5131','5','','1','Demographics','','','',''
+2023-03-27 14:05:45,752 [54] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:05:45,759 [54] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:05:46,525 [66] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:05:46,533 [66] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-03-27 14:09:43,277 [75] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:09:43,284 [75] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:09:49,057 [63] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:09:49,083 [63] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:09:49,380 [63] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94','-1001|5131','5','','1','Demographics','','','',''
+2023-03-27 14:09:50,311 [63] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:09:50,318 [63] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:09:50,736 [63] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:09:50,746 [63] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-03-27 14:09:52,038 [80] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:09:52,046 [80] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:09:57,473 [54] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:09:57,480 [54] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:09:57,825 [54] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94','-1001|5131','5','','1','Demographics','','','',''
+2023-03-27 14:09:58,523 [54] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:09:58,533 [54] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:09:58,869 [72] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:09:58,880 [72] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-03-27 14:10:14,503 [54] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:10:14,508 [54] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:10:15,990 [72] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:10:15,997 [72] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:10:16,290 [72] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','1|2|3|94','-1001|5131','5','','1','Demographics','','','',''
+2023-03-27 14:10:17,265 [71] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:10:17,271 [71] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:10:17,544 [75] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:10:17,549 [75] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-03-27 14:14:25,469 [76] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:14:25,476 [76] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:14:27,800 [78] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:14:27,807 [78] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:14:28,083 [78] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 14:14:28,787 [92] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:14:28,795 [92] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:14:29,152 [76] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:14:29,159 [76] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Demographics'
+2023-03-27 14:18:28,264 [78] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:18:28,281 [78] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5|8|11','','1','Demographics','','','',''
+2023-03-27 14:35:12,666 [66] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:35:12,676 [66] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:35:17,225 [66] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:35:17,238 [66] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:35:19,838 [66] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3|94','-1001|5131|5134','5','','','Segment','','','',''
+2023-03-27 14:35:20,565 [64] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:35:20,572 [64] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:35:20,925 [66] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:35:20,935 [66] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3|94','Segment'
+2023-03-27 14:54:27,744 [57] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:54:27,758 [57] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:54:31,549 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:54:31,571 [57] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:54:33,662 [57] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001|5134|5137|5140|5144|5147|5150','5','','','Segment','','','',''
+2023-03-27 14:54:34,069 [48] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:54:34,081 [48] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:54:34,393 [7] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:54:34,408 [7] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3','Segment'
+2023-03-27 14:55:22,503 [57] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 14:55:22,514 [57] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 14:55:26,864 [46] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:55:26,872 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 14:55:27,144 [46] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001|5134|5137|5140|5144|5147|5150','5','','','Segment','','','',''
+2023-03-27 14:55:27,557 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:55:27,563 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 14:55:27,831 [57] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 14:55:27,840 [57] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3','Segment'
+2023-03-27 18:38:48,083 [1] DEBUG  Application (null) (null) - Application Started
+2023-03-27 18:38:52,934 [9] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:38:53,010 [9] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-03-27 18:38:53,257 [11] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-03-27 18:39:09,465 [10] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-03-27 18:39:11,999 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:39:12,031 [11] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:39:24,607 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:39:24,633 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 18:39:24,974 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 18:39:26,755 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:39:26,762 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 18:39:27,057 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:39:27,069 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3','Segment'
+2023-03-27 18:40:31,563 [10] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:40:31,574 [10] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:40:36,714 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:40:36,723 [10] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 18:40:37,029 [10] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 18:40:38,715 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:40:38,724 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 18:40:39,123 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:40:39,130 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','2|3','Segment'
+2023-03-27 18:41:20,637 [10] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:41:20,644 [10] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:41:25,988 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:41:25,995 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 18:41:26,275 [11] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','2|3','-1001|5134','5|8|11','','','Segment','','','',''
+2023-03-27 18:41:28,034 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:41:28,041 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 18:58:29,621 [10] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:58:29,630 [10] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:58:30,133 [44] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:58:30,140 [44] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:58:30,691 [55] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:58:30,699 [55] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:58:31,195 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:58:31,613 [47] ERROR  Application (null) (null) - System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-03-27 18:59:31,911 [30] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:59:31,917 [30] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:59:31,948 [59] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:59:31,954 [59] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:59:32,456 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:59:32,466 [30] ERROR  Application (null) (null) - System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-03-27 18:59:36,468 [52] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-03-27 18:59:36,475 [52] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-03-27 18:59:37,118 [44] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:59:37,131 [44] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-03-27 18:59:39,139 [44] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output] '4','3','-1001|5134|5137|5140','5|8','','1','Demographics','','','',''
+2023-03-27 18:59:39,682 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:59:39,690 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-03-27 18:59:40,046 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-03-27 18:59:40,060 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','3','Demographics'

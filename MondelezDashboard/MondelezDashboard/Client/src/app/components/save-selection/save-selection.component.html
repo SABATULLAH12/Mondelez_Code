@@ -1,0 +1,56 @@
+
+<div class="saveselectionmain-conatiner center">
+<div class="header">
+  <div class="add-text-header textheader">
+    SAVE SELECTION
+  </div>
+ <div class="selection-IconMainHeader"><div class="selection-IconHeader" (click)="activeModal.dismiss('Cross click')">X</div></div>
+</div>
+<div style="height: 85%; padding: 0 1.5% !important;">
+  <div class="newselectionmaincontainer">
+    <div class="new_SelectionNameContainer">TABLE NAME</div>
+
+    <div class="new_SelectionNameConatiner"><input class="selecttextcontainer" type="text" name="tblName" [(ngModel)]="tableName" /></div>
+  </div>
+  <div class="TagMaincontainer">
+
+  <div class="selecttagcontainer">SELECT TAG</div>
+
+     
+  <div class="radio-btns radio-btn-maincontainer">
+    <label  class="radio-btn-container"  *ngFor="let radiobutton of radioItems">
+      <input class="radiotext" type="radio" name="options" (click)="radioChange(radiobutton)"
+             [checked]="radiobutton === model.option">{{radiobutton}}
+    </label>
+  </div>
+
+
+  <div *ngIf="isNewTag == true"><input class="selecttextcontainer" type="text" name="tblName" [(ngModel)]="tagName" /></div>
+  <div class="DropdownContainer" *ngIf="isAddToTag == true">
+    <select name="tag"  class="rounded-inputs20 select-select col-md-3 selecttagorstorycontainer"  (change)="ontagChange($event)">
+      <option [value]=""></option>
+      <option class="Dropdown-optionContainer" *ngFor="let tag of tagItem" [value]="tag.Id">{{tag.TagName}}</option>
+    </select>
+    <div>
+    </div>
+
+  </div>
+  <div class="DropdownContainer" *ngIf="isAddToStory == true">
+    <select name="story" class="rounded-inputs20 select-select col-md-3 selecttagorstorycontainer" (change)="ontagChange($event)">
+      <option [value]=""></option>
+      <option class="Dropdown-optionContainer" *ngFor="let story of storyItem" [value]="story.Id">{{story.StoryName}}</option>
+    </select>
+
+  </div>
+  <div class="buttonmaincontainer">
+    <div class="subcontainer firstcontainer"><button type="button" class="btn-design" (click)="saveSelection()"><div class="Icontextcontainer">SAVE</div></button><div class="btn-iconcontainer-save"></div></div>
+    <div class="subcontainer secondcontainer">
+      <button type="button" class="btn-design" (click)="activeModal.dismiss('Cross click')">
+        <div class="Icontextcontainer-cancel">CANCEL</div>
+      </button><div class="btn-iconcontainer-CancelIcon"></div>
+    </div>
+
+  </div>
+  </div>
+</div>
+  </div>

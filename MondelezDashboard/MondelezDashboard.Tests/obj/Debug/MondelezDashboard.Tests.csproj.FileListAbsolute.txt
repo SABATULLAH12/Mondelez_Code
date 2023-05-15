@@ -1,0 +1,2 @@
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard.Tests\obj\Debug\MondelezDashboard.Tests.csproj.CoreCompileInputs.cache
+D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard.Tests\obj\Debug\MondelezDashboard.Tests.csprojResolveAssemblyReference.cache

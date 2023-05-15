@@ -1,0 +1,293 @@
+﻿<div ng-controller="FilterPanelController" class="filter_container" ng-click="hideAllSearchDropdown()">
+    <div class="top_selection_bar">
+        <div class="top_selection_bar_inner" ng-class="{'expanded':selectionExpanded}">
+            <span>SELECTIONS : </span>
+            <span ng-repeat="item in FilterPanel" ng-if="item.Selection.length>0">
+                <span ng-if="$index != 0">||</span>
+                <span>{{item.SelectionText.toLowerCase().indexOf("multiple")>-1? (item.SelectionText + " " + item.Name + (item.Name.indexOf("time period")>-1 ? "s":"" ) ):item.SelectionText}}</span>
+            </span>
+            <span ng-if="ModuleName.toLowerCase()=='growthopportunity' && !isSelectedFiltersChanged">{{growth_opportunity_TimePeriod}}</span>
+            <div class="top_selection_bar_expand_icon" ng-show="selectionExpanded || isSelectionOverflown()" ng-click="selectionExpanded = !selectionExpanded;isFilterpanelOpen=false;">
+                <div class="top_selection_bar_expand_line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="filter_panel_button" ng-click="openFilterPanel(!isFilterpanelOpen)" ng-class="{'open':isFilterpanelOpen}"></div>
+    <div class="filter_panel_background" ng-show="isFilterpanelOpen">
+        <div class="filter_panel_inner_background">
+            <div class="filter_panel">
+                <div class="level level_0">
+                    <div ng-repeat="item in level1Data.Data" ng-show="level1Data.IsHidden" ng-init="this.parent_list=$parent.parent_list.concat([item])" class="list_item first_level" ng-style="{width:$parent.$index!=0?(100 / $parent.item.Data.length) + '%':'auto'}" ng-click="toggleTrendAndPIT()" ng-class="[replaceWhiteSpace(item.Name),{'active':item.IsSelected||item.IsChildSelected,'selectable':item.IsSelectable,'open':item.show,'disabled':item.IsDisable}]">
+                        <div class="list_item_radio_button"></div>
+                        <div class="list_item_content">
+                            <div class="metric_icon"><div class="icon"></div></div>
+                            <div class="metric_text">{{item.Name}}</div>
+                            <div class="metric_selected" ng-attr-title="{{((selectedItems[item.Name.toLowerCase()]===undefined||selectedItems[item.Name.toLowerCase()].length==0)?'None':(selectedItems[item.Name.toLowerCase()].length==1?selectedItems[item.Name.toLowerCase()][0].Name:'Multiple'))}}">{{((selectedItems[item.Name.toLowerCase()]===undefined||selectedItems[item.Name.toLowerCase()].length==0)?"None":(selectedItems[item.Name.toLowerCase()].length==1?selectedItems[item.Name.toLowerCase()][0].Name:"Multiple"))}}</div>
+                            <div class="metric_border"></div>
+                        </div>
+                    </div>
+                    <div ng-click="$event.stopPropagation();AvialableTimePeriodData();" class="metric_AvialableTP">
+                        <div class="AvialableTPDownloadDiv">
+                            <div class="AvialableTPDownload_icon"></div>
+                        </div>
+                        <div title="Available Data" class="AvialableTPTextDiv">
+                            Available Data
+                        </div>
+                    </div>
+                </div>
+                <div class="level level_1">
+                    <div ng-repeat="item in FilterPanel" class="list_item first_level" ng-hide="item.IsHidden" ng-click="SelectFilterType(item,FilterPanel,$index)"
+                         ng-style="{width:$parent.$index!=0?(100 / VisibleFilterPanelLength()) + '%':'auto'}"
+                         ng-class="[replaceWhiteSpace(item.Name),{'active':!item.IsOpen,'open':item.IsOpen,'disabled':item.IsDisabled}]">
+                        <div class="list_item_content">
+                            <div class="metric_channelordemographics">
+                                <span class="Toggle" ng-show="item.Name.toLowerCase()=='channel/retailer'||item.Name.toLowerCase()=='demographics'">
+                                    <span ng-click="$event.stopPropagation();ToggleChannel(true)" ng-class="{'Selected':IsChannelToggle,'disabled':ChannelOrDemographicsToggleDisabled}">channel</span>
+                                    <span ng-click="$event.stopPropagation();ToggleChannel(!IsChannelToggle)" ng-class="{'ToggleLeft':IsChannelToggle && !ChannelOrDemographicsToggleDisabled,'ToggleRight':!IsChannelToggle && !ChannelOrDemographicsToggleDisabled,'ToggleLeftDisabled':IsChannelToggle && ChannelOrDemographicsToggleDisabled,'ToggleRightDisabled':!IsChannelToggle && ChannelOrDemographicsToggleDisabled}"></span>
+                                    <span ng-click="$event.stopPropagation();ToggleChannel(false)" ng-class="{'Selected':!IsChannelToggle,'disabled':ChannelOrDemographicsToggleDisabled}">demographics</span>
+                                </span>
+                            </div>
+                            <div ng-click="$event.stopPropagation();downloadBrandHierarchy(item);" ng-if="item.Name.toLowerCase()=='brands'|| item.Name.toLowerCase()=='primary brands'" class="metric_brandHierarchy" ng-style="{'width':VisibleFilterPanelLength()<=5? '34%':(VisibleFilterPanelLength()<=7? '84%':(VisibleFilterPanelLength()<=8? '90%':(VisibleFilterPanelLength()<=9? '97%':'98%'))),'left':VisibleFilterPanelLength()<=5? '26%':(VisibleFilterPanelLength()<=7? '1%':(VisibleFilterPanelLength()<=8? '0%':(VisibleFilterPanelLength()<=9? '-5%':'-5%')))}">
+                                <div class="brandHierarchyDownloadDiv">
+                                    <div class="brandHierarchyDownload_icon"></div>
+                                </div>
+                                <div ng-attr-title="{{BrandHierarchyText().toUpperCase()}}" class="brandHierarchyTextDiv">
+                                    {{BrandHierarchyText()}}
+                                </div>
+                            </div>
+                            <div class="metric_icon"><div class="icon"></div></div>
+                            <div class="metric_text">{{item.Name}}</div>
+                            <div class="metric_selected" ng-attr-title="{{getSelectionText(item).toUpperCase()}}">{{getSelectionText(item)}}</div>
+                            <div class="metric_border" ng-style="{'margin-top':VisibleFilterPanelLength()<=5? '-2%':(VisibleFilterPanelLength()<=7? '-5%':(VisibleFilterPanelLength()<=8? '-6%':(VisibleFilterPanelLength()<=9? '-7%':'-9%')))}"></div>
+                        </div>
+                        <div class="list_item_child_container" ng-show="item.IsOpen" ng-click="$event.stopPropagation();CloseBrandSearch()">
+                            <div class="list_item_children" ng-click="$event.stopPropagation()" ng-if="item.Name.toLowerCase()!='brands' && item.Name.toLowerCase()!='time period' && item.Name.toLowerCase()!=='primary brands' && item.Name.toLowerCase()!=='secondary brands' && !(CheckCrossTabMultiMarketOrMultiCategory() && item.Name.toLowerCase()=='segments')">
+                                <div class="content1" ng-class="'L'+$index">
+                                    <div ng-show="ShowHideFilterPanelChildSelect()" class="ChildSelectToggleContainer">
+                                        <span class="ChildSelectToggleContainer-maintext">Select Child Cuts</span>
+                                        <span class="ChildSelectToggleContainer-endpart">
+                                            <span class="ss-showdata-label-subtext">Disable</span>
+                                            <span ng-class="{'ToggleLeft':!IsChildSelectionAllowed,'ToggleRight':IsChildSelectionAllowed}" ng-click="ToggleChildSelection()"></span>
+                                            <span class="ss-showdata-label-subtext">Enable</span>
+                                        </span>
+                                    </div>
+                                    <div ng-if="ShowSelectAllFilterPanel(item.Name)" class="list_item" style="width:82%;" ng-click="$event.stopPropagation();">
+                                        <div class="list_item_content">
+                                            <!--Select All-->
+                                            <div ng-click="SelectAllClick(item)" ng-class="{'MultiRadioUnSelected':!AllActiveChildSelected(item) ,'MultiRadioSelected':AllActiveChildSelected(item) }" ng-attr-title="Select All"></div>
+                                            <span style="padding-left:0.5%" ng-style="{color:AllActiveChildSelected(item)?'#E18719':'#404041'}" ng-attr-title="Select All">Select All</span>
+                                        </div>
+                                    </div>
+                                    <div ng-repeat="item1 in item.Data" class="list_item" ng-click="$event.stopPropagation();" ng-hide="HideItemData(item1)">
+                                        <div class="list_item_content">
+                                            <div ng-click="SelectSubFilterData(item1)" ng-show="item1.IsSelectable" ng-class="{'SingleRadioUnSelected':!item.IsMulti && !item1.IsSelected ,'SingleRadioSelected':!item.IsMulti && item1.IsSelected ,'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }" ng-attr-title="{{item.Name.toLowerCase()=='compare'||item.Name.toLowerCase()=='row'||item.Name.toLowerCase()=='column'?CompareByToolTip(item.Name,item1.Name):item1.Name.toUpperCase()}}"></div>
+                                            <span ng-click="SubFilterClick(item1,$parent.item.Data,$index)" ng-style="{color:item1.IsChildSelected||item1.IsSelected?'#E18719':'#404041'}" ng-attr-title="{{item.Name.toLowerCase()=='compare'||item.Name.toLowerCase()=='row'||item.Name.toLowerCase()=='column'?CompareByToolTip(item.Name,item1.Name):item1.Name.toUpperCase()}}">{{TrimString(item1.Name)}} </span>
+                                            <div ng-click="SubFilterClick(item1,$parent.item.Data,$index)" ng-show="!IsLeaf(item1)" ng-class="{'ArrowRight':!item1.IsOpen,'ArrowDown':item1.IsOpen}"></div>
+                                        </div>
+                                        <subfilterleveli2 class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen" ng-style="{'top':getHeight('L'+$parent.$index)}"></subfilterleveli2>
+                                    </div>
+                                </div>
+                                <div class="filterpanel-foot-notes" ng-style="{top:getFooterheight()}" ng-show="ShowHideFilterPanelFooter()" ng-bind-html="FilterPanelFooterText"></div>
+                                <div ng-repeat="item in AdditionalFooter"  ng-show=item.show()>
+                                    <div class="filterpanel-foot-notes additional-footer" ng-show=item.show() ng-style="{top:getBottomFooterHeight()}"  ng-bind-html="item.html"></div>
+                                </div>
+                            </div>
+                            <div class="list_item_children" ng-click="$event.stopPropagation()" ng-if="item.Name.toLowerCase()=='time period'">
+                                <div class="content1" ng-class="'L'+$index">
+                                    <div ng-repeat="item1 in item.Data" class="list_item" ng-click="$event.stopPropagation();" ng-hide="item1.IsHidden">
+                                        <div class="list_item_content">
+                                            <div ng-click="SelectSubFilterData(item1)" ng-show="item1.IsSelectable" ng-class="{'SingleRadioUnSelected':!item.IsMulti && !item1.IsSelected ,'SingleRadioSelected':!item.IsMulti && item1.IsSelected ,'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }" ng-attr-title="{{item1.Name.toUpperCase()}}"></div>
+                                            <span ng-click="SubFilterClick(item1,$parent.item.Data,$index)" ng-style="{color:item1.IsChildSelected||item1.IsSelected?'#E18719':'#404041'}" ng-attr-title="{{item1.Name.toUpperCase()}}">{{TrimString(item1.Name)}} </span>
+                                            <div ng-click="SubFilterClick(item1,$parent.item.Data,$index)" ng-show="!IsLeaf(item1)" ng-class="{'ArrowRight':!item1.IsOpen,'ArrowDown':item1.IsOpen}"></div>
+                                        </div>
+                                        <div class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen && IsTrend" ng-style="{'top':getHeight('L'+$parent.$index)}">
+                                            <div id="slider"></div>
+                                        </div>
+                                        <div class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen && !IsTrend" ng-style="{'top':getHeight('L'+$parent.$index)}">
+                                            <div ng-repeat="item2 in item1.Data" ng-if="ShowOrHideLTD(item2)" class="list_item" ng-show="item1.IsOpen">
+                                                <div class="list_item_content">
+                                                    <div ng-click="SelectSubFilterData(item2)" ng-show="item2.IsSelectable" ng-class="{'SingleRadioUnSelected':(!item.IsMulti && !item2.IsSelected ),'SingleRadioSelected':(!item.IsMulti && item2.IsSelected ),'MultiRadioUnSelected':item.IsMulti && !item2.IsSelected ,'MultiRadioSelected':item.IsMulti  && item2.IsSelected }" ng-attr-title="{{item2.Name.toUpperCase()}}"></div>
+                                                    <span ng-click="SubFilterClick(item2,$parent.item1.Data,$index)" ng-style="{color:item2.IsChildSelected||item2.IsSelected?'#E18719':'#404041'}" ng-attr-title="{{item2.Name.toUpperCase()}}">{{TrimString(item2.Name)}} </span>
+                                                    <div ng-click="SubFilterClick(item2,$parent.item1.Data,$index)" ng-show="!IsLeaf(item2)" ng-class="{'ArrowRight':!item2.IsOpen,'ArrowDown':item2.IsOpen}"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div ng-repeat="item in AdditionalFooter" ng-show=item.show()>
+                                    <div class="filterpanel-foot-notes additional-footer" ng-show=item.show() ng-style="{top:getBottomFooterHeight()}" ng-bind-html="item.html"></div>
+                                </div>
+                            </div>
+                            <div class="list_item_children" ng-click="$event.stopPropagation();CloseBrandSearch()" ng-if="CheckCrossTabMultiMarketOrMultiCategory() && item.Name.toLowerCase()=='segments'">
+                                <div class="content1" ng-class="'L'+$index" ng-click="CloseBrandSearch()">
+                                    <div ng-repeat="item1 in item.Data" class="list_item" ng-click="$event.stopPropagation();CloseBrandSearch()" ng-hide="item1.IsHidden">
+                                        <div class="list_item_content">
+                                            <div ng-click="SelectSubFilterData(item1)" ng-show="item1.IsSelectable" ng-class="{'SingleRadioUnSelected':!item.IsMulti && !item1.IsSelected ,'SingleRadioSelected':!item.IsMulti && item1.IsSelected ,'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }" ng-attr-title="{{item1.Name.toUpperCase()}}"></div>
+                                            <span ng-click="SubFilterClick(item1,$parent.item.Data,$index)" ng-style="{color:GetSegmentSelectionCount(item.Id,item1.Name.toLowerCase())>0?'#E18719':'#404041'}" ng-attr-title="{{item1.Name.toUpperCase()}}">{{TrimString(item1.Name)}} </span>
+                                            <div ng-click="SubFilterClick(item1,$parent.item.Data,$index)" ng-show="!IsLeaf(item1)" ng-class="{'ArrowRight':!item1.IsOpen,'ArrowDown':item1.IsOpen}"></div>
+                                        </div>
+                                        <div class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen" ng-style="{'top':getHeight('L'+$parent.$index)}">
+                                            <div class="segmentSearchContainer">
+                                                <div class="BrandSearchBox" ng-click="$event.stopPropagation();">
+                                                    <input ng-if="item1.Name.toLowerCase()=='segment 1'" class="BrandTextbox" ng-model="formData.brandSearchText" placeholder="Search Segment1" />
+                                                    <input ng-if="item1.Name.toLowerCase()=='segment 2'" class="BrandTextbox" ng-model="formData.brandSearchText" placeholder="Search Segment2" />
+                                                    <img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg" />
+                                                    <div class="BrandSearchListBox" ng-if="item1.Name.toLowerCase()=='segment 1'" ng-show="formData.brandSearchText.length>0">
+                                                        <div class="SearchElement" ng-repeat="data in SearchDataSegment1 | filter: {Name : formData.brandSearchText, IsSelectable: 1}  as filtered" ng-click="SelectSegment(data,false)">
+                                                            <div style="position:relative;width:10%;float:left"><div ng-class="{'SingleRadioUnSelected':!(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false) && !IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) ,'SingleRadioSelected':!(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false) &&  IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) ,'MultiRadioUnSelected':(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false) &&  !IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) ,'MultiRadioSelected':(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false)  &&  IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) }"></div></div>
+                                                            <div style="position:relative;width:90%;float:left"><div ng-attr-title="{{data.Name.toUpperCase()}}">{{data.Name}} </div></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="BrandSearchListBox" ng-if="item1.Name.toLowerCase()=='segment 2'" ng-show="formData.brandSearchText.length>0">
+                                                        <div ng-hide="isChannelOrDemogSelectedAsCompare() && !data.IsTopLevel" class="SearchElement" ng-repeat="data in SearchDataSegment2 | filter: {Name : formData.brandSearchText, IsSelectable: 1}  as filtered" ng-click="SelectSegment(data,false)">
+                                                            <div style="position:relative;width:10%;float:left"><div ng-class="{'SingleRadioUnSelected':!(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false) && !IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) ,'SingleRadioSelected':!(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false) &&  IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) ,'MultiRadioUnSelected':(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false) &&  !IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) ,'MultiRadioSelected':(item1.Name.toLowerCase()=='segment 1'?item.IsMulti:false)  &&  IsNameTypePresentInFilterSelection(item.Id,data.Name,item1.Name) }"></div></div>
+                                                            <div style="position:relative;width:90%;float:left"><div ng-attr-title="{{data.Name.toUpperCase()}}">{{data.Name}} </div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list_item" ng-repeat="item2 in item.Selection" ng-show="item2.Name==item1.Name">
+                                                <div class="list_item_content">
+                                                    <span style="color:#E18719" ng-attr-title="{{LoopSelectionName(item2).toUpperCase()}}">{{TrimString(LoopSelectionName(item2))}}</span>
+                                                    <div ng-click="RemoveSelection(item.Id,item2)" ng-attr-title="{{LoopSelectionName(item2).toUpperCase()}}" class="RemoveItemIcon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filterpanel-foot-notes" ng-style="{top:getFooterheight()}" ng-show="ShowHideFilterPanelFooter()" ng-bind-html="FilterPanelFooterText"></div>
+
+                                <div ng-repeat="item in AdditionalFooter" ng-show=item.show()>
+                                    <div class="filterpanel-foot-notes additional-footer" ng-show=item.show() ng-style="{top:getBottomFooterHeight()}" ng-bind-html="item.html"></div>
+                                </div>
+                            </div>
+                            <div class="list_item_children" ng-click="$event.stopPropagation();CloseBrandSearch()" ng-if="item.Name.toLowerCase()=='brands'||item.Name.toLowerCase()=='primary brands'||item.Name.toLowerCase()=='secondary brands'" style="overflow-y:hidden;height:100%;">
+                                <div class="brandbanner" ng-if="!CheckCrossTabMultiMarketOrMultiCategory() && item.IsOpen">
+                                    <div class="brandbannerParent" ng-click="CloseBrandSearch();">
+                                        <div class="brandbanneritem" ng-click="SetBrandTab(1)" ng-style="{color:BrandTab==1?'#E18719':'#303030',cursor:'pointer'}">Category & Manufacturer</div>
+                                        <div class="BrandSearchBox" ng-show="BrandTab==1" ng-click="$event.stopPropagation();">
+                                            <input class="BrandTextbox" ng-model="formData.brandSearchText" placeholder="Search Brands" />
+                                            <img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg" />
+                                            <div class="BrandSearchListBox" ng-show="formData.brandSearchText.length>0">
+                                                <div class="SearchElement" ng-if="item.IsMulti && filtered.length>0 && ModuleName.toLowerCase()=='crosstab'" ng-click="SelectAllSearchedListItem(filtered,item.Id)">
+                                                    <div style="position:relative;width:10%;float:left"><div ng-class="{'MultiRadioUnSelected': !IsAllSearchItemSelected(filtered,item.Id),'MultiRadioSelected': IsAllSearchItemSelected(filtered,item.Id)}"></div></div>
+                                                    <div style="position:relative;width:90%;float:left"><div ng-attr-title="SELECT ALL">SELECT ALL</div></div>
+                                                </div>
+                                                <div class="SearchElement" ng-repeat="data in SearchData | filter: {Name : formData.brandSearchText, IsSelectable: 1} as filtered" ng-click="SelectBrand(data,false)">
+                                                    <div style="position:relative;width:10%;float:left"><div ng-class="{'SingleRadioUnSelected':!item.IsMulti && !IsNamePresentInFilterSelection(item.Id,data.Name) ,'SingleRadioSelected':!item.IsMulti &&  IsNamePresentInFilterSelection(item.Id,data.Name) ,'MultiRadioUnSelected':item.IsMulti &&  !IsNamePresentInFilterSelection(item.Id,data.Name) ,'MultiRadioSelected':item.IsMulti  &&  IsNamePresentInFilterSelection(item.Id,data.Name) }"></div></div>
+                                                    <div style="position:relative;width:90%;float:left"><div ng-attr-title="{{data.Name.toUpperCase()}}">{{data.Name}} </div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brandbannerChildContainer" ng-show="BrandTab==1" ng-click="$event.stopPropagation();CloseBrandSearch()">
+                                            <div class="content1" ng-class="'L'+$index">
+                                                <div ng-repeat="item1 in item.Data" class="list_item" ng-click="$event.stopPropagation();" ng-hide="item1.IsHidden" ng-show="item1.brandTabId==1">
+                                                    <div class="list_item_content">
+                                                        <div ng-click="SelectSubFilterData(item1)" ng-show="item1.IsSelectable" ng-class="{'SingleRadioUnSelected':!item.IsMulti && !item1.IsSelected ,'SingleRadioSelected':!item.IsMulti && item1.IsSelected ,'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }" ng-attr-title="{{item1.Name.toUpperCase()}}"></div>
+                                                        <span ng-click="SubBrandFilterClick(item1,$parent.item.Data,$index)" ng-style="{color:item1.IsChildSelected||item1.IsSelected?'#E18719':'#404041'}" ng-attr-title="{{item1.Name.toUpperCase()}}">{{TrimString(item1.Name)}}</span>
+                                                        <div ng-click="SubBrandFilterClick(item1,$parent.item.Data,$index)" ng-show="!IsLeaf(item1)" ng-class="{'ArrowRight':!item1.IsOpen,'ArrowDown':item1.IsOpen}"></div>
+                                                    </div>
+                                                    <subbrand1filterleveli2 class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen && (!IsLeaf(item1) && item1.Data[0].brandTabId==1)" ng-style="{'top':getHeight('L'+$parent.$index)}"></subbrand1filterleveli2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brandbannerParent" ng-click="$event.stopPropagation();CloseBrandSearch()">
+                                        <div class="brandbanneritem" ng-click="BrandB2Data.length != 0 &&  SetBrandTab(2)" ng-style="{color:BrandTab==2?'#E18719':(BrandB2Data.length!= 0?'#303030':'grey') ,cursor:BrandB2Data.length!= 0?'pointer':'not-allowed'}">Brands</div>
+                                        <div class="brandbannerChildContainer" ng-show="BrandTab==2">
+                                            <div class="content1">
+                                                <div ng-repeat="item1 in BrandB2Data.Data" class="list_item" ng-click="$event.stopPropagation();" ng-hide="item1.IsHidden">
+                                                    <div class="list_item_content">
+                                                        <div ng-click="SelectSubFilterData(item1)" ng-show="item1.IsSelectable" ng-class="{'SingleRadioUnSelected':!item.IsMulti && !item1.IsSelected ,'SingleRadioSelected':!item.IsMulti && item1.IsSelected ,'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }" ng-attr-title="{{item1.Name.toUpperCase()}}"></div>
+                                                        <span ng-click="SubBrandFilterClick(item1,item1.Parent.Data,$index)" ng-style="{color:item1.IsChildSelected||item1.IsSelected?'#E18719':'#404041'}" ng-attr-title="{{item1.Name.toUpperCase()}}">{{TrimString(item1.Name)}}</span>
+                                                        <div ng-click="SubBrandFilterClick(item1,item1.Parent.Data,$index)" ng-show="!IsLeaf(item1)" ng-class="{'ArrowRight':!item1.IsOpen,'ArrowDown':item1.IsOpen}"></div>
+                                                    </div>
+                                                    <subbrand2filterleveli2 class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen && (!IsLeaf(item1) && item1.Data[0].brandTabId==2)" ng-style="{'top':getHeight('L'+$parent.$index)}"></subbrand2filterleveli2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brandbannerParent" ng-click="$event.stopPropagation();CloseBrandSearch()">
+                                        <div class="brandbanneritem" ng-click="BrandB3Data.length != 0 &&  SetBrandTab(3)" ng-style="{color:BrandTab==3?'#E18719':(BrandB3Data.length!= 0?'#303030':'grey') ,cursor:BrandB3Data.length!= 0?'pointer':'not-allowed'}">Sub-Brand</div>
+                                        <div class="brandbannerChildContainer" ng-show="BrandTab==3">
+                                            <div class="content1">
+                                                <div ng-repeat="item1 in BrandB3Data.Data" class="list_item" ng-click="$event.stopPropagation();" ng-hide="item1.IsHidden">
+                                                    <div class="list_item_content">
+                                                        <div ng-click="SelectSubFilterData(item1)" ng-show="item1.IsSelectable" ng-class="{'SingleRadioUnSelected':!item.IsMulti && !item1.IsSelected ,'SingleRadioSelected':!item.IsMulti && item1.IsSelected ,'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }" ng-attr-title="{{item1.Name.toUpperCase()}}"></div>
+                                                        <span ng-click="SubBrandFilterClick(item1,item1.Parent.Data,$index)" ng-style="{color:item1.IsChildSelected||item1.IsSelected?'#E18719':'#404041'}" ng-attr-title="{{item1.Name.toUpperCase()}}">{{TrimString(item1.Name)}}</span>
+                                                        <div ng-click="SubBrandFilterClick(item1,item1.Parent.Data,$index)" ng-show="!IsLeaf(item1)" ng-class="{'ArrowRight':!item1.IsOpen,'ArrowDown':item1.IsOpen}"></div>
+                                                    </div>
+                                                    <subbrand3filterleveli2 class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen && (!IsLeaf(item1) && item1.Data[0].brandTabId==3)" ng-style="{'top':getHeight('L'+$parent.$index)}"></subbrand3filterleveli2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="brandbannerParent" ng-click="$event.stopPropagation();CloseBrandSearch()">
+                                        <div class="brandbanneritem" ng-click="BrandB4Data.length != 0 &&  SetBrandTab(4)" ng-style="{color:BrandTab==4?'#E18719':(BrandB4Data.length!= 0?'#303030':'grey') ,cursor:BrandB4Data.length!= 0?'pointer':'not-allowed'}">variants</div>
+                                        <div class="brandbannerChildContainer" ng-show="BrandTab==4">
+                                            <div class="content1">
+                                                <div ng-repeat="item1 in BrandB4Data.Data" class="list_item" ng-click="$event.stopPropagation();" ng-hide="item1.IsHidden">
+                                                    <div class="list_item_content">
+                                                        <div ng-click="SelectSubFilterData(item1)" ng-show="item1.IsSelectable" ng-class="{'SingleRadioUnSelected':!item.IsMulti && !item1.IsSelected ,'SingleRadioSelected':!item.IsMulti && item1.IsSelected ,'MultiRadioUnSelected':item.IsMulti && !item1.IsSelected ,'MultiRadioSelected':item.IsMulti  && item1.IsSelected }" ng-attr-title="{{item1.Name.toUpperCase()}}"></div>
+                                                        <span ng-click="SubBrandFilterClick(item1,item1.Parent.Data,$index)" ng-style="{color:item1.IsChildSelected||item1.IsSelected?'#E18719':'#404041'}" ng-attr-title="{{item1.Name.toUpperCase()}}">{{TrimString(item1.Name)}}</span>
+                                                        <div ng-click="SubBrandFilterClick(item1,item1.Parent.Data,$index)" ng-show="!IsLeaf(item1)" ng-class="{'ArrowRight':!item1.IsOpen,'ArrowDown':item1.IsOpen}"></div>
+                                                    </div>
+                                                    <subbrand4filterleveli2 class="content2" ng-class="'L'+$parent.$index+'L'+$index" ng-show="item1.IsOpen && (!IsLeaf(item1) && item1.Data[0].brandTabId==4)" ng-style="{'top':getHeight('L'+$parent.$index)}"></subbrand4filterleveli2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="SearchBanner" ng-if="CheckCrossTabMultiMarketOrMultiCategory() && item.IsOpen">
+                                    <!--BrandUnionTemplate-->
+                                    <div class="brandbannerParent" ng-click="$event.stopPropagation();CloseBrandSearch()">
+                                        <div class="BrandSearchBox" ng-click="$event.stopPropagation();">
+                                            <input class="BrandTextbox" ng-model="formData.brandSearchText" placeholder="Search Brands" />
+                                            <img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg" />
+                                            <div class="BrandSearchListBox" ng-show="formData.brandSearchText.length>0">
+                                                <div class="SearchElement" ng-if="item.IsMulti && filtered.length>0" ng-click="SelectAllSearchedListItem(filtered,item.Id)">
+                                                    <div style="position:relative;width:10%;float:left"><div ng-class="{'MultiRadioUnSelected': !IsAllSearchItemSelected(filtered,item.Id),'MultiRadioSelected': IsAllSearchItemSelected(filtered,item.Id)}"></div></div>
+                                                    <div style="position:relative;width:90%;float:left"><div ng-attr-title="SELECT ALL">SELECT ALL</div></div>
+                                                </div>
+                                                <div class="SearchElement" ng-repeat="data in SearchData | filter: {Name : formData.brandSearchText, IsSelectable: 1}  as filtered" ng-click="SelectBrand(data,false)">
+                                                    <div style="position:relative;width:10%;float:left"><div ng-class="{'SingleRadioUnSelected':!item.IsMulti && !IsNamePresentInFilterSelection(item.Id,data.Name) ,'SingleRadioSelected':!item.IsMulti &&  IsNamePresentInFilterSelection(item.Id,data.Name) ,'MultiRadioUnSelected':item.IsMulti &&  !IsNamePresentInFilterSelection(item.Id,data.Name) ,'MultiRadioSelected':item.IsMulti  &&  IsNamePresentInFilterSelection(item.Id,data.Name) }"></div></div>
+                                                    <div style="position:relative;width:90%;float:left"><div ng-attr-title="{{data.Name.toUpperCase()}}">{{data.Name}} </div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brandbannerChildContainer2" ng-click="$event.stopPropagation();CloseBrandSearch()">
+                                            <div class="content1" ng-class="'L'+$index">
+                                                <div class="list_item" ng-repeat="item1 in item.Selection">
+                                                    <div class="list_item_content">
+                                                        <span style="color:#E18719" ng-attr-title="{{LoopSelectionName(item1).toUpperCase()}}">{{TrimString(LoopSelectionName(item1))}}</span>
+                                                        <div ng-click="RemoveSelection(item.Id,item1)" ng-attr-title="{{LoopSelectionName(item1).toUpperCase()}}" class="RemoveItemIcon"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filterpanel-foot-notes" ng-style="{top:getFooterheight()}" ng-show="ShowHideFilterPanelFooter()" ng-bind-html="FilterPanelFooterText"></div>
+                                <div ng-repeat="item in AdditionalFooter" ng-show=item.show()>
+                                    <div class="filterpanel-foot-notes additional-footer" ng-show=item.show() ng-style="{top:getBottomFooterHeight()}" ng-bind-html="item.html"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="filter_panel_button" class="filter_panel_button_container">
+                <div class="filter_clear_tab center_next_ele" ng-click="clearTab()"><span>CLEAR TAB</span></div>
+                <div class="filter_clear_all center_next_ele" ng-click="clearAll()"><span>CLEAR ALL</span></div>
+                <div class="filter_submit center_next_ele" ng-click="submitFilter()"><span>SUBMIT</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="output_content">
+        <div class="containerView" ui-view="module-view">
+        </div>
+    </div>
+
+</div>

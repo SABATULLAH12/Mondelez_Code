@@ -1,0 +1,132 @@
+<div class="main-container" #txt>
+  <div class="header-container">
+    <!--<div class="icon-area">
+    </div>-->
+    <div class="add-text-header">
+      <div class="text-container">Pivot Screen</div>
+      <div class="toogle-container">
+        <span [ngStyle]="{'font-family':(!harmonized)?'Montserrat-Bold':'Montserrat-Regular'}">NON-HARMONIZED</span>
+        <div [ngClass]="harmonized==false?'toggleswitch':'toggleswitch2'" [class.toggleDisable]="(toggleDisable())" (click)="harmonizedchanged()"></div>
+        <!--<label class="switch">
+          <input type="checkbox" [disabled]="toggleDisable()" [(ngModel)]="harmonized" (change)="harmonizedchanged()">
+          <span class="slider round"></span>
+        </label>-->
+        <span [ngStyle]="{'font-family':(harmonized)?'Montserrat-Bold':'Montserrat-Regular'}">HARMONIZED</span>
+      </div>
+    </div>
+    <div class="close-icon" (click)="exitClick()"></div>
+  </div>
+
+  <div class="modal-body-container">
+
+    <div class="selection-container">
+      <div class="left-section-con">
+        <div class="model-text"><span>SELECTION MARKET</span></div>
+        <div class="model-btn-con">
+          <button type="button" class="model-btn">Market ({{getcount('Market')}})</button>
+          <div class="search-plus-icon" (click)="openMarketDropdownPopup(false)"></div>
+        </div>
+      </div>
+      <div class="right-section-con">
+        <div class="model-text" style="padding-left: 10%;"> <span>SELECTION CATEGORY</span></div>
+        <div class="model-btn-con">
+          <button type="button" class="model-btn" [disabled]="disableCategorry()"  style="margin-left: 10%; width: 19.4rem;">Category ({{getcount('Category')}})</button>
+          <div class="search-plus-icon" (click)="openCategoryDropdownPopup(false)" style="width:0.9rem; left:-8%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="cube-container">
+      <div class="cube-text"> CUBES</div>
+      <div class="cubeparent">
+        <div [ngClass]="checkCubeEnable() ? 'cubecolumn' : 'disableCube'" style="width: 33.33%; display: inline-flex; align-items: center;" (click)="getDropDowns('Demographics')" [class.activeCube]="demogActive">
+        <div [ngClass]="checkCubeEnable() ? 'active-demog-icon' : 'demog-icon'"></div>
+        <div style="margin-left:2.2%;">Demographics</div>
+        </div>
+        <div class="segment-main-con" [ngClass]="{'segment-main-con1': demogActive, 'segment-main-con2' : segmentActive,'segment-main-con3' : channelActive}">
+        <div [ngClass]="checkCubeEnable() ? 'cubecolumn' : 'disableCube'" class="segmentcube" (click)="getDropDowns('Segment')"[class.activeCube]="segmentActive">
+          <div [ngClass]="checkCubeEnable() ? 'active-segment-icon' : 'segment-icon'" >
+
+          </div>
+          <div style="margin-left:2.2%;">Segment
+          </div>
+          </div>
+        </div>
+        <div [ngClass]="checkCubeEnable() ? 'cubecolumn' : 'disableCube'" style="width: 33.33%; display: inline-flex; align-items: center;" (click)="getDropDowns('Channel')" [class.activeCube]="channelActive"><div [ngClass]="checkCubeEnable() ? 'active-channel-icon' : 'channel-icon'"></div><div style="margin-left:2.2%;">Channel</div></div>
+      </div>
+    </div>
+    <div class="drop-down-container">
+      <div class="drop-down-text">Drop Downs</div>
+      <div class=drop-down-sub-container>
+        <div class="drop-downs" [dndList] [dndPlaceholder]="placeholder" [dndModel]="dragdropList[0]">
+          <ng-container *ngIf="dragdropList[0].length > 0">
+            <div *ngFor="let item of dragdropList[0]"
+                 [dndType]="'item'"
+                 (dndMoved)="removeItem1(item, dragdropList[0])"
+                 [dndDraggable]
+                 [dndObject]="item"  class="drop-down-items">{{item.name}}</div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="row-col-container">
+      <div class="dndPlaceholder- col-sm-12" #placeholder></div>
+        <div class="row-section" [dndList] [dndModel]="dragdropList[2]" [dndPlaceholder]="placeholder">
+          <div class="row-text-con"><div class="row-icon-con"><div class="row-icon"></div></div><div class="row-text">ROWS</div></div>
+          <div class="row-con">
+            <ng-container *ngIf="dragdropList[2].length > 0">
+              <div *ngFor="let item of dragdropList[2]"
+                   [ngClass]="disabledropdown() ? 'disableDdl' : 'col-items'"
+                   [dndType]="'item'"
+                   (dndMoved)="removeItem3(item, dragdropList[2])"
+                   [dndDraggable]
+                   [dndObject]="item">
+                <h2><span>{{item.name}} [{{getcount(item.name)}}]</span></h2><div style="margin-top:1.5%;" class="plus-icon" (click)="openPopupbyName(item.name)"></div>
+              </div>
+            </ng-container>
+           </div>
+        </div>
+        <div class="col-section" [dndList] [dndModel]="dragdropList[1]" [dndPlaceholder]="placeholder">
+          <div class="col-text-con"><div class="col-icon-con"><div class="col-icon"></div></div><div class="col-text" style=" padding-left: 7%;">COLUMNS</div></div>
+          <div class="col-con">
+            <ng-container *ngIf="dragdropList[1].length > 0">
+              <div *ngFor="let item of dragdropList[1]"
+                   [ngClass]="disabledropdown() ? 'disableDdl' : 'row-items'"
+                   [dndType]="'item'"
+                   (dndMoved)="removeItem2(item, dragdropList[1])"
+                   [dndDraggable]
+                   [dndObject]="item">
+                <h2><span>{{item.name}} [{{getcount(item.name)}}]</span></h2><div class="plus-icon" (click)="openPopupbyName(item.name)"></div>
+              </div>
+            </ng-container>
+
+  
+          </div>
+        </div>
+     </div>
+    <div class="rc-flex-container">
+      <div class="flex-child1" style="padding-left:13%;">
+        ({{rowcount}} {{rowcount>1?"Rows":"Row"}} Selected)
+      </div>
+
+      <div class="flex-child2" style="padding-left: 18%;">
+        ({{columncount}} {{columncount>1?"Columns":"Column"}} Selected)
+      </div>
+
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" style="accent-color: #e9e6e3;" type="checkbox" [(ngModel)]="supressZero" (change)="updateSupressZero()">
+      <label class="check-box-con" for="flexCheckDefault">
+        Supress zero rows
+      </label>
+    </div>
+    <div class="btns">
+      <button type="button"  [ngClass]="applyDisable()? 'apply-btn' : 'active-apply-btn'" [disabled]="applyDisable()" (click)="ApplyFilter()"><div style="margin-left:9%;">Apply</div><div [ngClass]="applyDisable()? 'save-icon' : 'active-save-icon'"></div></button>
+      <button type="button" class="exit-btn" (click)="exitClick()"><div style="margin-left:23%;">Exit</div><div class="exit-btn-icon"></div></button>
+       <button type="button" class="clear-btn" (click)="clearClick()"><div style=" padding-left: 9%;">Reset</div><div class="save-icon" ></div></button>
+    </div>
+    <div style="padding-bottom: 7px;">
+      <div *ngIf="applyDisable()" class="val-msg">* Please complete the necessary selections</div>
+      <div *ngIf="checkGermany()" class="val-msg">* Panel data not consistent in Germany, Indivisual panel for Chocolate & Biscuits whereas Household panel for Cheese</div>
+    </div>
+  </div>
+</div>

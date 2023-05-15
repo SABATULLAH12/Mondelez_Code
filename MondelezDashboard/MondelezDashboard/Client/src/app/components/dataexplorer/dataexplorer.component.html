@@ -1,0 +1,726 @@
+<div class="top_selection_bar">
+  <div class="top_selection_bar_inner" [class.expanded]="selectionExpanded"><b>SELECTIONS :</b> {{selectionText}}</div>
+  <div class="top_selection_bar_expand_icon" [class.top_selection_bar_expand_icon-active]="selectionExpanded" (click)="selectionExpand()" style="z-index:1;" *ngIf="selectionExpanded || isSelectionOverflown()">
+    <div class="top_selection_bar_expand_line" [class.top_selection_bar_expand_line_active]="selectionExpanded"></div>
+  </div>
+</div>
+<div class="selection-container">
+  <div class="maincontainer-selection">
+    <div class="submaincontainer-selection">
+      <button [ngClass]="Myselectionbtn" type="button"  class="output_header_button_container" (click)="openMySelection()">MY SELECTION</button>
+      <button [ngClass]="saveselectionbtn" type="button" class="output_header_button_container" (click)="openSaveSelection()">SAVE SELECTION</button>
+    </div>
+  </div>
+  </div>
+  <div class="popupDataContainer">
+    <div class="tableHeaderContainer">
+      <div class="excelIcon" (click)="DownloadExcel()"></div>
+      <div class="topHeaderDashedLine"></div>
+    </div>
+<div class="dropdownmaincontainer">
+  <div *ngIf="isVisible('Market')" class="main-marketddl-dropdown">
+    <div class="dropdown-name">Market</div>
+    <div *ngIf="isVisible('Market')" class="marketddl-dropdown">
+
+      <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange">
+        <div id="marketddlOuter" class="text-nowrap row-item">
+          <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+            <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+            <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+            <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+          </i>
+          <span>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+          </span>
+          <label class="form-check-label item-text-con" (click)="select(item,'Market')" style="padding-left: 5%;">{{ item.text }}</label>
+
+        </div>
+
+      </ng-template>
+      <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+
+      </ng-template>
+
+      <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="marketitem"
+                             [itemTemplate]="itemTemplate">
+
+      </ngx-dropdown-treeview>
+      <!--<ngx-dropdown-treeview [config]="config" [items]="brandItem" [buttonClass]="buttonClass"
+                           (selectedChange)="values = $event" [disabled]="!dropdownEnabled"
+                           [ngxDisabledOnSelector]="'button.dropdown-toggle'" (filterChange)="onFilterChange($event)">
+    </ngx-dropdown-treeview>-->
+    </div>
+  </div>
+  <div *ngIf="isVisible('Category')" class="main-categoryddl-dropdown">
+    <div class="dropdown-name">Category</div>
+    <div *ngIf="isVisible('Category')" class="categoryddl-dropdown">
+      <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange">
+        <div id="marketddlOuter" class="text-nowrap row-item">
+          <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+            <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+            <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+            <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+          </i>
+          <span>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+          </span>
+          <label class="form-check-label item-text-con" (click)="select(item,'Category')" style="padding-left: 5%;">{{ item.text }}</label>
+
+        </div>
+      </ng-template>
+      <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+
+      </ng-template>
+      <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="categoryitem"
+                             [itemTemplate]="itemTemplate">
+      </ngx-dropdown-treeview>
+      <!--<ngx-dropdown-treeview [config]="config" [items]="brandItem" [buttonClass]="buttonClass"
+                           (selectedChange)="values = $event" [disabled]="!dropdownEnabled"
+                           [ngxDisabledOnSelector]="'button.dropdown-toggle'" (filterChange)="onFilterChange($event)">
+    </ngx-dropdown-treeview>-->
+    </div>
+  </div>
+  <div *ngIf="isVisible('Brands') == true"  class="main-brand-dropdown">
+    <div class="dropdown-name">Brands</div>
+    <div *ngIf="isVisible('Brands') == true" class="brand-dropdown">
+      <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange">
+        <div id="marketddlOuter" class="text-nowrap row-item">
+          <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+            <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+            <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+            <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+          </i>
+          <span>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+          </span>
+          <label class="form-check-label item-text-con" (click)="select(item,'Brands')" style="padding-left: 5%;">{{ item.text }}</label>
+        </div>
+      </ng-template>
+      <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+        <div *ngIf="config.hasFilter" class="row row-filter">
+          <div class="col-12" style="display:flex;">
+            <input class="form-control search-container" type="text" placeholder="Search" [(ngModel)]="brandfilterText"
+                   (ngModelChange)="onFilterTextChange($event)" />
+            <div class="search-icon"></div>
+            <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
+              <div class="col-12">
+                <label *ngIf="config.hasAllCheckBox" (click)="select(item,'Brands')">
+                  <strong>{{ i18n.getAllCheckboxText() }}</strong>
+                </label>
+                <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
+                  <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
+                    <svg *ngSwitchCase="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-expand"
+                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                            d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                      <path fill-rule="evenodd"
+                            d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                      <path fill-rule="evenodd"
+                            d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <svg *ngSwitchCase="false" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-contract"
+                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                            d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                      <path fill-rule="evenodd"
+                            d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                      <path fill-rule="evenodd"
+                            d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                  </i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="config.hasDivider" class="dropdown-divider"></div>
+      </ng-template>
+      <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="brandItem"
+                             [itemTemplate]="itemTemplate">
+      </ngx-dropdown-treeview>
+      <!--<ngx-dropdown-treeview [config]="config" [items]="brandItem" [buttonClass]="buttonClass"
+                           (selectedChange)="values = $event" [disabled]="!dropdownEnabled"
+                           [ngxDisabledOnSelector]="'button.dropdown-toggle'" (filterChange)="onFilterChange($event)">
+    </ngx-dropdown-treeview>-->
+    </div>
+    </div>
+  <div *ngIf="isVisible('Demo') == true" class="main-demo-dropdown">
+    <div class="dropdown-name">Demographics</div>
+    <div *ngIf="isVisible('Demo') == true" class="demo-dropdown">
+      <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange">
+        <div class="text-nowrap row-item">
+          <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+            <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+            <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+            <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+              <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+              <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+            </svg>
+          </i>
+          <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+            <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+          </svg>
+          <label class="form-check-label item-text-con" (click)="select(item,'Demo')" style="padding-left: 5%;">{{ item.text }}</label>
+        </div>
+      </ng-template>
+      <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                   let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+        <div *ngIf="config.hasFilter" class="row row-filter">
+          <div class="col-12" style="display:flex;">
+            <input class="form-control search-container" placeholder="Search" type="text" [(ngModel)]="demofilterText"
+                   (ngModelChange)="onFilterTextChange($event)" />
+            <div class="search-icon"></div>
+            <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
+              <div class="col-12">
+                <label *ngIf="config.hasAllCheckBox" (click)="select(item,'Demo')">
+                  <strong>{{ i18n.getAllCheckboxText() }}</strong>
+                </label>
+                <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
+                  <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
+                    <svg *ngSwitchCase="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-expand"
+                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                            d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                      <path fill-rule="evenodd"
+                            d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                      <path fill-rule="evenodd"
+                            d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <svg *ngSwitchCase="false" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-contract"
+                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                            d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                      <path fill-rule="evenodd"
+                            d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                      <path fill-rule="evenodd"
+                            d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                  </i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="config.hasDivider" class="dropdown-divider"></div>
+      </ng-template>
+      <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="demoItem"
+                             [itemTemplate]="itemTemplate">
+      </ngx-dropdown-treeview>
+
+    </div>
+  </div>
+    <div *ngIf="isVisible('KPI') == true" class="main-kpi-dropdown" >
+      <div class="dropdown-name">KPI</div>
+      <div *ngIf="isVisible('KPI') == true" class="kpi-dropdown">
+        <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange">
+          <div class="text-nowrap row-item">
+            <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+              <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg>
+            <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>-->
+              <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+              <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+                <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+            </i>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+            <label class="form-check-label" [class.item-text-con]="item.value.IsSelectable == true" (click)="select(item,'KPI')" style="padding-left: 5%;">{{ item.text }}</label>
+          </div>
+        </ng-template>
+        <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+          <div *ngIf="config.hasFilter" class="row row-filter">
+            <div class="col-12" style="display:flex;">
+              <input class="form-control search-container" type="text" placeholder="Search" [(ngModel)]="kpifilterText"
+                     (ngModelChange)="onFilterTextChange($event)" />
+              <div class="search-icon"></div>
+              <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
+                <div class="col-12">
+                  <label *ngIf="config.hasAllCheckBox" (click)="select(item,'KPI')">
+                    <strong>{{ i18n.getAllCheckboxText() }}</strong>
+                  </label>
+                  <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
+                    <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
+                      <svg *ngSwitchCase="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-expand"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                      <svg *ngSwitchCase="false" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-contract"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                    </i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="config.hasDivider" class="dropdown-divider"></div>
+        </ng-template>
+        <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="kpiItem"
+                               [itemTemplate]="itemTemplate">
+        </ngx-dropdown-treeview>
+
+      </div>
+    </div>
+    <div *ngIf="isVisible('Segment Filter') == true" class="main-seg1-dropdown">
+      <div class="dropdown-name">Segment Filter</div>
+      <div *ngIf="isVisible('Segment Filter') == true" class="seg1-dropdown">
+        <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange">
+          <div class="text-nowrap row-item">
+            <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+              <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+              <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+              <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+                <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+            </i>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+            <label class="form-check-label item-text-con" (click)="select(item,'Segment Filter')" style="padding-left: 5%;">{{ item.text }}</label>
+          </div>
+        </ng-template>
+        <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+          <div *ngIf="config.hasFilter" class="row row-filter">
+            <div class="col-12" style="display:flex;">
+              <input class="form-control search-container" type="text" placeholder="Search" [(ngModel)]="seg1filterText"
+                     (ngModelChange)="onFilterTextChange($event)" />
+              <div class="search-icon"></div>
+              <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
+                <div class="col-12">
+                  <label *ngIf="config.hasAllCheckBox" (click)="select(item,'Segment Filter')">
+                    <strong>{{ i18n.getAllCheckboxText() }}</strong>
+                  </label>
+                  <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
+                    <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
+                      <svg *ngSwitchCase="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-expand"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                      <svg *ngSwitchCase="false" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-contract"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                    </i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="config.hasDivider" class="dropdown-divider"></div>
+        </ng-template>
+        <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="seg1Item"
+                               [itemTemplate]="itemTemplate">
+        </ngx-dropdown-treeview>
+
+      </div>
+    </div>
+    <div *ngIf="isVisible('Segment') == true" class="main-seg2-dropdown">
+      <div class="dropdown-name">Segment</div>
+      <div *ngIf="isVisible('Segment') == true" class="seg2-dropdown">
+        <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange">
+          <div class="text-nowrap row-item">
+            <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+              <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+              <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+              <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+                <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+            </i>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+            <label class="form-check-label item-text-con" (click)="select(item,'Segment')" style="padding-left: 5%;">{{ item.text }}</label>
+          </div>
+        </ng-template>
+        <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+          <div *ngIf="config.hasFilter" class="row row-filter">
+            <div class="col-12" style="display:flex;">
+              <input class="form-control search-container" type="text" placeholder="Search" [(ngModel)]="seg2filterText"
+                     (ngModelChange)="onFilterTextChange($event)" />
+              <div class="search-icon"></div>
+            </div>
+          </div>
+          <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
+            <div class="col-12">
+              <label *ngIf="config.hasAllCheckBox" (click)="select(item,'Segment')">
+                <strong>{{ i18n.getAllCheckboxText() }}</strong>
+              </label>
+              <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
+                <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
+                  <svg *ngSwitchCase="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-expand"
+                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                    <path fill-rule="evenodd"
+                          d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                          d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+                  </svg>
+                  <svg *ngSwitchCase="false" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-contract"
+                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                    <path fill-rule="evenodd"
+                          d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                          d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+                  </svg>
+                </i>
+              </label>
+            </div>
+          </div>
+          <div *ngIf="config.hasDivider" class="dropdown-divider"></div>
+        </ng-template>
+        <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="seg2Item"
+                               [itemTemplate]="itemTemplate">
+        </ngx-dropdown-treeview>
+
+      </div>
+    </div>
+    <div *ngIf="isVisible('Time Period') == true" class="main-tp-dropdown">
+      <div class="dropdown-name">Time Period</div>
+      <div *ngIf="isVisible('Time Period') == true" class="tp-dropdown">
+        <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange">
+          <div class="text-nowrap row-item">
+            <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+              <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+              <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+              <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+                <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+            </i>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+            <label class="form-check-label" [class.item-text-con]="item.value.IsSelectable == true" (click)="select(item,'Time Period')" style="padding-left: 5%;">{{ item.text }}</label>
+          </div>
+        </ng-template>
+        <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+          <div *ngIf="config.hasFilter" class="row row-filter">
+            <div class="col-12" style="display:flex;">
+              <input class="form-control search-container" type="text" placeholder="Search" [(ngModel)]="tpfilterText"
+                     (ngModelChange)="onFilterTextChange($event)" />
+              <div class="search-icon"></div>
+              <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
+                <div class="col-12">
+                  <label *ngIf="config.hasAllCheckBox" (click)="select(item,'Time Period')">
+                    <strong>{{ i18n.getAllCheckboxText() }}</strong>
+                  </label>
+                  <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
+                    <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
+                      <svg *ngSwitchCase="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-expand"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                      <svg *ngSwitchCase="false" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-contract"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                    </i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="config.hasDivider" class="dropdown-divider"></div>
+        </ng-template>
+        <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="timeperiodItem"
+                               [itemTemplate]="itemTemplate">
+        </ngx-dropdown-treeview>
+
+      </div>
+    </div>
+    <div *ngIf="isVisible('Channel') == true" class="main-ch-dropdown">
+      <div class="dropdown-name">Channel</div>
+      <div *ngIf="isVisible('Channel') == true" class="ch-dropdown">
+        <ng-template #itemTemplate let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange">
+          <div class="text-nowrap row-item">
+            <i *ngIf="item.children" (click)="onCollapseExpand()" aria-hidden="true" [ngSwitch]="item.collapsed">
+              <!--<svg *ngSwitchCase="true" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-right-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+          </svg>
+          <svg *ngSwitchCase="false" width="0.8rem" height="0.8rem" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>-->
+              <svg *ngSwitchCase="false" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+              <svg *ngSwitchCase="true" width="8" height="8" class="box-con">
+                <rect width="8" height="8" style="fill: white; stroke-width: 2; stroke: #3f3a3a; " />
+                <line x1="2" y1="4" x2="6" y2="4" style="stroke: #3f3a3a; stroke-width: 1px; " />
+                <line x1="4" y1="2" x2="4" y2="6" style="stroke: #3f3a3a; stroke-width: 1px; " />
+              </svg>
+            </i>
+            <svg width="3" height="10" [class.no-child-items]="!item.children" *ngIf="!item.children">
+              <line x1="0" y1="0" x2="0" y2="10" style="stroke: #3f3a3a; stroke-width: 1px;" />
+            </svg>
+            <label class="form-check-label item-text-con" (click)="select(item,'Channel')" style="padding-left: 5%;">{{ item.text }}</label>
+          </div>
+        </ng-template>
+        <ng-template #headerTemplate let-config="config" let-item="item" let-onCollapseExpand="onCollapseExpand"
+                     let-onCheckedChange="onCheckedChange" let-onFilterTextChange="onFilterTextChange">
+          <div *ngIf="config.hasFilter" class="row row-filter">
+            <div class="col-12" style="display:flex;">
+              <input class="form-control search-container" type="text" placeholder="Search" [(ngModel)]="channelfilterText"
+                     (ngModelChange)="onFilterTextChange($event)" />
+              <div class="search-icon"></div>
+              <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
+                <div class="col-12">
+                  <label *ngIf="config.hasAllCheckBox" (click)="select(item,'Channel')">
+                    <strong>{{ i18n.getAllCheckboxText() }}</strong>
+                  </label>
+                  <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
+                    <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
+                      <svg *ngSwitchCase="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-expand"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                      <svg *ngSwitchCase="false" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-angle-contract"
+                           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                              d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                              d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                    </i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="config.hasDivider" class="dropdown-divider"></div>
+        </ng-template>
+        <ngx-dropdown-treeview [config]="config" [headerTemplate]="headerTemplate" [items]="channelItem"
+                               [itemTemplate]="itemTemplate">
+        </ngx-dropdown-treeview>
+
+      </div>
+    </div>
+  </div>
+
+
+
+    <!--<table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>-->
+   <div style="height: 75%;">
+  <ng-container *ngIf="loadtable()">
+    <app-dataexplorertable [OutputData]="tableData" [excelOutputData]="excelTableData"></app-dataexplorertable>
+
+  </ng-container>
+   </div>
+    <div class="mainpivotbtn-container">
+      <div class="pbtn-flex-container container-btn" (click)="openPivot()" style="cursor:pointer">
+        <div class="pivot-btn">
+          <button type="button"  class="btn btn-secondary Pvt-btn" style="padding: 1vh!important;"><div class="subcontainer-pivot">PIVOT SCREEN</div></button>
+        </div>
+        <div class="btn-rightIcon">
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,232 @@
+﻿<div  class="growth_opportunity go-main" ng-controller="GrowthOpportunityController"  ng-show="showOutput == true">
+    <div class="go-main-type">
+        <div class="go-row-header"></div>
+        <div class="go-row-body" on-size-changed="GrowthOpportunityRePlot">
+            <div class="go-row-body-contanier">
+                <div class="go-row-cell">
+                    <div class="go-row-cell-header">
+                        <div class="go-row-cell-header-text-box">
+                            <div class="go-row-cell-header-brandName" title="{{ModuleRequestToDB.BrandName}}">{{ModuleRequestToDB.BrandName}}</div>
+                            <div class="go-row-cell-header-Seperator"></div>
+                            <div class="go-row-cell-subheader-container"  ng-show="IsHeaderButtonSelected()!='How Does the Brand Grow?'">
+                                <div class="go-row-cell-subheader-change">Value Share Change: {{pData.ValueShareChange>=0?'+':''}}{{numberWithCommas(pData.ValueShareChange,2)}} (abs)</div>
+                                <div class="go-row-cell-subheader-achievability">Achievability: {{numberWithCommas(100*(NoOfAchivedBrands/AchievabilityBrandList.length),2)}} %</div>
+                            </div>
+                            <div class="go-row-cell-subheader-container" style="left:6%" ng-show="IsHeaderButtonSelected()=='How Does the Brand Grow?'">
+                                <div class="go-row-cell-subheader" title="What should I expect for a brand like me ?">What should I expect for a brand like me ?</div>
+                            </div>
+                        </div>
+                        <div class="go-row-cell-header-button-box">
+                            <div class="go-row-cell-header-button" ng-repeat="data in headerButton" ng-hide="data.IsSelected" title="{{data.Name}}" ng-click="HeaderButtonSelect($index)">
+                                <span ng-class="data.ImageClass" class="go-row-cell-header-button-image"></span>
+                                <span class="go-row-cell-header-button-text">{{data.Name}}</span>
+                            </div>
+                            <div class="ppt_header_icon ppt_icon" title="Export to PPT" ng-click="ExportToPPT('.go-row-cell')"></div>
+                        </div>
+                    </div>
+                    <div class="go-row-cell-body" ng-show="IsHeaderButtonSelected()!='How Does the Brand Grow?'">
+                        <div class="go-row-cell-body-left">
+                            <div class="go-row-cell-body-left-top">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th></th>
+                                            <th class="alignCenter">
+                                                <div class="labelText">Current</div>
+                                                <div class="labelLine"></div>
+                                                <div class="labelshadow"></div>
+                                            </th>
+                                            <th class="alignCenter">
+                                                <div class="labelText">Projection</div>
+                                                <div class="labelLine"></div>
+                                                <div class="labelshadow"></div>
+                                            </th>
+                                            <th class="alignCenter">
+                                                <div class="labelText">Growth (abs/%)</div>
+                                                <div class="labelLine"></div>
+                                                <div class="labelshadow"></div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="borderRight">Penetration %</div>
+                                            </th>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(sData.penetration[0],sData.penetration[2])}} {{sData.penetration[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(pData.ProjectedPenetration,sData.penetration[2])}} {{sData.penetration[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div>{{pData.ProjectedPenetration-sData.penetration[0]>=0?'+':''}}{{numberWithCommas(pData.ProjectedPenetration-sData.penetration[0],2)}} pp</div>
+                                            </td>
+                                        </tr>
+                                        <tr ng-hide="IsHeaderButtonSelected()=='Achievabilty'">
+                                            <th>
+                                                <div class="borderRight">Price (EUR/Kg/L)</div>
+                                            </th>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(sData.price[0],sData.price[2])}} {{sData.price[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(sData.price[0],sData.price[2])}} {{sData.price[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div>{{0>=0?'+':''}}{{numberWithCommas(0,2)}}</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="borderRight">Frequency</div>
+                                            </th>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(sData.frequency[0],sData.frequency[2])}} {{sData.frequency[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(pData.ProjectedFrequency,sData.frequency[2])}} {{sData.frequency[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div>{{pData.ProjectionFreqYoYChange>=0?'+':''}}{{numberWithCommas(pData.ProjectionFreqYoYChange,1)}}</div>
+                                            </td>
+                                        </tr>
+                                        <tr ng-hide="IsHeaderButtonSelected()=='Achievabilty'">
+                                            <th>
+                                                <div class="borderRight">Volume (000 Kg/L)</div>
+                                            </th>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(sData.volume[0],sData.volume[2])}} {{sData.volume[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(pData.ProjectedVolume,sData.volume[2])}} {{sData.volume[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div>{{pData.ProjectionVolumeYoYChange>=0?'+':''}}{{numberWithCommas(pData.ProjectionVolumeYoYChange,0)}}</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="borderRight">
+                                                    Value (000 EUR)<div class="upDownButtonContainer">
+                                                        <button class="upDownButton upButton" ng-click="ChangeValue(true)"></button>
+                                                        <button class="upDownButton downButton" ng-click="ChangeValue(false)"></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(sData.value[0],sData.value[2])}} {{sData.value[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div class="borderRight">{{numberWithCommas(pData.ProjectedValue,0)}} {{sData.value[1]}}</div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <div title="click here to change value" ng-hide="showValueInput" style="cursor:pointer" ng-click="showValueInput=true;document.getElementById('valueInput').focus();">{{pData.ValueChangePect>=0?'+':''}}{{numberWithCommas(pData.ValueChangePect,2)}}</div>
+                                                    <input id="valueInput" ng-if="showValueInput" ng-value="pData.ValueChangePect" ng-keypress="GetValueChangeInput($event)" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="go-row-cell-body-left-bottom">
+                                <div id="widget2" ng-hide="IsHeaderButtonSelected()=='Achievabilty'" style="position:relative;float:left;width:100%;height:100%;"></div>
+                                <div ng-show="IsHeaderButtonSelected()=='Achievabilty'" class="go-row-cell-body-left-bottom-achieve-box">
+                                    <div class="achieve-box">
+                                        <div class="achieve-box-text">Number of Brands which have achieved or exceeded target absolute penetration growth</div>
+                                        <div class="achieve-box-number">{{NoOfAchivedBrands}}</div>
+                                        <div class="achieve-box-ShowBrands" ng-click="showAchievedBrandPopUp=true">Show Brands</div>
+                                    </div>
+                                    <div class="achieve-sign-box">
+                                        <div class="achieve-division-sign"></div>
+                                    </div>
+                                    <div class="achieve-box">
+                                        <div class="achieve-box-text" style="top:30%">Number of Brands</div>
+                                        <div class="achieve-box-number" style="top:40%">{{AchievabilityBrandList.length}}</div>
+                                    </div>
+                                    <div class="achieve-sign-box">
+                                        <div class="achieve-equal-sign"></div>
+                                    </div>
+                                    <div class="achieve-box">
+                                        <div class="achieve-box-text" style="top:30%">Achievability</div>
+                                        <div class="achieve-box-number" style="top:40%">{{numberWithCommas(100*(NoOfAchivedBrands/AchievabilityBrandList.length),2)}}%</div>
+                                    </div>
+                                    <div class="achieve-footer">* This achievibility is calculated based on the current market momentum</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="go-row-cell-body-right">
+                            <div id="widget1" ng-show="IsHeaderButtonSelected()=='Growth Curve'" style="position:relative;float:left;width:100%;height:100%;"></div>
+                            <div id="widget3" ng-show="IsHeaderButtonSelected()=='Path to Growth'" style="position:relative;float:left;width:100%;height:100%;"></div>
+                            <div id="widget4" ng-show="IsHeaderButtonSelected()=='Achievabilty'" style="position:relative;float:left;width:100%;height:100%;"></div>
+                        </div>
+                    </div>
+                    <div class="go-row-cell-body" ng-show="IsHeaderButtonSelected()=='How Does the Brand Grow?'">
+                        <div class="go-row-cell-body-container">
+                            <div class="go-row-cell-body-container-box1">
+                                <div class="go-row-cell-body-container-button" title="Example of Good Advertising" ng-click="openInNewTab(getBrandQuadrantPath('Video'))">
+                                    <span class="go-row-cell-body-container-button-image good_advertising_icon"></span>
+                                    <span class="go-row-cell-body-container-button-text">Example of Good Advertising</span>
+                                </div>
+                                <div class="go-row-cell-body-container-button" title="Brand Case Study" style="width: 33%" ng-click="openInNewTab(getBrandQuadrantPath('Document'))">
+                                    <span class="go-row-cell-body-container-button-image brand_case_study_icon"></span>
+                                    <span class="go-row-cell-body-container-button-text">Brand Case Study</span>
+                                </div>
+                            </div>
+                            <div class="go-row-cell-body-container-box2">
+                                <div style="position:relative;float:left;width:100%;height:8%;z-index: 1;">Growth Framework</div>
+                                <div id="widget5" style="position:relative;float:left;width:100%;height:88%;bottom: 3%;"></div>
+                                <div style="position:absolute;font-size: 0.7em;top: 88%;line-height: 1.2em;">* the Growth Framework is mapping the current situation of the brand they choose but the next 4 visuals are based on the average results of brands in similar situations</div>
+                            </div>
+                            <div class="go-row-cell-body-container-box3">
+                                <div class="container-box3-Your-World">YOUR WORLD</div>
+                                <div class="container-box3-How-You-Win">HOW YOU WIN</div>
+                                <div class="Your-World-container">
+                                    <span class="Your-World-container-item" ng-repeat="item in getBrandQuadrantText('YourWorld')">{{item}}</span>
+                                </div>
+                                <div class="How-You-Win-container">
+                                    <span class="How-You-Win-container-item" ng-repeat="item in getBrandQuadrantText('HowYouWin')">{{item}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="go-row-cell-body-container">
+                            <div class="go-row-cell-body-container-box4">
+                                <div style="height:10%;font-family:sans-serif;">Buyer Churn - How many buyers do we expect you to lose?</div>
+                                <div style="height:90%;background-size:100% 100%" ng-style="{'background-image':'url('+getBrandLogicPath('Image2')+')'}"></div>
+                            </div>
+                            <div class="go-row-cell-body-container-box5">
+                                <div style="height:10%;font-family:sans-serif;">What percent of your buyers will purchase once per year?</div>
+                                <div style="height:90%;background-size:100% 100%" ng-style="{'background-image':'url('+getBrandLogicPath('Image4')+')'}"></div>
+                            </div>
+                        </div>
+                        <div class="go-row-cell-body-container">
+                            <div class="go-row-cell-body-container-box6">
+                                <div style="height:10%;font-family:sans-serif;">What is your route to growth?</div>
+                                <div style="height:90%;background-size:100% 100%" ng-style="{'background-image':'url('+getBrandLogicPath('Image3')+')'}"></div>
+                            </div>
+                            <div class="go-row-cell-body-container-box7">
+                                <div style="height:10%;font-family:sans-serif;">Which levers are more effective?</div>
+                                <div style="height:90%;background-size:100% 100%" ng-style="{'background-image':'url('+getBrandQuadrantPath('Image5')+')'}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="achieved_brand_Container" ng-show="showAchievedBrandPopUp">
+        <div class="save_storyBoard center">
+            <div class="achieved_brand_Header">
+                <div class="achived_brand_list_HeaderText">Brands (Penetration Growth > Target)</div>
+                <div class="close_button" ng-click="showAchievedBrandPopUp = false"></div>
+            </div>
+            <div class="achived_brand_list">
+                <ul>
+                    <li ng-repeat="Brand in AchievabilityBrandList | filter :{Achieved : true}" title="{{Brand.BrandName}}">
+                        {{Brand.BrandName}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

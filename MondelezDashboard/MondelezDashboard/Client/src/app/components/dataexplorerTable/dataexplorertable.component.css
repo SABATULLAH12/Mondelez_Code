@@ -1,0 +1,166 @@
+.MainTableDiv {
+  width: 100%;
+  height: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+.NoDataContainer{
+  margin-top: 14vh;
+  text-align: center;
+}
+.topcontainer {
+  width: 100%;
+  height: 30%;
+}
+.bottomContainer {
+  width: 100%;
+  height: 70%;
+}
+.emptyDiv {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  float: left;
+  border-width:0px 1px 1px 0px;
+  border-style: solid;
+  border-color:rgba(167, 169, 172, 0.5);
+}
+.columnHeader {
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  font-family : Montserrat;
+  font-weight : bold;
+  font-size : 0.725rem;
+  text-transform : uppercase;
+  color : #414042;
+  border:1px solid rgba(167, 169, 172, 0.5);
+  border-left:none;
+  border-top-color:transparent;
+  border-right-color:transparent;
+}
+.columnHeader::-webkit-scrollbar-thumb {
+  display: none;
+}
+.columnHeader::-webkit-scrollbar {
+  display: none;
+}
+.rowHeader {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  background-color: #F4F4F4;
+  font-family : Montserrat;
+  font-size : 0.725rem;
+  text-transform : uppercase;
+  color : #414042;
+  border:1px dashed rgba(167, 169, 172, 0.5);
+  border-top:none;
+  border-left:1px solid transparent
+}
+.rowHeader::-webkit-scrollbar-thumb {
+  display: none;
+}
+.rowHeader::-webkit-scrollbar {
+  display: none;
+}
+.Data {
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  font-family : Montserrat;
+  font-size : 0.725rem;
+  text-transform : uppercase;
+  color : #414042;
+  border:1px dashed rgba(167, 169, 172, 0.5);
+  border-top:none;
+  border-left:none;
+  border-right-color:transparent;
+}
+.Data::-webkit-scrollbar-thumb {
+  display: none;
+}
+.Data::-webkit-scrollbar {
+  display: none;
+}
+.rowLevel{
+  display: inline-block;
+  float: left;
+}
+.rowLevelElements{
+  width: 100%;
+}
+.columnLevelScrollContainer{
+  height: 100%;
+  background-color: #F4F4F4;
+}
+.columnLevelElements {
+  display: inline-block;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.columnLevelSubContainer {
+  display: inline-block;
+  height: 100%;
+  float: left;
+}
+.columnLevel{
+  width:100%;
+  box-sizing:border-box;
+}
+.dataLevelSubContainer {
+  display: inline-block;
+  width: 15vw;
+  height: 100%;
+  float: left;
+}
+.dataLevel{
+  height: 3vh;
+}
+.center{
+  position: relative;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+.xScrollContainer::-webkit-scrollbar {
+  width: 0px;
+}
+.columnHeaderLine{
+  background : #4F2970;
+  width : 2.9375rem;
+  height : 0.125rem;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%,0px);
+}
+.txtOverflow{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.yScrollContainer{
+  position: absolute;
+  width:10px;
+  right:-1vw;
+  overflow:auto;
+}
+.xScrollContainer{
+  position: absolute;
+  height:10px;
+  bottom:-1.5vh;
+  overflow:auto;
+}
+.sampleSizeValidation{
+    color:gray;
+}
+

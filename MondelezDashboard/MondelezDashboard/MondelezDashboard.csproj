@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E653AD4-24D8-465F-A978-8ACD7238CE2C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MondelezDashboard</RootNamespace>
+    <AssemblyName>MondelezDashboard</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <TypeScriptToolsVersion>3.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxMin, Version=5.14.5506.26196, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AQ.Logger">
+      <HintPath>..\Libraries\AQ.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="AQ.Security.Cryptography, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\AQ.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="AQ.SSO.Library">
+      <HintPath>..\Libraries\AQ.SSO.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="AQ.Utilities, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AQ.Utilities.1.0.1\lib\net40\AQ.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Aspose.Slides">
+      <HintPath>..\Libraries\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.3.0\lib\net45\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common.WebHost, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.WebHost.3.3.0\lib\net45\Ninject.Web.Common.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC5.3.3.0\lib\net45\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebApiContrib.IoC.Ninject, Version=0.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApiContrib.IoC.Ninject.0.9.3.0\lib\net40\WebApiContrib.IoC.Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\AQ.Security.Cryptography.dll" />
+    <Content Include="bin\AQ.Utilities.dll" />
+    <Content Include="bin\AQ.Utilities.xml" />
+    <Content Include="bin\AQLogger.dll" />
+    <Content Include="bin\Aspose.Slides.dll" />
+    <Content Include="bin\BAL.dll" />
+    <Content Include="bin\BAL.pdb" />
+    <Content Include="bin\DAL.dll" />
+    <Content Include="bin\DAL.pdb" />
+    <Content Include="bin\Entites.dll" />
+    <Content Include="bin\Entites.pdb" />
+    <Content Include="bin\EPPlus.dll" />
+    <Content Include="bin\EPPlus.xml" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.xml" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\MondelezDashboard.dll" />
+    <Content Include="bin\MondelezDashboard.pdb" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Ninject.dll" />
+    <Content Include="bin\Ninject.Web.Common.dll" />
+    <Content Include="bin\Ninject.Web.Common.WebHost.dll" />
+    <Content Include="bin\Ninject.Web.Common.WebHost.xml" />
+    <Content Include="bin\Ninject.Web.Common.xml" />
+    <Content Include="bin\Ninject.Web.Mvc.dll" />
+    <Content Include="bin\Ninject.Web.Mvc.xml" />
+    <Content Include="bin\Ninject.xml" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.xml" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.xml" />
+    <Content Include="bin\WebActivatorEx.dll" />
+    <Content Include="bin\WebApiContrib.IoC.Ninject.dll" />
+    <Content Include="Client\karma.conf.js" />
+    <Content Include="Client\src\app\app.component.css" />
+    <Content Include="Client\src\app\app.component.html" />
+    <Content Include="Client\src\app\components\common\alert\alert.component.css" />
+    <Content Include="Client\src\app\components\common\alert\alert.component.html" />
+    <Content Include="Client\src\app\components\dataexplorerTable\dataexplorertable.component.css" />
+    <Content Include="Client\src\app\components\dataexplorerTable\dataexplorertable.component.html" />
+    <Content Include="Client\src\app\components\dataexplorer\dataexplorer.component.css" />
+    <Content Include="Client\src\app\components\dataexplorer\dataexplorer.component.html" />
+    <Content Include="Client\src\app\components\dropdownPopup\dropdownPopup.component.css" />
+    <Content Include="Client\src\app\components\dropdownPopup\dropdownPopup.component.html" />
+    <Content Include="Client\src\app\components\my-selection\alter-selection-delete\alter-selection-delete.component.css" />
+    <Content Include="Client\src\app\components\my-selection\alter-selection-delete\alter-selection-delete.component.html" />
+    <Content Include="Client\src\app\components\my-selection\my-selection.component.css" />
+    <Content Include="Client\src\app\components\my-selection\my-selection.component.html" />
+    <Content Include="Client\src\app\components\pivot\pivot.component.css" />
+    <Content Include="Client\src\app\components\pivot\pivot.component.html" />
+    <Content Include="Client\src\app\components\save-selection\save-selection.component.css" />
+    <Content Include="Client\src\app\components\save-selection\save-selection.component.html" />
+    <Content Include="Client\src\favicon.ico" />
+    <Content Include="Client\src\index.html" />
+    <Content Include="Client\src\styles.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Css\crosstab.css" />
+    <Content Include="Content\Css\dataCrossTab.css" />
+    <Content Include="Content\Css\deepdive.css" />
+    <Content Include="Content\Css\reportsHub.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\Css\filter_panel.css" />
+    <Content Include="Content\Css\filter_panel_slider.css" />
+    <Content Include="Content\fonts\Montserrat\OFL.txt" />
+    <Content Include="Content\fonts\Oswald\OFL.txt" />
+    <Content Include="Content\Css\growthOpportunity.css" />
+    <Content Include="Content\Css\home.css" />
+    <Content Include="Content\GrowthOpportunity\Consideration\Consideration.mp4" />
+    <Content Include="Content\GrowthOpportunity\Consideration\image5.png" />
+    <Content Include="Content\GrowthOpportunity\Develop\Develop.mp4" />
+    <Content Include="Content\GrowthOpportunity\Develop\image5.png" />
+    <Content Include="Content\GrowthOpportunity\Disrupt\Disrupt.mp4" />
+    <Content Include="Content\GrowthOpportunity\Disrupt\image5.png" />
+    <Content Include="Content\GrowthOpportunity\Lead\image5.png" />
+    <Content Include="Content\GrowthOpportunity\Lead\Lead.mp4" />
+    <Content Include="Content\GrowthOpportunity\Logic1\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic1\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic1\image4.png" />
+    <Content Include="Content\GrowthOpportunity\Logic2\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic2\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic2\image4.png" />
+    <Content Include="Content\GrowthOpportunity\Logic3\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic3\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic3\image4.png" />
+    <Content Include="Content\GrowthOpportunity\Logic4\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic4\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic4\image4.png" />
+    <Content Include="Content\GrowthOpportunity\Logic5\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic5\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic5\image4.png" />
+    <Content Include="Content\GrowthOpportunity\Logic6\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic6\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic6\image4.png" />
+    <Content Include="Content\GrowthOpportunity\Logic7\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic7\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic7\image4.png" />
+    <Content Include="Content\GrowthOpportunity\Logic8\image2.png" />
+    <Content Include="Content\GrowthOpportunity\Logic8\image3.png" />
+    <Content Include="Content\GrowthOpportunity\Logic8\image4.png" />
+    <Content Include="Content\Images\Landing_Sprite.png" />
+    <Content Include="Content\Images\Landing_Sprite.svg" />
+    <Content Include="Content\Images\Mondelez_dotted border line.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite-157.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite-158.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Achievability.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Achievability.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_alert icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Arrow_left.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Blue_round_chart_pointer.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_brand.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Brand_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Brand_icon_hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Brand_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Button_icon_01.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Button_icon_02.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Button_icon_03.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Button_icon_04.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Button_icon_05.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Button_icon_06.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_cancel_btn_icom.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_category.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Categoty_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Categoty_icon_hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Categoty_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_channel.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Channel_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Channel_icon_hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Channel_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Chart_bubble_icon_01.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Chart_bubble_icon_02.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_check_box.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_check_box_Active.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Clear_All_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Clear_Tab_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Column_chat_icon_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Column_chat_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Column_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Column_icon_Hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Column_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_compare.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Compare_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Compare_icon_hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Compare_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_compatitor_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_compatitor_icon_hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_compatitor_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Demographic_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Demographic_icon_Hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Demographic_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Devide_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_download_button.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Download_icon_grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Download_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Down_Arrow.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Edit_icon_grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Edit_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_equalto_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Excel_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Exel_icon_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Exel_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_expand_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Filter_Icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Filter_menu_bottom_border.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Filter_Open.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_filter_section_close.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_filter_section_open.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Growth Curve.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Growth Curve.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_H Shadow_ widget.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Home_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_How Does the Brand Grow-.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_How Does the Brand Grow-.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_increase_Down.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_increase_up.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_info_icon-10.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_info_icon-123.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_info_icon_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_info_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_kpi.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_KPI_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_KPI_icon_hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_KPI_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Line_chart_pointer_01.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Line_chart_pointer_02.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Line_chart_pointer_03.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Line_chat_icon_Grey-50.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Line_chat_icon_Grey-53.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Logout_icon_orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Logout_icon_White.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_market.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Markets_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Markets_icon_Hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Markets_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_menu_bottom_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Messure_tree_Arrow.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_messure_tree_box_01.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_messure_tree_box_02.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_messure_tree_box_03.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_messure_tree_box_04.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_messure_tree_box_05.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_messure_tree_box_06.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_messure_tree_box_07.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Orange_round_chart_pointer.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Path to Growth.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Path to Growth.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_point in time.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Popup_close.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_PPT_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_PPT_icon_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_PPT_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_radio_Active.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_radio_btn.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_radio_btn_active.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_radio_inactive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_refresh_icon_grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_refresh_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_ResetPassword_icon_orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_ResetPassword_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Bar_chart_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Bar_chart_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Bar_chart_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Chart_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Chart_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Chart_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Collapse_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Collapse_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Collapse_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_column_chart_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_column_chart_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_column_chart_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_round_down_arrow_orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_round_down_arrow_purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Excel_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Excel_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Excel_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Expand_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Expand_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Expand_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_PPT_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_PPT_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_PPT_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_round_Right_arrow_grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Story_board_Grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Story_board_Orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Round_Story_board_Purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Row_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Row_icon_Hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Row_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_save_btn_icom.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_save_icon_grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_save_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Search_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_segment.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Segment_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Segment_icon_Hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Segment_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_select_box_MD.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Settings_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_share_icon_grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_share_icon_MD.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_share_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Slider_pointer.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_storyboard_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_storyboard_icon_Active.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Submit_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Table_export_excel.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Table_export_excel_Hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_table_head_bracket.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_time peirod.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_TimePeriod_icon.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_TimePeriod_icon_Hover.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_TimePeriod_icon_inActive.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_toggle_left_orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_toggle_left_White.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_toggle_Right_orange.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_toggle_Right_White.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Trash_button.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Trash_icon_grey.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_Trash_icon_white.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Sprite_wdget_box_right_line.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Data_Explorer.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Data_Explorer_Active.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Report_Hub.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Report_Hub_Active.svg" />
+    <Content Include="Content\Image\Mondelez_Arrow Left.png" />
+    <Content Include="Content\Image\Mondelez_Arrow Right.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Arrow_left.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Button_icon_05.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Button_icon_06.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Devide_icon.png" />
+    <Content Include="Content\Image\Mondelez_Back to Crosstab icon grey.svg" />
+    <Content Include="Content\Image\Mondelez_Back to Crosstab icon white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_Brand_Hierarchy_pink.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_Brand_Hierarchy_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_Guide_Document_pink.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_Guide_Document_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_Logout_pink.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_Support_pink.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_Support_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_WPO pink.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown icon_WPO white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Dropdown_icon_Brand_Hierarchy_purple.svg" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_equalto_icon.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Exel_icon_purple.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_Exel_icon_white.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_increase_Down.png" />
+    <Content Include="Content\Image\GrowthOpportunity\Mondelez_Eropanel_increase_up.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Exel_icon_purple.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_arrow_black.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_brand.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_cancel_btn_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_category.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Category_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Category_icon_Active.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_channel.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Clear_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Close_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Column_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Column_icon_Hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Column_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_compare.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Download_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Download_icon_grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Download_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Edit_icon_grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Edit_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_expand_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Home_icon_New.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_icon_bottom_border.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_info_icon_storyboard.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_kpi.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_market.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Market_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Market_icon_Active.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_point_in_time.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_refresh_icon_grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_refresh_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Row_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Row_icon_Hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Row_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_save_icon_grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_save_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Search_icon_storyboard.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_segment.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_select_box_MD.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_share_icon_grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_share_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_time_peirod.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Time_Period_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Time_Period_icon_Active.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Trash_icon_grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Trash_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Upload_active.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_warning_icon-01.png" />
+    <Content Include="Content\Image\Mondelez_loginBG.jpg" />
+    <Content Include="Content\Image\Mondelez_Login_Username.svg" />
+    <Content Include="Content\Image\Mondelez_Sprite_old.png" />
+    <Content Include="Content\Images\Mondelez_Sprite.svg" />
+    <Content Include="Content\Images\Mondelez_Sprite_Orginal.svg" />
+    <Content Include="Content\Image\Landing_Sprite.png" />
+    <Content Include="Content\Image\Login_background.png" />
+    <Content Include="Content\Image\Login_Landing_Sprite_AQ_logo.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Crosstab.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Crosstab_Active.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Deepdive.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Deepdive_Active.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Growth_opertunity.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Growth_opertunity_Active.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Landing_BG.jpg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Logo.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Logout_icon.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_menu_select_Active.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_menu_select_bottom.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Settings_icon.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Snapshot.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Snapshot_Active.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Storyboard.svg" />
+    <Content Include="Content\Image\Login_Landing_Sprite_Storyboard_Active.svg" />
+    <Content Include="Content\Image\Loader.gif" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Round_Collapse_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Round_Collapse_purple.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite-Foot_info.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Demographic_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Demographic_icon_Hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Demographic_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_info_icon-10.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Story_board_purple.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_warning_icon.svg" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\Css\layout.css" />
+    <Content Include="Content\Css\login.css" />
+    <Content Include="Content\Image\Login_Landing_V shadow landing.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_H Shadow 1.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_H Shadow 2.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_H Shadow 3.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Brand_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Brand_icon_hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Brand_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Categoty_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Categoty_icon_hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Categoty_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Channel_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Channel_icon_hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Channel_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_check_box.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_check_box_Active.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Clear_All_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Clear_Tab_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Color_Pallet.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Column_chat_icon_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Column_chat_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Compare_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Compare_icon_hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Compare_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Down_Arrow.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Excel_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Exel_icon_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Exel_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Filter_Icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Filter_menu_bottom_border.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Filter_Open.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_H Shadow_ widget.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Home_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_info_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_info_icon_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_info_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_KPI_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_KPI_icon_hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_KPI_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Line_chart_pointer_01.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Line_chart_pointer_02.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Line_chart_pointer_03.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Line_chat_icon_Grey-50.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Line_chat_icon_Grey-53.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Logo.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Logout_icon_orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Logout_icon_White.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Markets_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Markets_icon_Hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Markets_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_menu_bottom_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_PPT_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_PPT_icon_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_PPT_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_radio_Active.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_radio_inactive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_ResetPassword_icon_orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_ResetPassword_icon_white.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Bar_chart_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Bar_chart_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Chart_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Chart_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Collapse_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Collapse_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_column_chart_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_column_chart_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_round_down_arrow_orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Excel_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Excel_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Expand_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Expand_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_PPT_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_PPT_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_round_Right_arrow_grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Story_board_Grey.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Round_Story_board_Orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Search_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Segment_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Segment_icon_Hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Segment_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Settings_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_storyboard_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_storyboard_icon_Active.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_Submit_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_TimePeriod_icon.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_TimePeriod_icon_Hover.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_TimePeriod_icon_inActive.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_toggle_left_orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_toggle_left_White.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_toggle_Right_orange.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_toggle_Right_White.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_Sprite_wdget_box_right_line.svg" />
+    <Content Include="Content\Image\Mondelez_Eropanel_V Shadow 1.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_V Shadow 2.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_V Shadow 3.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_V Shadow 4.png" />
+    <Content Include="Content\Image\Mondelez_Eropanel_widget_box.png" />
+    <Content Include="Content\Image\Mondelez_Login_Landing_Sprite.svg" />
+    <Content Include="Content\Montserrat.css" />
+    <Content Include="Content\Css\myStoryBoard.css" />
+    <Content Include="Content\Oswald.css" />
+    <Content Include="Content\Css\simplebar.css" />
+    <Content Include="Content\Css\Site.css" />
+    <Content Include="Content\Css\snapshot.css" />
+    <Content Include="Content\Css\timeperiod.css" />
+    <Content Include="Content\Css\top_menu.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\client\3rdpartylicenses.txt" />
+    <Content Include="Scripts\client\favicon.ico" />
+    <Content Include="Scripts\client\index.html" />
+    <Content Include="Scripts\client\main.js" />
+    <Content Include="Scripts\client\polyfills.js" />
+    <Content Include="Scripts\client\runtime.js" />
+    <Content Include="Scripts\client\styles.css" />
+    <Content Include="Scripts\Controller\DataCrossTabController.js" />
+    <Content Include="Scripts\Controller\ReportsHubController.js" />
+    <Content Include="Scripts\loginapp.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\Controller\CrossTabController.js" />
+    <Content Include="Scripts\Controller\DeepDiveController.js" />
+    <Content Include="Scripts\Controller\FilterPanelController.js" />
+    <Content Include="Scripts\Controller\GrowthOpportunityController.js" />
+    <Content Include="Scripts\Controller\HomeController.js" />
+    <Content Include="Scripts\Controller\LayoutController.js" />
+    <Content Include="Scripts\Controller\LoginController.js" />
+    <Content Include="Scripts\Controller\MyStoryBoardController.js" />
+    <Content Include="Scripts\Controller\SnapShotController.js" />
+    <Content Include="Scripts\Controller\TopMenuController.js" />
+    <Content Include="Scripts\Plugin\angular-css.min.js" />
+    <Content Include="Scripts\Plugin\angular-ui-router.min.js" />
+    <Content Include="Scripts\Plugin\angularAMD.min.js" />
+    <Content Include="Scripts\Plugin\big.min.js" />
+    <Content Include="Scripts\Plugin\bootstrap.min.js" />
+    <Content Include="Scripts\Plugin\highcharts-more.js" />
+    <Content Include="Scripts\Plugin\HighCharts.js" />
+    <Content Include="Scripts\Plugin\JqueryUi.js" />
+    <Content Include="Scripts\Plugin\lodash.min.js" />
+    <Content Include="Scripts\Plugin\angular-animate.min.js" />
+    <Content Include="Scripts\Plugin\angular-route.min.js" />
+    <Content Include="Scripts\Plugin\angular.min.js" />
+    <Content Include="Scripts\Plugin\html2canvas.js" />
+    <Content Include="Scripts\Plugin\html2canvas.svg.js" />
+    <Content Include="Scripts\Plugin\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\Plugin\jquery.nicescroll.js" />
+    <Content Include="Scripts\Plugin\simplebar.js" />
+    <Content Include="Scripts\Controller\slider.js" />
+    <Content Include="Scripts\Plugin\require.js" />
+    <Content Include="Scripts\LoginRequireJsConf.js" />
+    <Content Include="Scripts\RequireJsConf.js" />
+    <Content Include="Scripts\Services\canvg.min.js" />
+    <Content Include="Scripts\Services\CommonAjaxService.js" />
+    <Content Include="Scripts\Services\Constants.js" />
+    <Content Include="Scripts\Services\html2canvas.js" />
+    <Content Include="Scripts\Services\html2canvas.svg.js" />
+    <Content Include="Scripts\Services\promise.js" />
+    <Content Include="Scripts\Services\rgbcolor.js" />
+    <Content Include="Scripts\Services\StoryBoardService.js" />
+    <Content Include="Template\DataCrossTabPage.html" />
+    <Content Include="Template\CrossTabPage.html" />
+    <Content Include="Template\DeepDivePage.html" />
+    <Content Include="Template\FilterPanelPage.html" />
+    <Content Include="Template\GrowthOpportunityPage.html" />
+    <Content Include="Template\HomePage.html" />
+    <Content Include="Template\LayoutPage.html" />
+    <Content Include="Template\LoginPage.html" />
+    <Content Include="Template\ReportsHubPage.html" />
+    <Content Include="Template\MyStoryBoardPage.html" />
+    <Content Include="Template\SnapShotPage.html" />
+    <Content Include="Template\TopMenuPage.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\MinifyCss.cs" />
+    <Compile Include="App_Start\MinifyJavascript.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\CrossTabController.cs" />
+    <Compile Include="Controllers\API\DataExplorerController.cs" />
+    <Compile Include="Controllers\API\DeepDiveController.cs" />
+    <Compile Include="Controllers\API\FilterPanelController.cs" />
+    <Compile Include="Controllers\API\GrowthOpportunityController.cs" />
+    <Compile Include="Controllers\API\LoginController.cs" />
+    <Compile Include="Controllers\API\ReportsHubController.cs" />
+    <Compile Include="Controllers\API\SnapShotController.cs" />
+    <Compile Include="Controllers\API\StoryBoardController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ApiAuthorizationFilter.cs" />
+    <Compile Include="Utilities\Constants.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Constants.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ExceptionHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Black.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Italic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Light.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Thin.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="Content\fonts\Oswald\Oswald-Bold.ttf" />
+    <Content Include="Content\fonts\Oswald\Oswald-ExtraLight.ttf" />
+    <Content Include="Content\fonts\Oswald\Oswald-Light.ttf" />
+    <Content Include="Content\fonts\Oswald\Oswald-Medium.ttf" />
+    <Content Include="Content\fonts\Oswald\Oswald-Regular.ttf" />
+    <Content Include="Content\fonts\Oswald\Oswald-SemiBold.ttf" />
+    <Content Include="Scripts\Plugin\angular-animate.min.js.map" />
+    <Content Include="Scripts\Plugin\angular-route.min.js.map" />
+    <Content Include="Scripts\Plugin\angular.min.js.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="ExportTemplates\Deepdive\Deepdive_Bar_Chart.pptx" />
+    <Content Include="ExportTemplates\Deepdive\Deepdive_Column_Chart.pptx" />
+    <Content Include="ExportTemplates\Deepdive\Deepdive_Line_Chart.pptx" />
+    <Content Include="ExportTemplates\Deepdive\Deepdive_PIT.xlsx" />
+    <Content Include="ExportTemplates\Deepdive\Deepdive_Trend.xlsx" />
+    <Content Include="Aspose.Slides.lic" />
+    <Content Include="ExportTemplates\Snapshot\SnapShot_PPT_Template.pptx" />
+    <Content Include="ExportTemplates\CrossTab\CrossTab_Excel_Template.xlsx" />
+    <Content Include="ExportTemplates\Snapshot\Snapshot_Multi_Excel_Template.xlsx" />
+    <Content Include="ExportTemplates\Snapshot\Snapshot_Single_Excel_Template.xlsx" />
+    <Content Include="ExportTemplates\Snapshot\Snapshot_Demog_Single_Excel_Template.xlsx" />
+    <Content Include="ExportTemplates\StoryBoard\StoryBoard_Template.pptx" />
+    <Content Include="Views\Home\Locallogin.cshtml" />
+    <Content Include="Content\Mondelez_PBS_User_Manual.pdf" />
+    <Content Include="ExportTemplates\GrowthOpportunity\GrowthOpportunity_PPT_Template.pptx" />
+    <Content Include="ExportTemplates\BrandHierarchy\Market_Category_Hierarchy.xlsx" />
+    <Content Include="ExportTemplates\TimePeriodData\Available_TimePeriod_Data.xlsx" />
+    <Content Include="Content\GrowthOpportunity\Consideration\MDLZ PBS_Growth Opportunity_Consideration_case study.pptx" />
+    <Content Include="Content\GrowthOpportunity\Develop\MDLZ PBS_Growth Opportunity_Develop_case study.pptx" />
+    <Content Include="Content\GrowthOpportunity\Disrupt\MDLZ PBS_Growth Opportunity_Disrupt_case study.pptx" />
+    <Content Include="Content\GrowthOpportunity\Lead\MDLZ PBS_Growth Opportunity_Lead_case study.pptx" />
+    <Content Include="Content\CrossTab\Available Brands and Segments.xlsx" />
+    <Content Include="Content\DeepDive\Available Brands.xlsx" />
+    <Content Include="ExportTemplates\AvailableBrandSegment\Available Brands &amp; Segments.xlsx" />
+    <Content Include="ExportTemplates\AvailableBrandSegment\Available Brands.xlsx" />
+    <Content Include="Client\.browserslistrc" />
+    <Content Include="Client\.editorconfig" />
+    <Content Include="Client\.gitignore" />
+    <Content Include="Client\angular.json" />
+    <Content Include="Client\package-lock.json" />
+    <Content Include="Client\package.json" />
+    <Content Include="Client\README.md" />
+    <Content Include="Client\src\assets\.gitkeep" />
+    <Content Include="Client\tsconfig.app.json" />
+    <Content Include="Client\tsconfig.json" />
+    <Content Include="Client\tsconfig.spec.json" />
+    <Content Include="bin\MondelezDashboard.dll.config" />
+    <None Include="Properties\PublishProfiles\dummy.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Harsha.pubxml" />
+    <None Include="Properties\PublishProfiles\IAMHarsha.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\roslyn\" />
+    <Folder Include="Client\src\app\core\directives\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Views\DataExplorer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{bf7cc60a-8edf-4e08-8d12-fc7c0be92dd9}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{afa55096-e733-483d-ab78-d618fe60a72c}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entites\Entites.csproj">
+      <Project>{99ddf32c-28db-4332-adf5-9c0a7577a402}</Project>
+      <Name>Entites</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Utilities\Constants.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Constants.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Client\src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="Client\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\app.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\app.module.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\common\alert\alert.component.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\common\alert\alert.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\dataexplorerTable\dataexplorertable.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\dataexplorer\dataexplorer.component.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\dataexplorer\dataexplorer.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\dropdownPopup\dropdownPopup.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\my-selection\alter-selection-delete\alter-selection-delete.component.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\my-selection\alter-selection-delete\alter-selection-delete.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\my-selection\my-selection.component.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\my-selection\my-selection.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\pivot\pivot.component.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\pivot\pivot.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\save-selection\save-selection.component.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\components\save-selection\save-selection.component.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\global-error-handler.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\interceptor\loader.interceptor.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\interceptor\server-error.interceptor.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\models\DataExplorerTable.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\dataexplorer.service.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\dataexplorer.service.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\dragdropcube.service.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\error.service.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\loader.service.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\loader.service.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\notification.service.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\selection.service.spec.ts" />
+    <TypeScriptCompile Include="Client\src\app\core\service\selection.service.ts" />
+    <TypeScriptCompile Include="Client\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="Client\src\environments\environment.ts" />
+    <TypeScriptCompile Include="Client\src\main.ts" />
+    <TypeScriptCompile Include="Client\src\polyfills.ts" />
+    <TypeScriptCompile Include="Client\src\test.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63396</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63396/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

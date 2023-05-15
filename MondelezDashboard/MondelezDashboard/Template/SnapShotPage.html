@@ -1,0 +1,261 @@
+﻿<div class="snapshot-layout ss-main" ng-controller="SnapshotController" ng-show="showOutput == true">
+    <div class="ss-main-type" ng-if="!IsMultiSnapshot && IsDemographicSingle">
+
+        <div class="ss-row-header">
+            <span class="ss-row-header-icon add_StoryBoard" ng-click="showStoryBoardSave('.ss-row-body')" title="Add to Storyboard"></span>
+            <span class="ss-row-header-icon excel_icon" ng-click="ExportToExcel()" title="Export to Excel"></span>
+            <span class="ss-row-header-icon ppt_icon" ng-click="ExportToPPT('.ss-row-body')" title="Export to PPT"></span>
+            <span class="ss-showdata-label-toggle ">
+                <span class="ss-showdata-label-maintext">Show Data:</span>
+                <span class="ss-showdata-label-endpart">
+                    <span class="ss-showdata-label-subtext">Hide</span>
+                    <span ng-class="{'ToggleLeft':!IsDataLabelVisible,'ToggleRight':IsDataLabelVisible}" ng-click="ShowHideDataLabel()"></span>
+                    <span class="ss-showdata-label-subtext">Show</span>
+                </span>
+            </span>
+        </div>
+
+        <div class="ss-row-body" on-size-changed="SnapshotDemoSingleRePlot">
+            <div class="ss-row-body-contanier">
+                <div class="ss-row-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[0].WidgetTitle}}">{{widgetData[0].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 2vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[0])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget12">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-contanier">
+                <div class="ss-row-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[1].WidgetTitle}}">{{widgetData[1].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 2vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[1])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget13">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-contanier-value-split">
+                <div class="ss-row-cell" style="padding-top: 0.5%;">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" style="margin-left: 1%;" title="{{widgetData[2].WidgetTitle}}">{{widgetData[2].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 2vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[2])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget14"  style="left:1%;width: 98%;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ss-main-type" ng-if="!IsMultiSnapshot && !IsDemographicSingle">
+
+        <div class="ss-row-header">
+            <span class="ss-row-header-icon add_StoryBoard" ng-click="showStoryBoardSave('.ss-row-body')" title="Add to Storyboard"></span>
+            <span class="ss-row-header-icon excel_icon" ng-click="ExportToExcel()" title="Export to Excel"></span>
+            <span class="ss-row-header-icon ppt_icon" ng-click="ExportToPPT('.ss-row-body')" title="Export to PPT"></span>
+            <span class="ss-showdata-label-toggle ">
+                <span class="ss-showdata-label-maintext">Show Data:</span>
+                <span class="ss-showdata-label-endpart">
+                    <span class="ss-showdata-label-subtext">Hide</span>
+                    <span ng-class="{'ToggleLeft':!IsDataLabelVisible,'ToggleRight':IsDataLabelVisible}" ng-click="ShowHideDataLabel()"></span>
+                    <span class="ss-showdata-label-subtext">Show</span>
+                </span>
+            </span>
+            <span class="ss-row-cell-header-button" ng-show="ShowNavigateToGrowthOpportunity()" title="Growth Opportunity" ng-click="NavigateToGrowthOpportunity()">
+                <span class="ss-row-cell-header-button-image How-Does-the-Brand-Grow-Image"></span>
+                <span class="ss-row-cell-header-button-text">How Does the Brand Grow?</span>
+            </span>
+        </div>
+
+        <div class="ss-row-body" on-size-changed="SnapShotSingleRePlot">
+            <div class="ss-row-body-left-contanier">
+                <div class="ss-row-cell">
+                    <div class="ss-widget-header-div" style="height:7%">
+                        <div class="ss-widget-header" title="{{widgetData[0].WidgetTitle}}">{{widgetData[0].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right:1vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[0])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget5" style="height: 93%;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-middle-contanier">
+                <div class="ss-row-middle-cell" style="margin-bottom:5%">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[1].WidgetTitle}}">{{widgetData[1].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right:1vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[1])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget6">
+
+                    </div>
+                </div>
+                <div class="ss-row-middle-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[2].WidgetTitle}}">{{widgetData[2].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 1vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[2])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget7">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-right-contanier">
+                <div class="ss-row-right-cell" style="margin-bottom:7%">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" style="width: 70%;" title="{{widgetData[3].WidgetTitle}}">{{widgetData[3].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right:1vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[3])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget8">
+
+                    </div>
+                </div>
+                <div class="ss-row-right-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" style="width: 70%;" title="{{widgetData[4].WidgetTitle}}">{{widgetData[4].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 1vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[4])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget9">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-right-contanier">
+                <div class="ss-row-right-cell" style="margin-bottom:7%">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" style="width: 70%;" title="{{widgetData[5].WidgetTitle}}">{{widgetData[5].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 1vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[5])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget10">
+
+                    </div>
+                </div>
+                <div class="ss-row-right-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" style="width: 70%;" title="{{widgetData[6].WidgetTitle}}">{{widgetData[6].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 1vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[6])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget11">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="ss-main-type" ng-if="IsMultiSnapshot">
+
+        <div class="ss-row-header">
+            <span class="ss-row-header-icon add_StoryBoard" ng-click="showStoryBoardSave('.ss-row-body')" title="Add to Storyboard"></span>
+            <span class="ss-row-header-icon excel_icon" ng-click="ExportToExcel()" title="Export to Excel"></span>
+            <span class="ss-row-header-icon ppt_icon" ng-click="ExportToPPT('.ss-row-body')" title="Export to PPT"></span>
+            <span class="ss-showdata-label-toggle ">
+                <span class="ss-showdata-label-maintext">Show Data:</span>
+                <span class="ss-showdata-label-endpart">
+                    <span class="ss-showdata-label-subtext">Hide</span>
+                    <span ng-class="{'ToggleLeft':!IsDataLabelVisible,'ToggleRight':IsDataLabelVisible}" ng-click="ShowHideDataLabel()"></span>
+                    <span class="ss-showdata-label-subtext">Show</span>
+                </span>
+            </span>
+            <span class="ss-row-cell-LTA-button" ng-show="IsCategoryMultiLTA" ng-style="{background: (IsLTAPOPUpOpen?'#E18719':''),color:(IsLTAPOPUpOpen?'white':'')}" title="Time Info" ng-click="showLTDataFunc()">
+                 <span>Time Info</span>
+            </span>
+            <div class="LTD_list" ng-if="IsLTAPOPUpOpen" ng-style="{height: 'calc(8% * '+ (outputData[4].Series.length+1) +')'}">
+                <div class="LTD_list_row LTD_row_border" style="background: rgba(79, 33, 112,0.9);color: white;" ng-style="{height: 'calc(100% / '+ (outputData[4].Series.length + 1) +')'}">
+                    <div class="LTD_list_column">Market</div>
+                    <div class="LTD_list_column">Category</div>
+                    <div class="LTD_list_column">Latest Time Period</div>
+                    <div class="LTD_list_column">Year Ago</div>
+                </div>
+                <div class="LTD_body_container">
+                    <div class="LTD_list_row LTD_row_border" ng-repeat="item in outputData[4].Series" ng-style="{height: 'calc(100% / '+ (outputData[4].Series.length + 1) +')'}">
+                        <div class="LTD_list_column LTD_list_column_border">{{item.market}}</div>
+                        <div class="LTD_list_column LTD_list_column_border">{{item.category}}</div>
+                        <div class="LTD_list_column LTD_list_column_border">{{item.LTA==null||item.LTA==''?'NA':item.LTA}}</div>
+                        <div class="LTD_list_column">{{item.yearAgo==null||item.yearAgo==''?'NA':item.yearAgo}}</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="ss-row-body" on-size-changed="SnapShotMultiRePlot">
+            <div class="ss-row-body-contanier">
+                <div class="ss-row-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[0].WidgetTitle}}">{{widgetData[0].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 2vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[0])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget1">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-contanier">
+                <div class="ss-row-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[2].WidgetTitle}}">{{widgetData[2].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 2vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[2])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget3">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-contanier">
+                <div class="ss-row-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[1].WidgetTitle}}">{{widgetData[1].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 2vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[1])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget2">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ss-row-body-contanier">
+                <div class="ss-row-cell">
+                    <div class="ss-widget-header-div">
+                        <div class="ss-widget-header" title="{{widgetData[3].WidgetTitle}}">{{widgetData[3].WidgetTitle}}</div>
+                        <div class="ss-row-header-icon Expand_Widgit_icon" style="margin-right: 2vh;" title="Expand Widget" ng-click="OpenPopUp(widgetData[3])"></div>
+                    </div>
+                    <div class="ss-widget-div" id="Widget4">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+    <div class="ss-widget-popup-container" ng-style="{display:PopUpActive?'block':'none'}" on-size-changed="ReOpenPopUp">
+        <div class="ss-widget-popup">
+            <div class="ss-widget-popup-header">
+                <div class="ss-widget-popup-header-text" title="{{popupData.WidgetTitle}}">{{popupData.WidgetTitle}}</div>
+                <div class="ss-row-header-icon Collapse_Widget_icon" title="Shrink Widget" ng-click="OpenPopUp()"></div>
+                <div class="ss-row-header-icon add_StoryBoard" ng-click="showStoryBoardSave('.ss-widget-popup')" title="Add to Storyboard"></div>
+                <div class="ss-row-header-icon deepdive_navigate_icon" ng-show="popupData.widgetId == 4" title="Navigate to DeepDive" ng-click="NavigateToDeepDive()"></div>
+                <div class="ss-row-header-icon deepdive_navigate_icon" ng-show="popupData.widgetId == 12" title="Navigate to DeepDive" ng-click="NavigateToDeepDiveDemog()"></div>
+                <div class="ss-row-header-icon excel_icon" ng-click="ExportToExcel()" title="Export to Excel"></div>
+                <div class="ss-row-header-icon ppt_icon" title="Export to PPT" ng-click="ExportToPPT('.ss-widget-popup')"></div>
+                <span class="ss-showdata-label-toggle " ng-hide="[5,8,9,10,11].includes(popupData.widgetId)">
+                    <span class="ss-showdata-label-maintext">Show Data:</span>
+                    <span class="ss-showdata-label-endpart">
+                        <span class="ss-showdata-label-subtext">Hide</span>
+                        <span ng-class="{'ToggleLeft':!IsDataLabelVisiblePopUp,'ToggleRight':IsDataLabelVisiblePopUp}" ng-click="ShowHideDataLabelPopUp()"></span>
+                        <span class="ss-showdata-label-subtext">Show</span>
+                    </span>
+                </span>
+            </div>
+            <div class="ss-popup-body" id="POPUPWidget">
+
+            </div>
+        </div>
+    </div>
+</div>

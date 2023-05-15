@@ -1,0 +1,470 @@
+2023-05-12 14:19:39,069 [1] DEBUG  Application (null) (null) - Application Started
+2023-05-12 14:19:46,607 [10] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 14:19:46,671 [10] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-05-12 14:19:46,862 [12] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-05-12 14:20:11,171 [10] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'Revathi.k@aqinsights.com'
+2023-05-12 14:20:13,549 [12] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 14:20:13,569 [12] DEBUG  Application (null) (null) - User Is already Validated : revathi.k@aqinsights.com
+2023-05-12 14:20:24,894 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:20:28,698 [10] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','154','','0'
+2023-05-12 14:20:29,355 [10] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '4','1|2|3|94','5131|5134|5137|5140|5144|5147|5150|5153|5157|5160|6124|6127|6131|6134|6137|6140|6144|6147|6150|6153|6157|6160|8127|8131|8134|8137|8140|8144|8147|8150|8153|8157|8160','8|32|5|11|65','','1001,1001,1001','Demographics','','','',''
+2023-05-12 14:22:13,761 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:22:13,772 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 14:22:24,946 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:22:24,973 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '4','1|2|3|94','Demographics'
+2023-05-12 14:22:58,499 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:22:58,501 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:23:16,129 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:23:16,130 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|21|22|23|24|25|3|34|35|36|37|38|4|41|44|45|46|8|94|95|96|99','Demographics'
+2023-05-12 14:24:28,442 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:24:28,445 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|21|22|23|24|25|3|34|35|36|37|38|4|41|44|45|46|8|94|95|96|99','Demographics'
+2023-05-12 14:25:15,968 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:25:15,970 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:25:40,941 [6] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:25:40,943 [6] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '14','1','Demographics'
+2023-05-12 14:26:09,944 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:26:09,946 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:26:25,130 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:26:25,133 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:26:31,629 [16] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:26:31,633 [16] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '14','1','Demographics'
+2023-05-12 14:26:50,643 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:26:50,646 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:26:52,252 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User revathi.k@aqinsights.com
+2023-05-12 14:26:52,255 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:30:51,939 [1] DEBUG  Application (null) (null) - Application Started
+2023-05-12 14:30:55,761 [9] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 14:30:55,822 [9] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-05-12 14:30:55,935 [11] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-05-12 14:31:34,719 [10] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'keerthiga.sakthivel@kantar.com'
+2023-05-12 14:31:37,216 [9] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 14:31:37,228 [9] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:31:48,194 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:31:51,172 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 14:31:52,022 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '2|4','1|2|3','-1001','8','','1001,1001,1001,1001','Demographics','','','',''
+2023-05-12 14:31:54,495 [11] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:31:54,501 [11] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 14:31:54,814 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:31:54,820 [13] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '2|4','1|2|3','Demographics'
+2023-05-12 14:32:04,461 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:32:04,464 [9] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','Demographics'
+2023-05-12 14:32:12,029 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:32:12,032 [9] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:32:13,900 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:32:13,902 [9] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:32:42,892 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:32:42,895 [9] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|21|22|23|24|25|3|34|35|36|37|38|4|41|44|45|46|8|94|95|96|99','Demographics'
+2023-05-12 14:33:32,002 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:33:32,004 [9] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:58:22,062 [28] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 14:58:22,067 [28] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:58:23,234 [19] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:58:26,442 [19] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 14:58:28,896 [19] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '2|4','1|2|3','-1001','8','','1001,1001,1001,1001','Demographics','','','',''
+2023-05-12 14:58:31,682 [21] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:58:31,686 [21] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 14:58:31,981 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:58:31,994 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '2|4','1|2|3','Demographics'
+2023-05-12 14:58:39,973 [19] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:58:39,977 [19] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','Demographics'
+2023-05-12 14:58:47,909 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:58:47,913 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 14:59:36,395 [19] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 14:59:36,399 [19] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:01:46,160 [19] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:01:46,164 [19] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:01:46,972 [23] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:01:49,223 [23] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:01:49,507 [23] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '2|4','1|2|3','-1001','8','','1001,1001,1001,1001','Demographics','','','',''
+2023-05-12 15:01:50,997 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:01:51,001 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:01:51,289 [29] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:01:51,292 [29] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '2|4','1|2|3','Demographics'
+2023-05-12 15:01:58,187 [19] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:01:58,209 [19] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','Demographics'
+2023-05-12 15:02:00,017 [23] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:02:00,021 [23] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','Demographics'
+2023-05-12 15:02:06,818 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:02:06,821 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:07:40,408 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:07:40,412 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:08:14,800 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:08:14,810 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:08:21,951 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:08:24,198 [14] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:08:48,957 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:08:52,407 [14] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:09:38,105 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:09:39,837 [34] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:16:52,362 [14] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:16:52,370 [14] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:16:53,428 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:16:56,002 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:16:57,943 [32] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:17:01,402 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:17:01,406 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:17:01,714 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:17:01,721 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:17:22,878 [14] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:17:22,883 [14] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:17:23,391 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:17:25,324 [26] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:17:25,619 [26] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:17:27,114 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:17:27,118 [24] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:17:27,410 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:17:27,416 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:18:42,084 [40] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:18:42,086 [40] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:18:42,639 [40] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:18:44,395 [40] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:18:44,724 [40] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:18:46,136 [30] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:18:46,141 [30] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:18:46,451 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:18:46,455 [14] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:18:58,596 [34] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:18:58,600 [34] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:18:59,377 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:19:04,991 [14] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:19:05,289 [14] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:19:06,704 [26] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:19:06,708 [26] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:19:07,005 [24] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:19:07,009 [24] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:26:26,654 [14] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:26:26,663 [14] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:26:27,597 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:26:38,612 [5] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:26:40,630 [5] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:26:43,082 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:26:43,087 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:26:43,407 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:26:43,416 [32] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:29:39,574 [26] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:29:39,578 [26] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:29:40,328 [14] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:29:42,261 [14] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:29:42,541 [14] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:29:44,151 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:29:44,157 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:29:44,428 [32] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:29:44,432 [32] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 15:30:53,954 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:30:53,959 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1','2',''
+2023-05-12 15:30:54,403 [28] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test' expects parameter '@CUBE', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetCubeDDLData(String marketId, String categoryId, String cube, Boolean isHarmonized) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 488
+ClientConnectionId:01669bf3-d5a3-4d44-a4a7-6785f7b1c6f0
+Error Number:201,State:4,Class:16
+2023-05-12 15:30:56,776 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:30:56,781 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1','2','Demographics'
+2023-05-12 15:31:15,325 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:31:18,419 [28] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1','2','5160','8','','1001','Demographics','','','',''
+2023-05-12 15:31:50,993 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:31:50,997 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1','2','Demographics'
+2023-05-12 15:31:55,205 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:31:57,502 [5] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1','2','5160','8','','1','Demographics','','','',''
+2023-05-12 15:37:44,844 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:37:44,891 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|2','2','Demographics'
+2023-05-12 15:37:55,297 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:37:55,302 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','2','Demographics'
+2023-05-12 15:38:03,058 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:38:03,062 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:39:21,033 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:39:21,037 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:39:28,159 [34] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:39:29,988 [34] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1|2','8163','8','','1','Demographics','','','',''
+2023-05-12 15:40:55,294 [5] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:40:55,304 [5] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:40:57,128 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:40:59,393 [5] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:41:00,015 [5] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1|2','8163','8','','1','Demographics','','','',''
+2023-05-12 15:41:01,627 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:41:01,635 [47] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:41:01,926 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:41:01,934 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:41:25,178 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:41:25,187 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:41:31,585 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:41:31,591 [5] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:41:47,276 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:41:49,897 [5] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1|2','8163','8','','1','Demographics','','','',''
+2023-05-12 15:42:26,406 [5] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:42:28,139 [5] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1|2','8163','8','','1','Demographics','','','',''
+2023-05-12 15:51:52,322 [28] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:51:52,340 [28] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:51:53,452 [52] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:51:57,050 [52] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:51:59,587 [52] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1|2','8163','8','','1','Demographics','','','',''
+2023-05-12 15:52:01,874 [65] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:52:01,896 [65] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:52:02,205 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:52:02,229 [47] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:52:16,730 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:52:16,739 [47] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:52:32,761 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:52:34,773 [47] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1|2','8163','8','','1001,1001','Demographics','','','',''
+2023-05-12 15:52:44,685 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:52:46,476 [28] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1|2','8163','8','','1001,1001','Demographics','','','',''
+2023-05-12 15:53:44,453 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:53:44,459 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:54:18,696 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:54:18,702 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1','Demographics'
+2023-05-12 15:54:30,126 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:54:31,887 [28] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:55:38,201 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:55:38,207 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1','Demographics'
+2023-05-12 15:55:52,522 [65] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 15:55:52,528 [65] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:55:53,323 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:55:55,017 [28] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 15:55:55,301 [28] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '14','1','8163','8','','1','Demographics','','','',''
+2023-05-12 15:55:56,771 [65] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:55:56,776 [65] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 15:55:57,075 [77] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:55:57,079 [77] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1','Demographics'
+2023-05-12 15:56:05,506 [28] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:56:05,514 [28] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1|2','Demographics'
+2023-05-12 15:56:16,669 [47] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 15:56:16,674 [47] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '14','1','Demographics'
+2023-05-12 16:38:14,492 [81] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 16:38:14,502 [81] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:38:16,139 [76] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:38:18,482 [76] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 16:38:20,328 [76] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','-1001','8','','1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001','Demographics','','','',''
+2023-05-12 16:39:20,177 [53] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 16:39:20,195 [53] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:39:26,089 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:39:26,113 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 16:39:37,136 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:39:37,145 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','Demographics'
+2023-05-12 16:39:41,720 [74] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:39:44,440 [74] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 16:39:44,716 [74] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','-1001','8','','1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001','Demographics','','','',''
+2023-05-12 16:39:52,211 [76] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:39:52,216 [76] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 16:39:52,503 [71] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:39:52,509 [71] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1|2|3','Demographics'
+2023-05-12 16:40:13,264 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:40:13,271 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 16:40:19,758 [51] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:40:19,764 [51] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 16:42:22,028 [69] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:42:26,501 [69] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 16:48:11,372 [73] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 16:48:11,382 [73] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:48:12,918 [76] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:48:14,702 [76] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 16:48:14,988 [76] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 16:48:16,448 [71] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:48:16,463 [71] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 16:48:16,757 [82] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 16:48:16,765 [82] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 17:09:25,534 [1] DEBUG  Application (null) (null) - Application Started
+2023-05-12 17:09:32,612 [11] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 17:09:32,737 [11] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-05-12 17:09:33,013 [15] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-05-12 17:12:50,926 [1] DEBUG  Application (null) (null) - Application Started
+2023-05-12 17:12:53,965 [8] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 17:12:54,016 [8] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-05-12 17:12:54,109 [10] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-05-12 17:13:24,587 [9] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'keerthiga.sakthivel@kantar.com'
+2023-05-12 17:13:26,898 [10] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 17:13:26,954 [10] DEBUG  Application (null) (null) - User Is already Validated : Keerthiga.Sakthivel@kantar.com
+2023-05-12 17:13:46,873 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 17:13:50,023 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 17:13:54,471 [9] ERROR  Application (null) (null) - System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DAL.FilterPanelRepository.GetDataExplorerTblData(ExcelSelectionData selectionData, Int32 userid) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 547
+   at BAL.FilterPanel.GetDataByFilter(ExcelSelectionData selectionData) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\FilterPanel.cs:line 836
+   at BAL.FilterPanel.GetDataExplorerData(Int32 ModuleId, String userId) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\FilterPanel.cs:line 1022
+   at MondelezDashboard.Controllers.API.FilterPanelController.GetDataExplorerData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\FilterPanelController.cs:line 148
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-05-12 17:13:56,027 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Keerthiga.Sakthivel@kantar.com
+2023-05-12 17:13:57,069 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','174','','0'
+2023-05-12 17:13:58,600 [9] ERROR  Application (null) (null) - System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DAL.FilterPanelRepository.GetDataExplorerTblData(ExcelSelectionData selectionData, Int32 userid) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 547
+   at BAL.FilterPanel.GetDataByFilter(ExcelSelectionData selectionData) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\FilterPanel.cs:line 836
+   at BAL.FilterPanel.GetDataExplorerData(Int32 ModuleId, String userId) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\FilterPanel.cs:line 1022
+   at MondelezDashboard.Controllers.API.FilterPanelController.GetDataExplorerData() in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\FilterPanelController.cs:line 148
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2023-05-12 17:23:33,136 [19] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-05-12 17:23:53,263 [18] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'revathi.kumarasamy@kantar.com'
+2023-05-12 17:25:44,803 [18] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Cannot open server 'uat-ep-ne-sql01' requested by the login. Client with IP address '106.195.80.159' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at DAL.DALRepository.LoginRepository.GetUserDetails(String UserName) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\LoginRepository.cs:line 100
+   at BAL.BALRepository.Login.GetUserDetails(String UserName) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\BAL\BALRepository\Login.cs:line 31
+   at MondelezDashboard.Controllers.API.LoginController.CheckUser(LoginRequest request) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\MondelezDashboard\Controllers\API\LoginController.cs:line 32
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ClientConnectionId:0ed32044-5090-4161-a29b-472f669264f8
+Error Number:40615,State:1,Class:14
+2023-05-12 17:26:55,641 [18] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'revathi.kumarasamy@kantar.com'
+2023-05-12 17:26:58,747 [25] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 17:26:58,753 [25] DEBUG  Application (null) (null) - User Is already Validated : Revathi.Kumarasamy@kantar.com
+2023-05-12 17:27:04,809 [18] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:27:09,517 [18] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','169','','0'
+2023-05-12 17:27:09,933 [18] ERROR  Application (null) (null) - System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at DAL.FilterPanelRepository.GetDataExplorerData(Int32 ModuleId, Int32 userId) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 773
+2023-05-12 17:27:12,806 [20] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:27:12,823 [20] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 17:27:33,136 [25] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:27:33,150 [25] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1',''
+2023-05-12 17:27:33,582 [25] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test' expects parameter '@CUBE', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetCubeDDLData(String marketId, String categoryId, String cube, Boolean isHarmonized) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 488
+ClientConnectionId:608db778-5c26-46ff-8f08-0050b65141a2
+Error Number:201,State:4,Class:16
+2023-05-12 17:27:35,148 [18] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:27:35,155 [18] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 17:28:14,924 [18] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:28:16,676 [18] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 17:33:35,796 [1] DEBUG  Application (null) (null) - Application Started
+2023-05-12 17:33:39,124 [9] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 17:33:39,182 [9] DEBUG  Application (null) (null) - request Is redirected to : http://192.168.0.72:8082
+2023-05-12 17:33:39,281 [9] DEBUG  Application (null) (null) - LocalLogin Action Accessed
+2023-05-12 17:34:13,982 [9] DEBUG  Application (null) (null) - [USP_MDLZ_Check_local_User] 'revathi.kumarasamy@kantar.com'
+2023-05-12 17:34:17,946 [10] DEBUG  Application (null) (null) - Home Index Accessed, Param null
+2023-05-12 17:34:17,965 [10] DEBUG  Application (null) (null) - User Is already Validated : Revathi.Kumarasamy@kantar.com
+2023-05-12 17:34:29,038 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:34:31,712 [10] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_GetLatestSelection] '7','169','','0'
+2023-05-12 17:34:32,138 [10] ERROR  Application (null) (null) - System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at DAL.FilterPanelRepository.GetDataExplorerData(Int32 ModuleId, Int32 userId) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 773
+2023-05-12 17:34:35,986 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:34:35,996 [12] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_MarketCategory] ''
+2023-05-12 17:34:49,989 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:34:50,006 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1',''
+2023-05-12 17:34:50,428 [10] ERROR  Application (null) (null) - System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test' expects parameter '@CUBE', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DAL.FilterPanelRepository.GetCubeDDLData(String marketId, String categoryId, String cube, Boolean isHarmonized) in D:\Mondelez\Mondelez\trunk\MondelezDashboard\DAL\DALRepository\FilterPanelRepository.cs:line 488
+ClientConnectionId:bd93bf9a-29ef-4d45-9fb6-ee749e0cd35e
+Error Number:201,State:4,Class:16
+2023-05-12 17:34:51,608 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:34:51,615 [10] DEBUG  Application (null) (null) - [USP_mdlz_filter_Dataexplorer_DependentOnMarketCategory_test] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','Demographics'
+2023-05-12 17:35:03,913 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:35:06,187 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 17:35:24,700 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:35:27,020 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 17:35:37,632 [10] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:35:39,443 [10] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 17:36:10,627 [13] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:36:38,379 [13] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 17:37:35,936 [9] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:37:47,132 [9] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 17:37:58,364 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:39:20,592 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''
+2023-05-12 17:40:20,640 [12] DEBUG  Application (null) (null) - FilterPanel API initiated by User Revathi.Kumarasamy@kantar.com
+2023-05-12 17:40:34,888 [12] DEBUG  Application (null) (null) - [USP_mdlz_dataexplorer_output_optimized_new] '1|10|11|12|13|14|2|3|4|5|6|7|8|9','1','8163','8','','1','Demographics','','','',''

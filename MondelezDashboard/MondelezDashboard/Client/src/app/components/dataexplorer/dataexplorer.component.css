@@ -1,0 +1,532 @@
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.pbtn-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .pbtn-flex-container div {
+    width: 23px;
+    height: 15px;
+  }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.selection-container {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  margin: 0 0.6rem;
+  flex-wrap: wrap;
+  float: right;
+  padding: 7px;
+  justify-content: flex-end;
+}
+.brand-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.main-demo-dropdown {
+  width: 12%;
+
+}
+  .demo-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.main-kpi-dropdown {
+  width: 12%;
+}
+.kpi-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.main-seg1-dropdown {
+  width: 12%;
+}
+.seg1-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.main-seg2-dropdown {
+  width: 12%;
+}
+.seg2-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+ .main-tp-dropdown {
+    width: 12%;
+  }
+.tp-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.main-ch-dropdown {
+  width: 12%;
+}
+.ch-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.marketddl-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.main-categoryddl-dropdown {
+  width: 12%;
+}
+.categoryddl-dropdown {
+  width: 100%;
+  height: 50%;
+  padding-right: 5px;
+}
+.modal-content-savesel {
+  width: 800px !important;
+  margin: auto !important;
+  margin-top: 0 !important;
+  position: fixed;
+  top: 10%;
+  left: 18.5%;
+  z-index: 1066;
+  height: 300px;
+  margin-left: -10%;
+}
+
+.container-btn {
+  background: #fcf4eb;
+  border: 1px solid #e18719;
+  width: 9.5625rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+  align-content: center;
+}
+
+.container-btn-onclick {
+  background: #E18719;
+  border: 1px Solid #A35D11;
+  width: 9.5625rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+}
+
+.pivot-btn {
+  width: 6.8rem !important;
+  height: 100% !important;
+  font-family: Montserrat-Regular !important;
+  font-size: .8125rem !important;
+  color: #e18719 !important;
+  border: none;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* display: flex; */
+  background: none !important;
+}
+.btn-rightIcon {
+  background-image: url('/Client/src/assets/Images/Mondelez_Piviot_Screen_orange.svg');
+  background-size:contain;
+/*  margin-left: -4px;*/
+ /* margin-top: 53%;*/
+  background-repeat:no-repeat ;
+}
+.btn-rightIcon-Onclick {
+  background-image: url('/Client/src/assets/Images/Mondelez_Piviot_Screen_white.svg');
+  background-size: 77%;
+  margin-left: -4px;
+  margin-top: 53%;
+  background-repeat: no-repeat;
+}
+  .subcontainer-pivot {
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: -3px;
+}
+
+.Pvt-btn {
+  height: auto !important;
+  font-family: Montserrat-Regular!important;
+  font-size: .8125rem !important;
+  color: #e18719 !important;
+  border: none;
+  background: none !important;
+}
+  .Pvt-btn:hover {
+    height: auto !important;
+    font-family: Montserrat-Regular !important;
+    font-size: .8125rem !important;
+    color: #e18719 !important;
+    border: none;
+    background: none !important;
+  }
+.Pvt-btn-onclick {
+  font-weight: bold !important;
+  color: #FFFFFF !important;
+  height: auto !important;
+  font-family: Montserrat-Regular !important;
+  font-size: .8125rem !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+.mainpivotbtn-container {
+  /*  display: block !important;
+  margin-left: 45% !important;
+  position: absolute;
+  margin-top: 4vh;
+  bottom: 5vh;*/
+  display: flex;
+  margin-top: 7.5vh;
+  width: 100%;
+  bottom: 5vh;
+  justify-content: center;
+  height: 2rem;
+  position: relative;
+}
+
+.output_header_button_container {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  text-align: center;
+  padding: 2px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 0.8vw;
+  line-height: 3vh;
+  letter-spacing: 1.22px;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  border: 1px solid;
+  border-color: rgba(77,77,77,0.3);
+  border-radius: 14px;
+  width: 15vw;
+  height: 4vh;
+  margin-right: 5%;
+  background: none;
+  flex-direction: column;
+  float: right !important;
+  align-items: center;
+}
+.maincontainer-selection {
+  position: relative;
+  /* padding: .5%; */
+  height: 100%;
+}
+.output_header_button_container:hover {
+  background-color: #E18719 !important;
+  color: white !important;
+}
+
+.output_header_button_container_clicked {
+  background-color: #E18719 !important;
+  color: white !important;
+}
+.submaincontainer-selection {
+  float: right;
+  display: flex;
+  margin-right: 19%;
+}
+
+.dropdownmaincontainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 8vh;
+  /*  top: 3vh;*/
+}
+.dropdown-toggle, .btn-outline-secondary, .btn-outline-secondary:hover {
+  /* background: none; */
+  /* border: 1px solid; */
+  display: inline-block !important;
+  float: right !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  padding: 2px !important;
+  cursor: pointer !important;
+  font-family: Montserrat !important;
+  font-weight: normal !important;
+  font-size: 0.8vw !important;
+  line-height: 3vh !important;
+  letter-spacing: 1.22px !important;
+  text-transform: uppercase !important;
+  color: rgb(77, 77, 77) !important;
+  border: 1px solid rgba(77, 77, 77, 0.3) !important;
+  /* border-radius: 14px; */
+  width: 20vw !important;
+  height: 6vh !important;
+  margin-right: 2% !important;
+  background: none !important;
+}
+.popupDataContainer{
+  position: relative;
+  top: calc(4vh + 34px);
+  height: fit-content;
+  padding-bottom: 2vh;
+  border: 1px solid transparent;
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+  box-shadow: 0 0 18px -11px #111;
+}
+.tableHeaderContainer {
+  position: absolute;
+  height: 2%;
+  width: 100%;
+  top: 0;
+  transform: translate(0px, -50%);
+  z-index: 1;
+}
+.excelIcon {
+  background: url('/Client/src/assets/Images/Mondelez_Excel_icon_Grey.svg') no-repeat;
+  float: right;
+  width: 3.4%;
+  height: 5.5vh;
+  cursor: pointer;
+  position: relative;
+  top: -2vh;
+  background-size: 5vh 5vh !important;
+}
+.excelIcon:hover{
+  background: url('/Client/src/assets/Images/Mondelez_Excel_icon_Green.svg') no-repeat;
+}
+.topHeaderDashedLine{
+  background-image: url('/Client/src/assets/Images/Mondelez_dotted_border_line.png');
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  width: 100%;
+}
+.NoDataContainer {
+  margin-top: 14vh;
+  text-align: center;
+}
+
+.top_selection_bar {
+  width: 100%;
+/*  height: 5.5%;*/
+  height: 5vh;
+  border-bottom: 1px solid #A6A8AB;
+  background: #CCCCCC;
+  white-space: nowrap;
+  font-size: 0;
+  text-transform: uppercase;
+  position: relative;
+}
+.top_selection_bar:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.top_selection_bar_inner {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: calc(10% + 20px);
+  background: #CCCCCC;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.95vw;
+}
+
+  .top_selection_bar_inner.expanded {
+    white-space: normal;
+  }
+.top_selection_bar_expand_icon {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+  .top_selection_bar_expand_icon:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url(/Content/Image/Mondelez_Sprite_old.png) no-repeat -1334px -60px;
+    width: 11px;
+    height: 10px;
+  }
+
+  .top_selection_bar_expand_icon:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #4F2170;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: none;
+  }
+
+/*.top_selection_bar_inner.expanded .top_selection_bar_expand_icon:before {
+  background-position: -1374px -60px;
+  top: 10%;
+  transform: translate(-50%,0);
+}*/
+.top_selection_bar_expand_icon-active::before {
+  background-position: -1374px -60px !important;
+  top: 10% !important;
+  transform: translate(-50%,0) !important;
+}
+.top_selection_bar_expand_icon-active::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #4F2170;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%,0);
+  display: block;
+}
+
+.top_selection_bar_inner.expanded .top_selection_bar_expand_icon:after {
+  display: block;
+}
+
+.top_selection_bar_expand_line {
+  display: none;
+  height: calc(80% - 17px);
+  width: calc(50% + 1px);
+  border-right: 2px dotted #4F2170;
+  box-sizing: border-box;
+  top: calc(10% + 10px);
+  position: absolute;
+}
+  .top_selection_bar_expand_line_active{
+      display: block;
+  }
+  .top_selection_bar_inner.expanded .top_selection_bar_expand_line {
+    display: block;
+  }
+.container-btn:hover {
+  background: #E18719;
+  border: 1px Solid #A35D11;
+  width: 9.5625rem;
+  height: 1.625rem;
+  border-radius: 0.8125rem;
+}
+
+  .container-btn:hover .Pvt-btn {
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+    height: auto !important;
+    font-family: Montserrat-Regular!important;
+    font-size: .8125rem !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .container-btn:hover .btn-rightIcon {
+    background-image: url('/Client/src/assets/Images/Mondelez_Piviot_Screen_white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+.search-container {
+  height: 68%;
+  font-size: 0.75rem;
+  padding-left: 5%;
+}
+.search-icon {
+  position: relative;
+  background: url(/Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg)no-repeat;
+  background-size: contain;
+  width: 1.5vh;
+  height: 1.5vh;
+  top: 19.3%;
+  left: -8%;
+}
+.box-img {
+  position: relative;
+  left: 1%;
+}
+.item-text-con:hover {
+  background: #fcf4eb;
+  border: 1px solid #e18719;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1.2rem;
+  margin-left: 3%;
+  color: #e18719;
+  padding-right: 1%;
+  padding-left: 2% !important;
+}
+
+::ng-deep .dropdown-menu {
+  max-height: 56vh!important;
+  width: 38vh !important;
+}
+::ng-deep .row {
+  height: 3vh!important;
+}
+::ng-deep .treeview-container {
+  max-height: 45vh!important;
+}
+.no-child-items {
+  margin-left: 1.1px;
+}
+.dropdown-name {
+  height: 3vh;
+  display: flex;
+  /* justify-content: center; */
+  font-size: .62rem !important;
+  font-family: Montserrat-Regular !important;
+  color: #666 !important;
+  position: relative;
+  padding-top: 3%;
+  font-weight: bold;
+}
+.main-marketddl-dropdown{
+    width:12%;
+}
+.main-brand-dropdown{
+    width:12%;
+}
+

@@ -1,0 +1,115 @@
+<div class="Myselection-header center">
+  <div class="header MyselectionHeader">
+    <div class="add-text-header MyselectionHeadertext">
+      MY SELECTION -{{viewType}}
+    </div>
+    <div class="Myselection-IconMainHeader"><div class="Myselection-IconHeader" (click)="activeModal.dismiss('Cross click')">X</div></div>
+    <!--<div class="header-close">
+
+      <ng-container><span aria-hidden="true" (click)="activeModal.dismiss('Cross click')">&times;</span></ng-container>
+    </div>-->
+  </div>
+  <div class="Myselection-content">
+    <div class="Tagviewcontainer">
+      <div class="TagViewsubcontainer">
+        <label class="selectdropdown">
+          <select name="ts" class="Selectioncontainer-text rounded-inputs20 select-select col-md-6" style="font-weight : bold;" (change)="onSelectChange($event)">
+
+            <option [value]="1">Tag View</option>
+            <option [value]="2">Story View</option>
+          </select>
+
+          <div class="dropdownIcon"></div>
+        </label>
+      </div>
+      <div class="Myselection-tablecontainer">TABLE VIEW</div>
+    </div>
+    <div class="view-container">
+      <div class="Viewsubcontainer">
+      <div class="view">
+
+        <div class="TagOptionMainContainer" *ngIf="isStory == true">
+          <div class="search-hero search-Myselection">
+            <div class="myselectiontitlecontainer">Story</div>
+            <input class="form-control searchTag" type="text" name="search" [(ngModel)]="searchTextstory" autocomplete="off" placeholder=" Search story"><img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg">
+          </div>
+          <div class="TagOptionsubMainContainer" *ngIf="isStory  == true">
+            <table class="table table-striped" >
+
+              <tbody>
+                <tr class="tag-tr" *ngFor="let story of storyItem  | filter:searchTextstory">
+
+                  <td class="tag-td">
+                    <div class="TagInputMainContainer"> <input type="radio" name="options" id={{story.Id}} (click)="storyClick(story)"><label class="LableMaincontainer" for={{story.Id}}>{{story.StoryName}}</label></div>
+                   </td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="TagOptionMainContainer" *ngIf="isTag == true">
+          <div class="search-hero search-Myselection">
+            <div class="myselectiontitlecontainer">TAGS</div>
+            <input class="form-control searchTag" type="text" name="search" [(ngModel)]="searchTextTag" autocomplete="off" placeholder="Search Tag">
+            <img src="../Content/Image/Mondelez_Eropanel_Sprite_Search_icon.svg">
+          </div>
+          <div class="TagOptionsubMainContainer" *ngIf="isTag == true">
+            <table class="table table-striped">
+
+              <tbody>
+                <tr class="tag-tr" *ngFor="let tag of tagItem  | filter:searchTextTag">
+                  <td class="tag-td">
+                    <div class="TagInputMainContainer"><input class="TagLabeltext" type="radio" name="options" id={{tag.Id}} (click)="tagClick(tag)"><label class="LableMaincontainer" for="{{tag.Id}}"> {{tag.TagName}}</label></div>
+                    <div class="DeleteIconTag" (click)="tagDelete(tag)"></div>
+                  </td>
+
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+
+        </div>
+      <div class="tableViewMaincontainer">
+        <div class="Tableviewcontainer">
+            <div class="search-hero search-Myselection TableText ">
+            TABLES
+          </div>
+        </div>
+        <div class="TableOptionsubMainContainer" *ngIf="tableItem != null">
+
+          <table class="table table-striped">
+
+            <tbody>
+              <tr class="tag-tr" *ngFor="let table of tableItem  | filter:searchTextTable">
+
+                <td class="tag-td">
+                  <div class="TagInputMainContainer">
+                    <input type="radio" name="options" id={{table.SelectionId}} (click)="tableClick(table)"><label class="LableMaincontainer" for={{table.SelectionId}}>{{table.SelectionTitle}}</label>
+                  </div>
+                    <div class="DeleteIconTable" (click)="tableDelete(table)"></div>
+
+                </td>
+
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="myselection-Btn-maincontainer">
+        <button type="button" class="Myselection-btndesign viewbtn" (click)="viewClick()">VIEW</button>
+        <button type="button" class="Myselection-btndesign downloadbtn" (click)="downloadClick()">DownLoad</button>
+
+      </div>
+  </div>
+
+</div>
+
+
+

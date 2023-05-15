@@ -1,0 +1,145 @@
+header {
+  height: 45px;
+  background-color: #f0f2f4;
+}
+
+.header-close {
+  display: inline-block;
+  font-size: 27px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+
+::ng-deep .modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content-alert {
+  width: 500px !important;
+  margin: auto !important;
+  margin-top: 0 !important;
+  position: fixed;
+  top: 10%;
+  left: 18.5%;
+  z-index: 1066;
+  height: 150px;
+  margin-left: -10%;
+}
+
+
+.vertical-center {
+  width: 100%;
+  height: 18%;
+  padding-top: 2%;
+  position: relative;
+}
+.Deletebuttontext {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+  /* width: 20%; */
+  padding-right: 5%;
+  white-space: nowrap;
+}
+.spantext {
+  vertical-align: bottom;
+  border-bottom: 1px solid;
+}
+
+.alter-IconMainHeader {
+  font-size: 1.56rem;
+  color: #e18719;
+  text-transform: lowercase;
+  position: relative;
+  font-family: monospace;
+  top: -29%;
+  left: 72%;
+  width: 6%;
+  height: 100%;
+  display: inline-table;
+  text-align: center;
+  border-bottom: 2px solid;
+  cursor: pointer;
+}
+
+
+.alert-maincontainer {
+  background: #F9F8F7 !important;
+  border-radius: 10px !important;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) !important;
+  width: 79% !important;
+  height: 127%;
+  position: relative;
+  top: -18%;
+  left: 10%;
+  padding: 0 0.8% !important;
+}
+
+.alert-header {
+  width: 100%;
+  height: 18%;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display: flex;
+  border-bottom: 1px solid rgba(48, 48, 48, 0.5);
+  font-family: Montserrat;
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  color: #303030;
+  padding: 2px;
+}
+
+.alter-text-header {
+  padding-left: 2px;
+  margin-top: 1%;
+  font-weight: bold;
+}
+
+.alter-IconHeader {
+  position: relative;
+  top: 5px;
+}
+
+.alert-bodycontainer {
+  font-family: Montserrat;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #303030 !important;
+  font-weight: 100;
+  /* display: inline-block; */
+  display: flex;
+  text-align: left;
+  width: 95%;
+  height: 100%;
+  vertical-align: middle;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.alert-bodymaincontainer {
+  height: 60%;
+  /* padding: 3% 0; */
+  border-bottom: 1px solid rgba(48, 48, 48, 0.5);
+}

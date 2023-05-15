@@ -1,0 +1,190 @@
+/*.modal-content {
+  background: #F9F8F7 !important;
+  border-radius: 10px !important;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) !important;
+  width: 100% !important;
+  height: 51% !important;
+  padding: 0 0.8% !important;
+}*/
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(/Content/fonts/Montserrat/Montserrat-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(/Content/fonts/Montserrat/Montserrat-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(/Content/fonts/Montserrat/Montserrat-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Montserrat-black";
+  src: url(/Content/fonts/Montserrat/Montserrat-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(/Content/fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: "MyriadPro-Light";
+  src: url(/Content/fonts/MyriadPro/MyriadPro-Light.otf) format('truetype');
+}
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: url(/Content/fonts/MyriadPro/MYRIADPRO-REGULAR.OTF) format('truetype');
+}
+.modal-body.Myselection-content-body {
+  width: 100%;
+  height: 100%;
+}
+select, input[type=radio] {
+  font-family: Montserrat;
+  font-size: .725rem;
+  color: #303030;
+  text-transform: uppercase;
+}
+input[type=radio]:checked {
+  background-color: black
+}
+.modal-dialog {
+  height: 91%;
+}
+.modal-content {
+  background: none !important;
+  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+button:active:focus, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+body, html {
+  font-family: Montserrat-Regular!important;
+}
+input[type=text]:active:focus, input[type=text]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+select:active:focus, select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.dropdown button, .dropdown-toggle {
+  margin-right: 0.9rem;
+  overflow: hidden;
+  padding-right: 30px;
+  text-align: left;
+  padding-top: 0.15rem;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #666666!important;
+  border: 1.5px solid #dee2e6 !important;
+  border-radius: 0px;
+  /*  width: 14vw;
+  height: 5vh;*/
+  width: 9.25rem !important;
+  height: 1.3625rem !important;
+  margin-right: 2% !important;
+  background: none !important;
+  cursor: pointer !important;
+  font-family: Montserrat-Regular !important;
+  font-weight: normal !important;
+  /* font-size: 0.8vw !important;*/
+
+ 
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(77, 77, 77, 0.3) !important;
+  border-radius: 0;
+  width: 36vh !important;
+  font-family: Montserrat-Regular!important;
+  font-weight: normal !important;
+  /*font-size: 0.8vw!important;*/
+  /* font-size: 0.5625rem!important;*/
+  font-size: 0.625rem !important;
+  line-height: 3vh !important;
+  /*letter-spacing: 1.22px !important;*/
+  /*  text-transform: uppercase !important;*/
+}
+
+.show > .btn-outline-secondary.dropdown-toggle {
+  background-color: none;
+  border-color:none
+}
+.dropdown-toggle:after {
+  display: inline-block;
+
+  content: "";
+  top:2px;
+  right: 3% !important;
+  border-top: 0.4em solid;
+  border-right: 0.4em solid #0000;
+  border-bottom: 0;
+  border-left: 0.4em solid #0000;
+  /* width: 7px; */
+}
+.dropdown.show .dropdown-toggle:after{
+  content: "";
+  border-bottom: 0.4em solid!important;
+  border-right: 0.4em solid #0000!important;
+   border-top:0!important;
+  border-left: 0.4em solid #0000!important;
+}
+
+.add-dropdown-content .modal-content {
+  /* width: 500px!important; */
+  /* margin: 0 auto auto!important; */
+  /* position: fixed; */
+  /* top: 10%; */
+  /* left: 18.5%; */
+  /* z-index: 1060; */
+  /* width: 80%; */
+  /* height: 80%; */
+  /* margin-left: -10%; */
+}
+.modal-open .modal {
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;
+}
+::-webkit-scrollbar-thumb {
+  background: #e18719;
+  border-radius: 10px;
+  height: 2px;
+}
+.xScrollContainer::-webkit-scrollbar-thumb {
+  background: #4F2170;
+  border-radius: 10px;
+  height: 2px;
+}
+.yScrollContainer::-webkit-scrollbar-thumb {
+  background: #4F2170;
+  border-radius: 10px;
+  height: 2px;
+}
+
+.dropdown-toggle {
+  font-size: 0.625rem !important;
+  text-transform: uppercase;
+}
